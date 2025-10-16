@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.10.15)  16 OCT 2025 00:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.10.15)  16 OCT 2025 00:42
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **itManual.tex
 (./itManual.tex
@@ -174,7 +175,7 @@ LaTeX Info: Redefining \addtolength on input line 81.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
-Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
 Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
@@ -202,10 +203,9 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
-runsystem(uname -s > "itManual.w18")...executed.
 
- (./itManual.w18)
-runsystem(rm -- "itManual.w18")...executed.
+Package ifplatform Warning: 
+    shell escape is disabled, so I can only detect \ifwindows.
 
 ) (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
@@ -238,8 +238,21 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@every@listing=\toks22
 \c@listing=\count292
 )
-runsystem(mkdir -p _minted-itManual)...executed.
+runsystem(mkdir -p _minted-itManual)...disabled (restricted).
 
+
+
+./itManual.tex:22: Package minted Error: You must invoke LaTeX with the -shell-
+escape flag.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 
+     
+Pass the -shell-escape flag to LaTeX. Refer to the minted.sty documentation for
+ more information.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
@@ -968,9 +981,17 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \pstool@out=\write7
 \pstool@mainfile@ior=\read6
 \pstool@auxfile@ior=\read7
-runsystem(cd ""; rm -- "itManual.oldaux" )...executed.
 
-runsystem(cd ""; cp -- "itManual.aux" "itManual.oldaux" )...executed.
+
+Package pstool Warning: 
+  Package option [process=none] activated
+  because -shell-escape is not enabled.
+This warning occurred on input line 163.
+
+runsystem(cd ""; rm -- "itManual.oldaux" )...disabled (restricted).
+
+runsystem(cd ""; cp -- "itManual.aux" "itManual.oldaux" )...disabled (restricte
+d).
 
 )
 \c@theorem=\count373
@@ -985,8 +1006,7 @@ runsystem(cd ""; cp -- "itManual.aux" "itManual.oldaux" )...executed.
 \c@reqkBusiness=\count382
 \c@useCase=\count383
 \c@userStory=\count384
-
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -1133,23 +1153,44 @@ Writing index file itManual.idx
 (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
-runsystem(which pygmentize && touch itManual.aex)...executed.
+runsystem(which pygmentize && touch itManual.aex)...disabled (restricted).
 
-runsystem(rm itManual.aex)...executed.
+
+
+./itManual.tex:356: Package minted Error: You must have `pygmentize' installed 
+to use this package.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.356 \begin{document}
+                      
+Refer to the installation instructions in the minted documentation for more inf
+ormation.
 
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 3
 56.
-
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 ) (./itManual.aux
-(./prologue.aux))
+(./prologue.aux
+
+LaTeX Warning: Label `Table::UpdateHistory' multiply defined.
+
+
+LaTeX Warning: Label `Table::UpdateHistory' multiply defined.
+
+) (./itIntroduction.aux) (./itPasswords.aux) (./itHosts.aux) (./KanbanSetup.aux
+) (./Hosts.aux) (./LinuxCommands.aux) (./ProjectProposal.aux)
+(./AWSDeployment.aux))
 \openout1 = `itManual.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 356.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 356.
- (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 356.
@@ -1237,31 +1278,2982 @@ LaTeX Info: Redefining \nameref on input line 356.
  (./prologue.tex
 Title page
 Title page
-! Misplaced alignment tab character &.
-\@author ->Justin Baumann &
-                            Gianna Cerbone & Thomas Ung & Spurthi Setty\\ St...
-l.12 \end
-         {titlepage}
-? ^^X
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
-? X
+[1
+Non-PDF special ignored!
+<special> header=psfrag.pro
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Copyleft page
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 2
+0.
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
+File: ts1txr.fd 2000/12/15 v3.1
+) [2
+
+
+]
+Abstract
+(./abstract.tex
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 9.
+
+
+LaTeX Warning: Reference `Chapter:DomainHosting' on page iii undefined on input
+ line 15.
+
+
+LaTeX Warning: Reference `Chapter:DomainHosting' on page iii undefined on input
+ line 16.
+
+
+LaTeX Warning: Reference `Chapter:OverleafConfiguration' on page iii undefined 
+on input line 22.
+
+
+LaTeX Warning: Reference `Chapter:SSLResearch' on page iii undefined on input l
+ine 28.
+
+
+LaTeX Warning: Reference `Chapter::Overleaf' on page iii undefined on input lin
+e 41.
+
+
+LaTeX Warning: Reference `Chapter::Bugzilla' on page iii undefined on input lin
+e 48.
+
+
+LaTeX Warning: Reference `Chapter::LaTeXDocker' on page iii undefined on input 
+line 54.
+
+[3
+
+] [4]) [5]
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <24.88> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 42.
+ (./itManual.toc)
+\tf@toc=\write10
+\openout10 = `itManual.toc'.
+
+ [6
+
+] (./itManual.lot)
+\tf@lot=\write11
+\openout11 = `itManual.lot'.
+
+ [7
+
+] (./itManual.lof)
+\tf@lof=\write12
+\openout12 = `itManual.lof'.
+
+
+[8
+
+])
+\openout2 = `itIntroduction.aux'.
+
+ (./itIntroduction.tex
+Chapter 1.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <10.95> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 5.
+LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <10.95> not available
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 5.
+) [1
+
+
+
+
+
+]
+\openout2 = `itPasswords.aux'.
+
+ (./itPasswords.tex
+Chapter 2.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 14--14
+[]|\OT1/txr/m/n/10.95 SSH/root ac-count on Dig-i-talO-cean. Pass-word fol-lows 
+An-
+ []
+
+) [2
+
+
+
+
+]
+\openout2 = `itHosts.aux'.
+
+
+No file itHosts.tex.
+\openout2 = `KanbanSetup.aux'.
+
+(./KanbanSetup.tex
+Chapter 3.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17.28> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 8.
+) [3
+
+
+
+
+
+
+
+]
+\openout2 = `Hosts.aux'.
+
+ (./Hosts.tex
+Chapter 4.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
+15.
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txtt.fd
+File: ot1txtt.fd 2000/12/15 v3.1
+)
+Underfull \hbox (badness 1565) in paragraph at lines 16--16
+[]|\OT1/txr/m/n/10.95 Root pass-word stored sep-a-rately; SSH keys rec-om-mende
+d.
+ []
+
+) [4
+
+
+
+
+]
+\openout2 = `LinuxCommands.aux'.
+
+ (./LinuxCommands.tex
+Chapter 5.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+Package epstopdf Info: Source file: <eps/LinuxBash.eps>
+(epstopdf)                    date: 2025-10-16 00:08:42
+(epstopdf)                    size: 2811732 bytes
+(epstopdf)             Output file: <eps/LinuxBash-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-10-16 00:08:42
+(epstopdf)                    size: 72071 bytes
+(epstopdf)             Command: <repstopdf --outfile=eps/LinuxBash-eps-converte
+d-to.pdf eps/LinuxBash.eps>
+(epstopdf)             \includegraphics on input line 14.
+Package epstopdf Info: Output file is already uptodate.
+<eps/LinuxBash-eps-converted-to.pdf, id=145, 1269.74374pt x 366.36874pt>
+File: eps/LinuxBash-eps-converted-to.pdf Graphic file (type pdf)
+<use eps/LinuxBash-eps-converted-to.pdf>
+Package pdftex.def Info: eps/LinuxBash-eps-converted-to.pdf  used on input line
+ 14.
+(pdftex.def)             Requested size: 469.75499pt x 135.54312pt.
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 21.
+[5
+
+
+
+
+ <./eps/LinuxBash-eps-converted-to.pdf>]
+LaTeX Font Info:    Trying to load font information for TS1+txtt on input line 
+35.
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txtt.fd
+File: ts1txtt.fd 2000/12/15 v3.1
+)
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[6])
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[7]
+\openout2 = `ProjectProposal.aux'.
+
+ (./ProjectProposal.tex
+Chapter 6.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+) [8
+
+
+
+
+]
+\openout2 = `AWSDeployment.aux'.
+
+ (./AWSDeployment.tex
+Chapter 7.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+\openout4 = `itManual.pyg'.
+
+(./_minted-itManual/default.pygstyle)
+(./_minted-itManual/3B2276B3736E0BD7BCAFBDA76DD826D361FE775D20659B054DDAB669258
+31BF0.pygtex)
+\openout4 = `itManual.pyg'.
+
+
+(./_minted-itManual/F6BFF70B761B46BBC5B36B8743717D7061FE775D20659B054DDAB669258
+31BF0.pygtex) [9
+
+
+
+
+]
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 4
+7.
+ (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
+File: utxsya.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 4
+7.
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
+File: utxsyb.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 4
+7.
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
+File: utxmia.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 4
+7.
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
+File: utxsyc.fd 2000/12/15 v3.1
+)
+\openout4 = `itManual.pyg'.
+
+
+(./_minted-itManual/0D59AB1F96B3E03AE3C75CB8E9BB643A61FE775D20659B054DDAB669258
+31BF0.pygtex)
+\openout4 = `itManual.pyg'.
+
+
+(./_minted-itManual/58C27F236FDBAB0D46CDE99635628B6461FE775D20659B054DDAB669258
+31BF0.pygtex)
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l base -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/06A78A4AE2053AE7B6E4A6994F80C50BD6211F59AD6E73F4
+BD7D740284A90367.pygtex itManual.pyg)...disabled (restricted).
+
+
+
+./AWSDeployment.tex:78: Package minted Error: Missing Pygments output; \inputmi
+nted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78     \end{minted}
+                     
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l json -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/963920EF78EB30BB7E8352FBFAF3A269ABC6DD5422EE8681
+FF3332202D26E18C.pygtex itManual.pyg)...disabled (restricted).
+
+
+./AWSDeployment.tex:86: Package minted Error: Missing Pygments output; \inputmi
+nted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86     \end{minted}
+                     
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[10]
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bat -f latex -P commandprefix=PYG -F tokenmerge -P stri
+pnl=False -o _minted-itManual/0CA86DD0B27521F1101AD8CDDF570CC293EBC2CB6B426EF10
+7C3A7414E9147C2.pygtex itManual.pyg)...disabled (restricted).
+
+
+
+./AWSDeployment.tex:100: Package minted Error: Missing Pygments output; \inputm
+inted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.100 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bat -f latex -P commandprefix=PYG -F tokenmerge -P stri
+pnl=False -o _minted-itManual/72301A5E6796D08BA32F8ECC5EA080FC93EBC2CB6B426EF10
+7C3A7414E9147C2.pygtex itManual.pyg)...disabled (restricted).
+
+
+./AWSDeployment.tex:108: Package minted Error: Missing Pygments output; \inputm
+inted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.108     \end{minted}
+                      
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l json -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/0B4A495202A816E349F350EE71802554ABC6DD5422EE8681
+FF3332202D26E18C.pygtex itManual.pyg)...disabled (restricted).
+
+
+./AWSDeployment.tex:126: Package minted Error: Missing Pygments output; \inputm
+inted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126     \end{minted}
+                      
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bat -f latex -P commandprefix=PYG -F tokenmerge -P stri
+pnl=False -o _minted-itManual/203387366C845FCB8DDA26AC9C587F9C93EBC2CB6B426EF10
+7C3A7414E9147C2.pygtex itManual.pyg)...disabled (restricted).
+
+
+./AWSDeployment.tex:138: Package minted Error: Missing Pygments output; \inputm
+inted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138     \end{minted}
+                      
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bat -f latex -P commandprefix=PYG -F tokenmerge -P stri
+pnl=False -o _minted-itManual/A3A0D01F6997BF1C5BE1603DABC1F3D193EBC2CB6B426EF10
+7C3A7414E9147C2.pygtex itManual.pyg)...disabled (restricted).
+
+
+./AWSDeployment.tex:144: Package minted Error: Missing Pygments output; \inputm
+inted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.144     \end{minted}
+                      
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l text -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/201CBC439F146CB4275A9F0FC2520DC0AF5F89FADCFF11B7
+D07C3A9CA0B329C8.pygtex itManual.pyg)...disabled (restricted).
+
+
+./AWSDeployment.tex:148: Package minted Error: Missing Pygments output; \inputm
+inted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.148 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bat -f latex -P commandprefix=PYG -F tokenmerge -P stri
+pnl=False -o _minted-itManual/8D6C395B163C780FEB6C9D833FF12B3A93EBC2CB6B426EF10
+7C3A7414E9147C2.pygtex itManual.pyg)...disabled (restricted).
+
+
+./AWSDeployment.tex:153: Package minted Error: Missing Pygments output; \inputm
+inted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.153     \end{minted}
+                      
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bat -f latex -P commandprefix=PYG -F tokenmerge -P stri
+pnl=False -o _minted-itManual/22277402A3551136599D187FE250E54193EBC2CB6B426EF10
+7C3A7414E9147C2.pygtex itManual.pyg)...disabled (restricted).
+
+
+./AWSDeployment.tex:158: Package minted Error: Missing Pygments output; \inputm
+inted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.158     \end{minted}
+                      
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bat -f latex -P commandprefix=PYG -F tokenmerge -P stri
+pnl=False -o _minted-itManual/65F15208519790EB08448DC43B93801B93EBC2CB6B426EF10
+7C3A7414E9147C2.pygtex itManual.pyg)...disabled (restricted).
+
+
+./AWSDeployment.tex:164: Package minted Error: Missing Pygments output; \inputm
+inted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.164     \end{minted}
+                      
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l json -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/FB8AF90095BA72D6203DE8BB048DC2A9ABC6DD5422EE8681
+FF3332202D26E18C.pygtex itManual.pyg)...disabled (restricted).
+
+
+./AWSDeployment.tex:173: Package minted Error: Missing Pygments output; \inputm
+inted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.173         \end{minted}
+                          
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bat -f latex -P commandprefix=PYG -F tokenmerge -P stri
+pnl=False -o _minted-itManual/9B6F11F9ED5B2B8C6DE840110BBE0FC693EBC2CB6B426EF10
+7C3A7414E9147C2.pygtex itManual.pyg)...disabled (restricted).
+
+
+./AWSDeployment.tex:184: Package minted Error: Missing Pygments output; \inputm
+inted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.184 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bat -f latex -P commandprefix=PYG -F tokenmerge -P stri
+pnl=False -o _minted-itManual/B55BAACDCD8563D57804A08EB7F49CB793EBC2CB6B426EF10
+7C3A7414E9147C2.pygtex itManual.pyg)...disabled (restricted).
+
+
+./AWSDeployment.tex:189: Package minted Error: Missing Pygments output; \inputm
+inted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bat -f latex -P commandprefix=PYG -F tokenmerge -P stri
+pnl=False -o _minted-itManual/AF36841B424DD50F2582F593B8B5E77193EBC2CB6B426EF10
+7C3A7414E9147C2.pygtex itManual.pyg)...disabled (restricted).
+
+
+./AWSDeployment.tex:194: Package minted Error: Missing Pygments output; \inputm
+inted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bat -f latex -P commandprefix=PYG -F tokenmerge -P stri
+pnl=False -o _minted-itManual/1270924FA559B656973F436E1B84785993EBC2CB6B426EF10
+7C3A7414E9147C2.pygtex itManual.pyg)...disabled (restricted).
+
+
+./AWSDeployment.tex:206: Package minted Error: Missing Pygments output; \inputm
+inted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.206 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bat -f latex -P commandprefix=PYG -F tokenmerge -P stri
+pnl=False -o _minted-itManual/E9EFD8A4F8BB866A1ED2C3B7FEDC38A993EBC2CB6B426EF10
+7C3A7414E9147C2.pygtex itManual.pyg)...disabled (restricted).
+
+
+./AWSDeployment.tex:216: Package minted Error: Missing Pygments output; \inputm
+inted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.216 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[11]
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l text -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/D95CBA53D89510FC2F232D532FF6C905AF5F89FADCFF11B7
+D07C3A9CA0B329C8.pygtex itManual.pyg)...disabled (restricted).
+
+
+
+./AWSDeployment.tex:222: Package minted Error: Missing Pygments output; \inputm
+inted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l javascript -f latex -P commandprefix=PYG -F tokenmerge 
+-P stripnl=False -o _minted-itManual/73C8712FAE151B3000F60A54F56BFC9B341721B060
+DC3C0122DD7BDE024D1636.pygtex itManual.pyg)...disabled (restricted).
+
+
+./AWSDeployment.tex:262: Package minted Error: Missing Pygments output; \inputm
+inted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.262 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+
+LaTeX Warning: Reference `fig:uml-colorcontroller' on page 12 undefined on inpu
+t line 266.
+
+Package epstopdf Info: Source file: <eps/ColorControllerUML.eps>
+(epstopdf)                    date: 2025-10-16 00:08:42
+(epstopdf)                    size: 140365 bytes
+(epstopdf)             Output file: <eps/ColorControllerUML-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2025-10-16 00:08:42
+(epstopdf)                    size: 11482 bytes
+(epstopdf)             Command: <repstopdf --outfile=eps/ColorControllerUML-eps
+-converted-to.pdf eps/ColorControllerUML.eps>
+(epstopdf)             \includegraphics on input line 271.
+Package epstopdf Info: Output file is already uptodate.
+<eps/ColorControllerUML-eps-converted-to.pdf, id=239, 401.5pt x 165.61874pt>
+File: eps/ColorControllerUML-eps-converted-to.pdf Graphic file (type pdf)
+<use eps/ColorControllerUML-eps-converted-to.pdf>
+Package pdftex.def Info: eps/ColorControllerUML-eps-converted-to.pdf  used on i
+nput line 271.
+(pdftex.def)             Requested size: 281.85585pt x 116.27348pt.
+)
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[12 <./eps/ColorControllerUML-eps-converted-to.pdf>]
+\openout2 = `LaTeXDocker.aux'.
+
+ (./LaTeXDocker.tex
+Chapter 8.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l docker -f latex -P commandprefix=PYG -F tokenmerge -P s
+tripnl=False -o _minted-itManual/0C7C04CBF0A262ECBA5D914242EDA87ADD10C0F49BC5E9
+F05562F752DB2D93AD.pygtex itManual.pyg)...disabled (restricted).
+
+
+./LaTeXDocker.tex:20: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \end{minted}
+                 
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/E196AE14B08B953EE4F55750C99EEAD261FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./LaTeXDocker.tex:29: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \end{minted}
+                 
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+) [13
+
+
+
+
+]
+\openout2 = `itBugzilla.aux'.
+
+ (./itBugzilla.tex
+Chapter 9.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/FAB1C4F0E6DC071091C87C7636BAE60D61FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itBugzilla.tex:29: Package minted Error: Missing Pygments output; \inputminte
+d was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29     \end{minted}
+                     
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/8545694F406E5D9D7348B8AB8BC73D1B61FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itBugzilla.tex:36: Package minted Error: Missing Pygments output; \inputminte
+d was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36     \end{minted}
+                     
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/1BCB06AEAAEE1DA8F704EF773574D83361FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itBugzilla.tex:47: Package minted Error: Missing Pygments output; \inputminte
+d was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47     \end{minted}
+                     
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l yaml -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/982EB54255B8426D5698DA39AECEBD99606ECF2A678031AC
+85323194345E6AFC.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itBugzilla.tex:78: Package minted Error: Missing Pygments output; \inputminte
+d was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78     \end{minted}
+                     
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/86E9EE0B91F482E898F41EC7696F0D7961FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itBugzilla.tex:85: Package minted Error: Missing Pygments output; \inputminte
+d was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85     \end{minted}
+                     
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/ABC79F65E5D422DA1BD9E181197BE92561FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itBugzilla.tex:97: Package minted Error: Missing Pygments output; \inputminte
+d was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97     \end{minted}
+                     
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/CDADB0863C3164DF27B54A44A2E92FCC61FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itBugzilla.tex:105: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105     \end{minted}
+                      
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/C471C38E2413C2F02A66A68507E7064361FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itBugzilla.tex:121: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121     \end{minted}
+                      
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/EE7F24FC9ED185027380C59F900970D961FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itBugzilla.tex:127: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127     \end{minted}
+                      
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/C1B25ED9ADE03C4C3B94AAA8898094D161FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itBugzilla.tex:140: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140     \end{minted}
+                      
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+[14
+
+
+
+
+]
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/BCC29854AFEC423A3C99E2148458511C61FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+
+./itBugzilla.tex:159: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.159     \end{minted}
+                      
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/76DF1F8800DFB65D61A5166DC859E6D761FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itBugzilla.tex:166: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.166     \end{minted}
+                      
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/72DB213A1192C57858DE4D2E8AE3DF9D61FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itBugzilla.tex:176: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.176     \end{minted}
+                      
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/9B67C5F17D298D6FED9B5E8B9F1D37D061FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itBugzilla.tex:184: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.184     \end{minted}
+                      
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/DD8CDD784A8FB188355B3E16BF5D6EF361FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itBugzilla.tex:190: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.190     \end{minted}
+                      
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/832C7D7080B3A3774EB0E2976D32CF1461FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itBugzilla.tex:213: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.213     \end{minted}
+                      
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/72DB213A1192C57858DE4D2E8AE3DF9D61FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itBugzilla.tex:219: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.219     \end{minted}
+                      
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+<png/bugzilla.png, id=282, 1271.5003pt x 740.7675pt>
+File: png/bugzilla.png Graphic file (type png)
+<use png/bugzilla.png>
+Package pdftex.def Info: png/bugzilla.png  used on input line 231.
+(pdftex.def)             Requested size: 328.82706pt x 191.5664pt.
+)
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[15]
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[16 <./png/bugzilla.png>]
+\openout2 = `itOverleaf.aux'.
+
+ (./itOverleaf.tex
+Chapter 10.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l latex -f latex -P commandprefix=PYG -F tokenmerge -P st
+ripnl=False -o _minted-itManual/5418BCBD965D29873A05877B3A139A04C44D0F54FB793D3
+BDE9B7F40BE0AE9B3.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf.tex:14: Package minted Error: Missing Pygments output; \inputminte
+d was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \end{minted}
+                 
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/1466484DEA34219A9F9327ED80F0D60661FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf.tex:37: Package minted Error: Missing Pygments output; \inputminte
+d was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \end{minted}
+                 
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/C4D343813D5DAEAF36FC4F0AD0B5A6D361FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf.tex:44: Package minted Error: Missing Pygments output; \inputminte
+d was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 \end{minted}
+                 
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/7C516ECEFC005CD35BA2132BB4F20A6261FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf.tex:52: Package minted Error: Missing Pygments output; \inputminte
+d was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{minted}
+                 
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l yaml -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/CE84B98697E23CF03131229757448E6A606ECF2A678031AC
+85323194345E6AFC.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf.tex:91: Package minted Error: Missing Pygments output; \inputminte
+d was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.91 \end{minted}
+                 
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+
+Overfull \hbox (1.8264pt too wide) in paragraph at lines 55--92
+\OT1/txr/m/n/10.95 We used \OT1/txtt/m/n/10.95 sharelatex/sharelatex \OT1/txr/m
+/n/10.95 (the Over-leaf CE im-age) with Mon-goDB and Re-dis. Note the \OT1/txr/
+bx/n/10.95 Overleaf-
+ []
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/4012188C12E950281D6BB47BA9087A6361FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf.tex:99: Package minted Error: Missing Pygments output; \inputminte
+d was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.99 \end{minted}
+                 
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/2BBDA3D5E59E71A4CFCE744E791D9A4161FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf.tex:110: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.110 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+[17
+
+
+
+
+]
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/8E56E879A444E1172B01E73CD0B631C961FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+
+./itOverleaf.tex:117: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/B703EAE32386CDF2934135A390D7A7CD61FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf.tex:129: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+
+Overfull \hbox (79.88971pt too wide) in paragraph at lines 120--130
+\OT1/txr/m/it/10.95 Symptom: \OT1/txtt/m/n/10.95 000[]check[]for[]old[]env[]var
+s[]5.sh \OT1/txr/m/n/10.95 re-fuses startup, list-ing \OT1/txtt/m/n/10.95 SHARE
+LATEX[]MONGO[]URL\OT1/txr/m/n/10.95 , \OT1/txtt/m/n/10.95 SHARELATEX[]REDIS[]HO
+ST\OT1/txr/m/n/10.95 ,
+ []
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/0702F9A02A1C27ABCC1CF200561A7A7361FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf.tex:146: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.146 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/0F0EFC1037C79FCEAA77740D163F6E7561FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf.tex:152: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/75679A8828B9F406402B56E72D3957CC61FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf.tex:161: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.161 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/DC57AEE614385A288B906EBA03DABB8A61FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf.tex:168: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.168 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/F86521CD8AB57DF9CAEC2F8FB644C3FE61FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf.tex:175: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.175 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/D595F48D1A72CD371ED3CDCA1934932261FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf.tex:192: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.192 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/A35D7EEA9387DA6F6FFA56DED6B0BECA61FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf.tex:220: Package minted Error: Missing Pygments output; \inputmint
+ed was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.220 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[18]
+<png/overleaf.png, id=340, 1443.14156pt x 846.91406pt>
+File: png/overleaf.png Graphic file (type png)
+<use png/overleaf.png>
+Package pdftex.def Info: png/overleaf.png  used on input line 227.
+(pdftex.def)             Requested size: 422.77661pt x 248.10582pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[19 <./png/overleaf.png>])
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[20]
+\openout2 = `SSLResearch.aux'.
+
+ (./SSLResearch.tex
+Chapter 11.
+[21
+
+
+
+
+]
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[22]
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[23])
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[24]
+\openout2 = `itOverleaf_Configuration.aux'.
+
+ (./itOverleaf_Configuration.tex
+Chapter 12.
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/9BD942401BCA715019B033FA52AB5DAE61FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:21: Package minted Error: Missing Pygments outpu
+t; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \end{minted}
+                 
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l dockerfile -f latex -P commandprefix=PYG -F tokenmerge 
+-P stripnl=False -o _minted-itManual/FE206A2187495608CD609081EB6FA1CD31F6B827D2
+422E78A8DCEEC664073D66.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:53: Package minted Error: Missing Pygments outpu
+t; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 \end{minted}
+                 
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l yaml -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/7241542997BA44E6CCA63B1BD2F8F8A3606ECF2A678031AC
+85323194345E6AFC.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:94: Package minted Error: Missing Pygments outpu
+t; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 \end{minted}
+                 
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/B8B6FBE2BD70F30D034D43A2BB3D5BBA61FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:103: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+[25
+
+
+
+
+]
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/941C38B7ADEE88EE694EB362AA3DCE2561FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+
+./itOverleaf_Configuration.tex:112: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/9BB3AE2CEF7E54CCB0BF57CB00D7819761FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:118: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.118 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/1B46950B2F1C2D5962C0244FE295EECB61FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:128: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/1E4CE0C96451AE10A283646EB5CFBCED61FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:134: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/F68AE32A99C8C9AF5A0F1C736D3FE93761FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:158: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.158 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l text -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/1D6698815CA2982126DA436628D58662AF5F89FADCFF11B7
+D07C3A9CA0B329C8.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:167: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.167 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l text -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/69FBA6DB44F35651E0B81D101F441FFCAF5F89FADCFF11B7
+D07C3A9CA0B329C8.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:183: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.183 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/0E0D3093E6345452932F89571CDA74B361FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:189: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/1E4CE0C96451AE10A283646EB5CFBCED61FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:195: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/41AAE6392D12D73B059075F09455EBF661FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:201: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.201 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[26]
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/84024C20CF40E04486A18A30464277A161FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+
+./itOverleaf_Configuration.tex:209: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.209 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l text -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/69A125F9299A8EEA7613B648489B280DAF5F89FADCFF11B7
+D07C3A9CA0B329C8.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:217: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.217 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/9B6B7B01E9A1CAB4FF31E049AE53820A61FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:224: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.224 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l text -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/0BA0EFE559E40BC67B7A09922DD1B159AF5F89FADCFF11B7
+D07C3A9CA0B329C8.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:235: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.235 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/F067B4BB9536BC14DF36AB9B1C76C28A61FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:242: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.242 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l text -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/A0D97CEF0DD808E4D43D3E399A59770EAF5F89FADCFF11B7
+D07C3A9CA0B329C8.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:250: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.250 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/A6DCDA0C4A489DF29B499B6A3C498B2161FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:258: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.258 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l text -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/BF29277A221DA78526B6D999ACD41588AF5F89FADCFF11B7
+D07C3A9CA0B329C8.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:267: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.267 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l latex -f latex -P commandprefix=PYG -F tokenmerge -P st
+ripnl=False -o _minted-itManual/54C563AD8A6234D0A201CF8AC7142361C44D0F54FB793D3
+BDE9B7F40BE0AE9B3.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:274: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.274 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l latex -f latex -P commandprefix=PYG -F tokenmerge -P st
+ripnl=False -o _minted-itManual/D4767A218960FD8378A30D581FD43DBFC44D0F54FB793D3
+BDE9B7F40BE0AE9B3.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:280: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.280 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/80602276735C8A18AA85A53A2308B2B861FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:287: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.287 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/D6B59D95C264F1C3BE903E6D8B7D4B1261FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:297: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.297 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/1E4CE0C96451AE10A283646EB5CFBCED61FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:315: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.315 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[27]
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l text -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/D46C287A163F6CE59496EA5131B779ADAF5F89FADCFF11B7
+D07C3A9CA0B329C8.pygtex itManual.pyg)...disabled (restricted).
+
+
+
+./itOverleaf_Configuration.tex:324: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.324 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l text -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/9949DB52ABE0949F0F98553B6250C648AF5F89FADCFF11B7
+D07C3A9CA0B329C8.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:346: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.346 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l latex -f latex -P commandprefix=PYG -F tokenmerge -P st
+ripnl=False -o _minted-itManual/4CC3677C364A9E3DFF1EC966A533970CC44D0F54FB793D3
+BDE9B7F40BE0AE9B3.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:353: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.353 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l latex -f latex -P commandprefix=PYG -F tokenmerge -P st
+ripnl=False -o _minted-itManual/5B316D119FF9DBA88B35B987EA801EC3C44D0F54FB793D3
+BDE9B7F40BE0AE9B3.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:369: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l latex -f latex -P commandprefix=PYG -F tokenmerge -P st
+ripnl=False -o _minted-itManual/1D1B59DD0BC83BB5F0FE7EAF06E631C6C44D0F54FB793D3
+BDE9B7F40BE0AE9B3.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:381: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.381 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l latex -f latex -P commandprefix=PYG -F tokenmerge -P st
+ripnl=False -o _minted-itManual/6806E917B9FFE133E5540680DD26F573C44D0F54FB793D3
+BDE9B7F40BE0AE9B3.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:389: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.389 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/E858484339CC597A3648E59921D8580761FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:397: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.397 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l yaml -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/8DB4E797627B837A03FDA9B600ACCB11606ECF2A678031AC
+85323194345E6AFC.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:407: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.407 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/35FD99F416D57E6FEF522CFD9969567D61FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./itOverleaf_Configuration.tex:414: Package minted Error: Missing Pygments outp
+ut; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.414 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+
+LaTeX Warning: Reference `fig:overleaf-working' on page 28 undefined on input l
+ine 418.
+
+File: png/overleaf.png Graphic file (type png)
+<use png/overleaf.png>
+Package pdftex.def Info: png/overleaf.png  used on input line 423.
+(pdftex.def)             Requested size: 422.77661pt x 248.10582pt.
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[28])
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[29]
+\openout2 = `DomainHosting.aux'.
+
+ (./DomainHosting.tex
+Chapter 13.
+
+Overfull \hbox (28.7968pt too wide) in paragraph at lines 9--10
+\OT1/txr/m/n/10.95 group full con-trol over cus-tom DNS records, SSL, and sub-d
+o-mains (like http://overleaf.quackops.me:8090/project),
+ []
+
+
+LaTeX Warning: Reference `fig:dns-records' on page 30 undefined on input line 2
+7.
+
+
+Overfull \hbox (17.69293pt too wide) in paragraph at lines 31--39
+ [][] 
+ []
+
+[30
+
+
+
+
+]
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[31]
+Overfull \hbox (70.62596pt too wide) in paragraph at lines 124--124
+[]\OT1/txtt/m/n/10.95 # Hi JustBaumann! You\TS1/txtt/m/n/10.95 '\OT1/txtt/m/n/1
+0.95 ve successfully authenticated, but GitHub does not provide shell access.[]
  
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[32]
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <10> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 135.
+
+Overfull \hbox (53.37976pt too wide) in paragraph at lines 153--153
+[]  \OT1/txtt/m/n/10.95 \( -name "*.tex" -o -name "*.bib" -o -name "*.cls" -o -
+name "*.sty" -o -name "*.bst" \) \[] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[33])
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[34]
+\openout2 = `CompilingOverleaf.aux'.
+
+ (./CompilingOverleaf.tex
+Chapter 14.
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/A9CBD2CACB97B5EDC728E4397DC0009561FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./CompilingOverleaf.tex:14: Package minted Error: Missing Pygments output; \inp
+utminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \end{minted}
+                 
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/17D4270266ABB26F45D5F07484FEEDF861FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./CompilingOverleaf.tex:20: Package minted Error: Missing Pygments output; \inp
+utminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \end{minted}
+                 
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/2A9C0801DDF453F01FCF66769CE604A061FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./CompilingOverleaf.tex:25: Package minted Error: Missing Pygments output; \inp
+utminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 \end{minted}
+                 
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+<png/cmdoverleaf.png, id=489, 992.95969pt x 566.115pt>
+File: png/cmdoverleaf.png Graphic file (type png)
+<use png/cmdoverleaf.png>
+Package pdftex.def Info: png/cmdoverleaf.png  used on input line 30.
+(pdftex.def)             Requested size: 234.87749pt x 133.9095pt.
+\openout4 = `itManual.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -P str
+ipnl=False -o _minted-itManual/678DFACB336AC4C847B852A3FEB1F63361FE775D20659B05
+4DDAB66925831BF0.pygtex itManual.pyg)...disabled (restricted).
+
+
+./CompilingOverleaf.tex:41: Package minted Error: Missing Pygments output; \inp
+utminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.41 \end{minted}
+                 
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+<png/overleafpdf.png, id=490, 1336.995pt x 802.49812pt>
+File: png/overleafpdf.png Graphic file (type png)
+<use png/overleafpdf.png>
+Package pdftex.def Info: png/overleafpdf.png  used on input line 46.
+(pdftex.def)             Requested size: 234.87749pt x 140.97806pt.
+) [35
+
+
+
+
+ <./png/cmdoverleaf.png>]
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[36 <./png/overleafpdf.png>]
+\openout2 = `itAppendix.aux'.
+
+ (./itAppendix.tex
+Appendix A.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+) [37
+
+
+
+
+]
+
+Package glossaries Warning: Empty glossary for \printnoidxglossary[type={main}]
+. Rerun may be required (or you may have forgotten to use commands like \gls) o
+n input line 420.
+
+No file itManual.bbl.
+No file itManual.ind.
+runsystem(cd ""; rm -- "itManual.oldaux" )...disabled (restricted).
+
+(./itManual.aux (./prologue.aux) (./itIntroduction.aux) (./itPasswords.aux)
+(./itHosts.aux) (./KanbanSetup.aux) (./Hosts.aux) (./LinuxCommands.aux)
+(./ProjectProposal.aux) (./AWSDeployment.aux) (./LaTeXDocker.aux)
+(./itBugzilla.aux) (./itOverleaf.aux) (./SSLResearch.aux)
+(./itOverleaf_Configuration.aux) (./DomainHosting.aux) (./CompilingOverleaf.aux
+) (./itAppendix.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+
+Package rerunfilecheck Warning: File `itManual.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `itManual.out':
+(rerunfilecheck)             Before: 9EB0CDBEE1350967265FFA0C0B282F9A;4463
+(rerunfilecheck)             After:  4DBE2E56B1BDA4228220B1BA2544FB44;24923.
+runsystem(rm itManual.pyg)...disabled (restricted).
+
+ ) 
 Here is how much of TeX's memory you used:
- 30591 strings out of 478287
- 562204 string characters out of 5849288
- 974507 words of memory out of 5000000
- 48226 multiletter control sequences out of 15000+600000
- 472870 words of font info for 39 fonts, out of 8000000 for 9000
+ 32196 strings out of 478287
+ 618987 string characters out of 5849288
+ 994468 words of memory out of 5000000
+ 49277 multiletter control sequences out of 15000+600000
+ 518701 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 91i,1n,97p,1117b,262s stack positions out of 5000i,500n,10000p,200000b,80000s
-No pages of output.
+ 91i,12n,97p,1117b,647s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txf
+onts/tcxtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txbtt.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/font
+s/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
+mes/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
+>
+Output written on itManual.pdf (45 pages, 1136202 bytes).
 PDF statistics:
- 6 PDF objects out of 1000 (max. 8388607)
- 1 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 621 PDF objects out of 1000 (max. 8388607)
+ 533 compressed objects within 6 object streams
+ 265 named destinations out of 1000 (max. 500000)
+ 163 words of extra memory for PDF output out of 10000 (max. 10000000)
 
