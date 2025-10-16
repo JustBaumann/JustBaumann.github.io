@@ -1,0 +1,6 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+CONTAINER ID   IMAGE              COMMAND           CREATED      STATUS      PORTS                    NAMES
+7244bdc99c8a   overleaf\PYGZhy{}fulltex   \PYGZdq{}/sbin/my\PYGZus{}init\PYGZdq{}   2 hours ago  Up 2 hours  0.0.0.0:8090\PYGZhy{}\PYGZgt{}80/tcp     sharelatex
+9b8786881b61   redis:7            \PYGZdq{}docker\PYGZhy{}entry...\PYGZdq{}  2 hours ago  Up 2 hours  6379/tcp                 overleaf\PYGZhy{}redis\PYGZhy{}1
+3f1ee20cf169   mongo:6.0          \PYGZdq{}docker\PYGZhy{}entry...\PYGZdq{}  2 hours ago  Up 2 hours  27017/tcp                overleaf\PYGZhy{}mongo\PYGZhy{}1
+\end{MintedVerbatim}

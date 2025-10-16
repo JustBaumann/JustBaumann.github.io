@@ -1,0 +1,4 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+docker\PYG{+w}{ }compose\PYG{+w}{ }up\PYG{+w}{ }\PYGZhy{}d
+docker\PYG{+w}{ }ps
+\end{MintedVerbatim}

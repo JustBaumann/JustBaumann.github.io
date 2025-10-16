@@ -1,0 +1,9 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+! LaTeX Error: File `psfrag.sty\PYGZsq{} not found.
+
+Type X to quit or \PYGZlt{}RETURN\PYGZgt{} to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name:
+! Emergency stop.
+\end{MintedVerbatim}

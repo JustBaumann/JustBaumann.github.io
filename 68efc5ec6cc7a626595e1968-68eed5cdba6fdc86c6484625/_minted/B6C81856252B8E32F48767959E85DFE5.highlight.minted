@@ -1,0 +1,4 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+    aws ecr describe\PYGZhy{}repositories \PYGZhy{}\PYGZhy{}repository\PYGZhy{}names \PYG{n+nv}{\PYGZpc{}ECR\PYGZus{}REPO\PYGZpc{}} \PYGZhy{}\PYGZhy{}region \PYG{n+nv}{\PYGZpc{}AWS\PYGZus{}REGION\PYGZpc{}} \PYG{p}{\PYGZgt{}}NUL \PYG{l+m+mi}{2}\PYG{p}{\PYGZgt{}\PYGZam{}}\PYG{l+m+mi}{1} \PYG{p}{||} \PYG{l+s+se}{\PYGZca{}}
+\PYG{l+s+se}{ }   aws ecr create\PYGZhy{}repository \PYGZhy{}\PYGZhy{}repository\PYGZhy{}name \PYG{n+nv}{\PYGZpc{}ECR\PYGZus{}REPO\PYGZpc{}} \PYGZhy{}\PYGZhy{}image\PYGZhy{}scanning\PYGZhy{}configuration scanOnPush=true \PYGZhy{}\PYGZhy{}region \PYG{n+nv}{\PYGZpc{}AWS\PYGZus{}REGION\PYGZpc{}}
+\end{MintedVerbatim}

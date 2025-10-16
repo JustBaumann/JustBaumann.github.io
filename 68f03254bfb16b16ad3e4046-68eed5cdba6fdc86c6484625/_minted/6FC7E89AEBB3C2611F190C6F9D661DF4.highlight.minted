@@ -1,0 +1,4 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+Package hyperref Warning: You have enabled option `breaklinks\PYGZsq{}.
+But driver `hdvips.def\PYGZsq{} does not support this.
+\end{MintedVerbatim}

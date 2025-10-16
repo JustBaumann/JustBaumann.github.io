@@ -1,0 +1,20 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} restart}
+\PYG{n+nb}{cd}\PYG{+w}{ }/opt/overleaf
+docker\PYG{+w}{ }compose\PYG{+w}{ }down
+docker\PYG{+w}{ }compose\PYG{+w}{ }up\PYG{+w}{ }\PYGZhy{}d
+
+\PYG{c+c1}{\PYGZsh{} upgrade images (occasional)}
+docker\PYG{+w}{ }compose\PYG{+w}{ }pull\PYG{+w}{ }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }docker\PYG{+w}{ }compose\PYG{+w}{ }up\PYG{+w}{ }\PYGZhy{}d
+
+\PYG{c+c1}{\PYGZsh{} view logs}
+docker\PYG{+w}{ }compose\PYG{+w}{ }logs\PYG{+w}{ }\PYGZhy{}f\PYG{+w}{ }sharelatex
+
+\PYG{c+c1}{\PYGZsh{} backups of volumes (quick tar via busybox)}
+mkdir\PYG{+w}{ }\PYGZhy{}p\PYG{+w}{ }/opt/overleaf/backups
+\PYG{n+nb}{cd}\PYG{+w}{ }/opt/overleaf
+\PYG{k}{for}\PYG{+w}{ }v\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }overleaf\PYGZus{}app\PYGZus{}data\PYG{+w}{ }overleaf\PYGZus{}mongo\PYGZus{}data\PYG{+w}{ }overleaf\PYGZus{}redis\PYGZus{}data\PYG{p}{;}\PYG{+w}{ }\PYG{k}{do}
+\PYG{+w}{  }docker\PYG{+w}{ }run\PYG{+w}{ }\PYGZhy{}\PYGZhy{}rm\PYG{+w}{ }\PYGZhy{}v\PYG{+w}{ }\PYG{l+s+si}{\PYGZdl{}\PYGZob{}}\PYG{n+nv}{v}\PYG{l+s+si}{\PYGZcb{}}:/data\PYG{+w}{ }\PYGZhy{}v\PYG{+w}{ }\PYG{k}{\PYGZdl{}(}\PYG{n+nb}{pwd}\PYG{k}{)}/backups:/backup\PYG{+w}{ }busybox\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }tar\PYG{+w}{ }czf\PYG{+w}{ }/backup/\PYG{l+s+si}{\PYGZdl{}\PYGZob{}}\PYG{n+nv}{v}\PYG{l+s+si}{\PYGZcb{}}\PYGZus{}\PYG{k}{\PYGZdl{}(}date\PYG{+w}{ }+\PYGZpc{}F\PYG{k}{)}.tar.gz\PYG{+w}{ }/data
+\PYG{k}{done}
+\end{MintedVerbatim}

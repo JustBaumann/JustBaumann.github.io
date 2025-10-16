@@ -1,0 +1,3 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+aws iam attach\PYGZhy{}role\PYGZhy{}policy \PYGZhy{}\PYGZhy{}role\PYGZhy{}name AppRunnerECRAccessRole \PYGZhy{}\PYGZhy{}policy\PYGZhy{}arn arn:aws:iam::aws:policy/service\PYGZhy{}role/AWSAppRunnerServicePolicyForECRAccess
+\end{MintedVerbatim}

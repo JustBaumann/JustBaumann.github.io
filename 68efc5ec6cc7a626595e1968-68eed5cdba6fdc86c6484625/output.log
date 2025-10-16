@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.5.19)  15 OCT 2025 22:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.5.19)  15 OCT 2025 22:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1111,7 +1111,21 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 3
 54.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-) (./output.aux)
+) (./output.aux (./prologue.aux
+
+LaTeX Warning: Label `Table::UpdateHistory' multiply defined.
+
+) (./itIntroduction.aux) (./itPasswords.aux) (./itHosts.aux) (./KanbanSetup.aux
+) (./Hosts.aux) (./LinuxCommands.aux) (./ProjectProposal.aux) (./AWSDeployment.
+aux) (./LaTeXDocker.aux) (./itBugzilla.aux) (./itOverleaf.aux
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
+) (./SSLResearch.aux) (./itOverleaf_Configuration.aux
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
+) (./itAppendix.aux))
 \openout1 = `output.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 354.
@@ -1174,6 +1188,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package hyperref Info: Link coloring ON on input line 354.
+(./output.out) (./output.out)
 \@outlinefile=\write8
 \openout8 = `output.out'.
 
@@ -1316,74 +1331,6 @@ might try typing `S' now just to see what is salvageable.
 (./abstract.tex
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 9.
-
-LaTeX Warning: Reference `Chapter:OverleafConfiguration' on page iii undefined 
-on input line 15.
-
-
-LaTeX Warning: Reference `Chapter:SSLResearch' on page iii undefined on input l
-ine 21.
-
-
-LaTeX Warning: Reference `Chapter::Passwords' on page iii undefined on input li
-ne 27.
-
-
-LaTeX Warning: Reference `Chapter::Hosts' on page iii undefined on input line 2
-8.
-
-
-LaTeX Warning: Reference `Chapter::Overleaf' on page iii undefined on input lin
-e 34.
-
-
-LaTeX Warning: Reference `Chapter::Bugzilla' on page iii undefined on input lin
-e 41.
-
-
-LaTeX Warning: Reference `Chapter::LaTeXDocker' on page iii undefined on input 
-line 47.
-
-
-LaTeX Warning: Reference `Chapter::AWS Development' on page iii undefined on in
-put line 53.
-
-
-LaTeX Warning: Reference `Chapter::AWS Development' on page iii undefined on in
-put line 59.
-
-
-LaTeX Warning: Reference `Chapter::ProjectProposal' on page iii undefined on in
-put line 78.
-
-
-LaTeX Warning: Reference `Section:Description' on page iii undefined on input l
-ine 78.
-
-
-LaTeX Warning: Reference `Chapter::LinuxCommands' on page iii undefined on inpu
-t line 84.
-
-
-LaTeX Warning: Reference `Chapter::Introduction' on page iii undefined on input
- line 90.
-
-
-LaTeX Warning: Reference `Chapter::Hosts' on page iii undefined on input line 9
-6.
-
-
-LaTeX Warning: Reference `Chapter::Kanbansetup' on page iii undefined on input 
-line 103.
-
-
-LaTeX Warning: Reference `Chapter::Passwords' on page iii undefined on input li
-ne 110.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 1 on input line 115.
-
 [3
 
 ])
@@ -1391,31 +1338,62 @@ Package longtable Warning: Column widths have changed
 [4]
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <24.88> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 38.
-No file output.toc.
+(./output.toc
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <10.95> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <10.95> not available
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 1.
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 1
+.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/txfonts/utxsya.fd
+File: utxsya.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 1
+.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/txfonts/utxsyb.fd
+File: utxsyb.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 1
+.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/txfonts/utxmia.fd
+File: utxmia.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
+.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/txfonts/utxsyc.fd
+File: utxsyc.fd 2000/12/15 v3.1
+)
+
+[5
+
+]
+LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
+46.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/txfonts/ot1txtt.fd
+File: ot1txtt.fd 2000/12/15 v3.1
+)
+
+[6])
 \tf@toc=\write9
 \openout9 = `output.toc'.
 
 
 
-[5
-
-]
-No file output.lot.
+[7] (./output.lot)
 \tf@lot=\write10
 \openout10 = `output.lot'.
 
 
 
-[6
+[8
 
-]
-No file output.lof.
+] (./output.lof)
 \tf@lof=\write11
 \openout11 = `output.lof'.
 
 
 
-[7
+[9
 
 ])
 \openout2 = `itIntroduction.aux'.
@@ -1426,10 +1404,6 @@ Chapter 1.
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 5.
 
-LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 5.
-LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <10.95> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 5.
 )
 
 [1
@@ -1493,11 +1467,7 @@ Chapter 4.
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 5.
 
-LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
-15.
-(/usr/local/texlive/2025/texmf-dist/tex/latex/txfonts/ot1txtt.fd
-File: ot1txtt.fd 2000/12/15 v3.1
-)
+
 Underfull \hbox (badness 1565) in paragraph at lines 16--16
 []|\OT1/txr/m/n/10.95 Root pass-word stored sep-a-rately; SSH keys rec-om-mende
 d.
@@ -1520,5 +1490,707 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 5.
 
 Package epstopdf Info: Source file: <eps/LinuxBash.eps>
-(epstopdf)                    date: 2025-10-15 22:06:59
-(eps
+(epstopdf)                    date: 2025-10-15 22:34:15
+(epstopdf)                    size: 2811732 bytes
+(epstopdf)             Output file: <eps/LinuxBash-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-10-15 22:34:40
+(epstopdf)                    size: 72071 bytes
+(epstopdf)             Command: <repstopdf --outfile=eps/LinuxBash-eps-converte
+d-to.pdf eps/LinuxBash.eps>
+(epstopdf)             \includegraphics on input line 14.
+Package epstopdf Info: Output file is already uptodate.
+<eps/LinuxBash-eps-converted-to.pdf, id=571, 1269.74374pt x 366.36874pt>
+File: eps/LinuxBash-eps-converted-to.pdf Graphic file (type pdf)
+<use eps/LinuxBash-eps-converted-to.pdf>
+Package pdftex.def Info: eps/LinuxBash-eps-converted-to.pdf  used on input line
+ 14.
+(pdftex.def)             Requested size: 469.75499pt x 135.54312pt.
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 21.
+
+
+[5
+
+
+
+
+ <./eps/LinuxBash-eps-converted-to.pdf>]
+LaTeX Font Info:    Trying to load font information for TS1+txtt on input line 
+35.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/txfonts/ts1txtt.fd
+File: ts1txtt.fd 2000/12/15 v3.1
+)
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[6])
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[7]
+\openout2 = `ProjectProposal.aux'.
+
+(./ProjectProposal.tex
+Chapter 6.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+)
+
+[8
+
+
+
+
+]
+\openout2 = `AWSDeployment.aux'.
+
+(./AWSDeployment.tex
+Chapter 7.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+\pydata@fh@0=\write12
+\openout12 = `_78E6221F6393D1356681DB398F14CE6D.data.minted'.
+
+runsystem(latexminted config  --timestamp 20251015223748Z 78E6221F6393D1356681D
+B398F14CE6D)...executed safely (allowed).
+
+(./_78E6221F6393D1356681DB398F14CE6D.config.minted)
+runsystem(latexminted cleanconfig  --timestamp 20251015223748Z 78E6221F6393D135
+6681DB398F14CE6D)...executed safely (allowed).
+
+(./_minted/default.style.minted) (./_minted/15E6D25E4719382BD9B7725FDE2A03D1.hi
+ghlight.minted) (./_minted/FC3F26139970BC5A6DCEC74D77FCB0DF.highlight.minted)
+
+[9
+
+
+
+
+] (./_minted/6AD5A2E396B6060DFBFCD435D92A573D.highlight.minted) (./_minted/1ED9
+8F9F7165DE9D9AD700C8E16CB4B6.highlight.minted)
+\openout12 = `_78E6221F6393D1356681DB398F14CE6D.data.minted'.
+
+runsystem(latexminted highlight  --timestamp 20251015223748Z 78E6221F6393D13566
+81DB398F14CE6D)...executed safely (allowed).
+
+(./_78E6221F6393D1356681DB398F14CE6D.message.minted)
+
+! Package minted Error: 
+ => ./AWSDeployment.tex:76: Pygments lexer "base" is unknown.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78     \end{minted}
+                     
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+(./_minted/1A41EA5405A3CFAF389E9793951DDCF8.highlight.minted
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[10]
+Overfull \hbox (180.48293pt too wide) in paragraph at lines 5--5
+[][]\OT1/txtt/m/n/10.95 "arn:aws:sts::474150574930:assumed[]role/AWSReservedSSO
+_AdministratorAccess_67ee4a10fe53d47e/spurthi"[]|  
+ []
+
+) (./_minted/D67347C0F057D02EDAD1564C241824E4.highlight.minted) (./_minted/B6C8
+1856252B8E32F48767959E85DFE5.highlight.minted) (./_minted/C7E62E7CC598AABA72159
+147048E44EF.highlight.minted
+Overfull \hbox (31.01585pt too wide) in paragraph at lines 4--4
+[][]\OT1/txtt/m/n/10.95 "arn:aws:ecr:us[]east[]1:474150574930:repository/color[
+]buttons[]app"[],|  
+ []
+
+
+Overfull \hbox (25.26712pt too wide) in paragraph at lines 7--7
+[][]\OT1/txtt/m/n/10.95 "474150574930.dkr.ecr.us[]east[]1.amazonaws.com/color[]
+buttons[]app"[],|  
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[11]) (./_minted/5BA41A1F0BCFD830326E5EB194629604.highlight.minted) (./_minted/
+6E9DAC8FE73AC73AFD8E926B38017912.highlight.minted) (./_minted/78A97970509320AFA
+B4422B2BFCFFE40.highlight.minted) (./_minted/7663E3174577E0ABB077907D71B5536C.h
+ighlight.minted
+Overfull \hbox (31.01585pt too wide) in paragraph at lines 2--2
+[]\OT1/txtt/m/n/10.95 %AWS_ACCOUNT_ID%[].dkr.ecr.[]%AWS_REGION%[].amazonaws.com
+/[]%ECR_REPO%[]:[]%IMAGE_TAG%[]|  
+ []
+
+) (./_minted/63FCB2E1EA96957954F1034C96D562FF.highlight.minted
+Overfull \hbox (36.76459pt too wide) in paragraph at lines 2--2
+[]\OT1/txtt/m/n/10.95 %AWS_ACCOUNT_ID%[].dkr.ecr.[]%AWS_REGION%[].amazonaws.com
+/[]%ECR_REPO%[]:[]%IMAGE_TAG%[]%|  
+ []
+
+) (./_minted/FA25EC659D0ACF1D02A646DC68BBC154.highlight.minted) (./_minted/0C7C
+D16183EB7594A7ACB7B6D61EC9DD.highlight.minted) (./_minted/522A2EC034765D3FC5709
+FADC38A75F1.highlight.minted
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[12]
+Overfull \hbox (508.16074pt too wide) in paragraph at lines 2--2
+[]\OT1/txtt/m/n/10.95 "{\"[]Version\[]":\"[]2012[]10[]17\[]",\"[]Statement\[]":
+[{\"[]Effect\[]":\"[]Allow\[]",\"[]Principal\[]":{\"[]Service\[]":\"[]build.app
+runner.amazonaws.com\[]"},\"[]Action\[]":\"[]sts:AssumeRole\[]"}]}"[]|  
+ []
+
+) (./_minted/C6A2117F6B816F5EB75203073444A047.highlight.minted
+Overfull \hbox (8.02092pt too wide) in paragraph at lines 2--2
+\OT1/txtt/m/n/10.95 arn:aws:iam::aws:policy/service[]role/AWSAppRunnerServicePo
+licyForECRAccess|  
+ []
+
+) (./_minted/7832DB90089A5DBA163D4C7E1C912130.highlight.minted
+Overfull \hbox (2.27219pt too wide) in paragraph at lines 2--2
+[]\OT1/txtt/m/n/10.95 ACCESS_ROLE_ARN[]=arn:aws:iam::[]%AWS_ACCOUNT_ID%[]:role/
+AppRunnerECRAccessRole|  
+ []
+
+) (./_minted/68A83A1801F7DBEF959691E365DEB705.highlight.minted
+Overfull \hbox (1404.96317pt too wide) in paragraph at lines 5--5
+[]\OT1/txtt/m/n/10.95 "{\"[]AuthenticationConfiguration\[]":{\"[]AccessRoleArn\
+[]":\"[][]%ACCESS_ROLE_ARN%[]\[]"},\"[]ImageRepository\[]":{\"[]ImageIdentifier
+\[]":\"[][]%AWS_ACCOUNT_ID%[].dkr.ecr.[]%AWS_REGION%[].amazonaws.com/[]%ECR_REP
+O%[]:[]%IMAGE_TAG%[]\[]",\"[]ImageRepositoryType\[]":\"[]ECR\[]",\"[]ImageConfi
+guration\[]":{\"[]Port\[]":\"[][]%CONTAINER_PORT%[]\[]"}},\"[]AutoDeploymentsEn
+abled\[]":true}"[] 
+ []
+
+) (./_minted/3C677E68498C8703CCB70903FFD2ABFC.highlight.minted
+Overfull \hbox (36.76459pt too wide) in paragraph at lines 3--3
+[]\OT1/txtt/m/n/10.95 "ServiceSummaryList[?ServiceName==\TS1/txtt/m/n/10.95 '[]
+[]\OT1/txtt/m/n/10.95 %APP_NAME%[][]\TS1/txtt/m/n/10.95 '\OT1/txtt/m/n/10.95 ].
+[ServiceArn,Status,ServiceUrl]"[] 
+ []
+
+) (./_minted/F2BC891967B520B20ADF9C30B89E8859.highlight.minted)
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[13] (./_minted/4F726DD5C5EC7AA22110B03ED6E8F1A1.highlight.minted)
+Package epstopdf Info: Source file: <eps/ColorControllerUML.eps>
+(epstopdf)                    date: 2025-10-15 22:34:15
+(epstopdf)                    size: 140365 bytes
+(epstopdf)             Output file: <eps/ColorControllerUML-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2025-10-15 22:34:49
+(epstopdf)                    size: 11482 bytes
+(epstopdf)             Command: <repstopdf --outfile=eps/ColorControllerUML-eps
+-converted-to.pdf eps/ColorControllerUML.eps>
+(epstopdf)             \includegraphics on input line 271.
+Package epstopdf Info: Output file is already uptodate.
+<eps/ColorControllerUML-eps-converted-to.pdf, id=670, 401.5pt x 165.61874pt>
+File: eps/ColorControllerUML-eps-converted-to.pdf Graphic file (type pdf)
+<use eps/ColorControllerUML-eps-converted-to.pdf>
+Package pdftex.def Info: eps/ColorControllerUML-eps-converted-to.pdf  used on i
+nput line 271.
+(pdftex.def)             Requested size: 281.85585pt x 116.27348pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[14]
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[15 <./eps/ColorControllerUML-eps-converted-to.pdf>]
+\openout2 = `LaTeXDocker.aux'.
+
+(./LaTeXDocker.tex
+Chapter 8.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+(./_minted/F1B348A4E5427EA681A3D8CB408DC57C.highlight.minted
+Overfull \hbox (1.64116pt too wide) in paragraph at lines 9--9
+[]\OT1/txtt/m/n/10.95 [[]"latexmk"[],[]"[]pdf"[],[]"[]interaction=nonstopmode"[
+],[]"[]halt[]on[]error"[],[]"[]shell[]escape"[]]|  
+ []
+
+) (./_minted/98FA748880853A3A30C93F04A4D94626.highlight.minted
+LaTeX Font Info:    Font shape `OT1/txtt/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/txtt/m/sl' tried instead on input line 2.
+))
+
+[16
+
+
+
+
+]
+\openout2 = `itBugzilla.aux'.
+
+(./itBugzilla.tex
+Chapter 9.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+(./_minted/2B823D151599CCD4E20CD439583C215D.highlight.minted) (./_minted/C9FFC2
+4808EFBB0597F8F8D606C3D6BD.highlight.minted) (./_minted/CC240B705565EC314F525E4
+BE3E58FB9.highlight.minted) (./_minted/25D65ECD87E6BCBF1755E2EDA74399CE.highlig
+ht.minted
+
+[17
+
+
+
+
+]) (./_minted/4AFD8D034CE6504E68EBF1D4B5C6FFF9.highlight.minted) (./_minted/B08
+7F3CB98D7AD277B96B1A6604968BF.highlight.minted) (./_minted/AFDFCD6D296DCC3F57A9
+DB8A2D76E9E1.highlight.minted) (./_minted/E9103D2BC723BBF2EDE196AFC5B69CDF.high
+light.minted
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[18]) (./_minted/DC41763582DE963175F3C8AB2FD3CC06.highlight.minted) (./_minted/
+C446A1F16EEC2791FA027A5F27815A8F.highlight.minted) (./_minted/5B0E02D0CB96F7FB6
+638AE24D34AE3C5.highlight.minted) (./_minted/6619A020D47F71D4042B12A4625DC261.h
+ighlight.minted) (./_minted/76999F3EA234A7BC444374F4763B2C7F.highlight.minted
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[19]) (./_minted/D6AF514CCE0B261463B63D95B0693BA7.highlight.minted) (./_minted/
+2351A07FB5EA8183224CBC5D5117B054.highlight.minted) (./_minted/CBD12A88EE28D1658
+35667708CCAD21E.highlight.minted) (./_minted/76999F3EA234A7BC444374F4763B2C7F.h
+ighlight.minted)
+<png/bugzilla.png, id=714, 1271.5003pt x 740.7675pt>
+File: png/bugzilla.png Graphic file (type png)
+<use png/bugzilla.png>
+Package pdftex.def Info: png/bugzilla.png  used on input line 231.
+(pdftex.def)             Requested size: 328.82706pt x 191.5664pt.
+)
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[20]
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[21 <./png/bugzilla.png>]
+\openout2 = `itOverleaf.aux'.
+
+(./itOverleaf.tex
+Chapter 10.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+(./_minted/E40A6C030BCAEF6F77B48ED180455269.highlight.minted) (./_minted/44DE3F
+805952DAF4C2E47CA0FDAB9BCD.highlight.minted
+
+[22
+
+
+
+
+]) (./_minted/7CED111B08E81C257DFE461DC1093D4C.highlight.minted) (./_minted/ACE
+6EEEE3DF96CFDBE2E5128BFD9C027.highlight.minted) (./_minted/E9CD32095C9098DA885F
+90103DB649B3.highlight.minted
+Overfull \hbox (1.8264pt too wide) in paragraph at lines 55--1
+\OT1/txr/m/n/10.95 We used \OT1/txtt/m/n/10.95 sharelatex/sharelatex \OT1/txr/m
+/n/10.95 (the Over-leaf CE im-age) with Mon-goDB and Re-dis. Note the \OT1/txr/
+bx/n/10.95 Overleaf-
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[23]) (./_minted/4F9B005EDF2D991DC16FE134BEA10107.highlight.minted) (./_minted/
+2FA550BCF9C9B2CD15B596870C812EDA.highlight.minted) (./_minted/51633974E8ED18C7D
+93ABBD55BF4437B.highlight.minted) (./_minted/F58F80424A9A15CA03E7ADEAA5CB8D14.h
+ighlight.minted
+Overfull \hbox (79.88971pt too wide) in paragraph at lines 120--1
+\OT1/txr/m/it/10.95 Symptom: \OT1/txtt/m/n/10.95 000[]check[]for[]old[]env[]var
+s[]5.sh \OT1/txr/m/n/10.95 re-fuses startup, list-ing \OT1/txtt/m/n/10.95 SHARE
+LATEX[]MONGO[]URL\OT1/txr/m/n/10.95 , \OT1/txtt/m/n/10.95 SHARELATEX[]REDIS[]HO
+ST\OT1/txr/m/n/10.95 ,
+ []
+
+)
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[24] (./_minted/7D163AFCF3E47DF69F63522AE2EC72DD.highlight.minted) (./_minted/8
+2733CB5E7622646A5BEE2AD798AC2DA.highlight.minted) (./_minted/8EF8FC0BD15BE57DF6
+A6FD18B6024098.highlight.minted) (./_minted/08B0038556C9AA7235C54ED9AD919E46.hi
+ghlight.minted) (./_minted/B970E4A1E1CDDEF4659DB1D41C7734BC.highlight.minted) (
+./_minted/944F773137112B915B6DA98E7594EEAC.highlight.minted
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[25]) (./_minted/440C48E148BAD6B787FB0144147CCC0B.highlight.minted)
+<png/overleaf.png, id=754, 1443.14156pt x 846.91406pt>
+File: png/overleaf.png Graphic file (type png)
+<use png/overleaf.png>
+Package pdftex.def Info: png/overleaf.png  used on input line 227.
+(pdftex.def)             Requested size: 422.77661pt x 248.10582pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[26])
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[27 <./png/overleaf.png>]
+\openout2 = `SSLResearch.aux'.
+
+(./SSLResearch.tex
+Chapter 11.
+
+
+[28
+
+
+
+
+]
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[29]
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[30])
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[31]
+\openout2 = `itOverleaf_Configuration.aux'.
+
+(./itOverleaf_Configuration.tex
+Chapter 12.
+(./_minted/3AF3CB9D93B2987686B5420FF85380A3.highlight.minted) (./_minted/22F319
+FDDBBEF076ADB44D276EEF29F7.highlight.minted
+
+[32
+
+
+
+
+]) (./_minted/34E832F6AA9A985C93802D8CF0B7F972.highlight.minted
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[33]) (./_minted/36C4159D4EAD634BBE3E94D6B273D1C1.highlight.minted) (./_minted/
+B0BDBD032F8051666399F72A65B53F1C.highlight.minted) (./_minted/D41F67273B1D29646
+AF948C269672F01.highlight.minted) (./_minted/229FA61976A4AB15C01BE46BE492AAB8.h
+ighlight.minted) (./_minted/F1F5DA2113D5A3B79E0A29BB963DE141.highlight.minted)
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[34] (./_minted/C0EEBC639CF89E74E60114447E53958A.highlight.minted) (./_minted/2
+25D01C12E17C752E87602891679B08C.highlight.minted) (./_minted/F6EDDAAD1EC203641D
+43D4912A71ECA9.highlight.minted) (./_minted/C27E502E5957A14999178F47ECDAB302.hi
+ghlight.minted) (./_minted/F1F5DA2113D5A3B79E0A29BB963DE141.highlight.minted) (
+./_minted/9E3820E7CED7FCAD026890F68DCF1AD9.highlight.minted
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[35]) (./_minted/5ACF556FCBEEBFF1A29C3C9552118A1C.highlight.minted) (./_minted/
+D5D3D6DC6184534C640C4C8E1CD64C1C.highlight.minted) (./_minted/61457A68274F55C18
+67BE9F34C47F79A.highlight.minted) (./_minted/00342F2DB81E559D9006DED47F568F42.h
+ighlight.minted) (./_minted/40B03286FBD828A5C694D321CD72490A.highlight.minted) 
+(./_minted/62C04D9C8B63860308D7558F9241685E.highlight.minted) (./_minted/35CF05
+C2C68775D8FE15570F2BE4B7ED.highlight.minted) (./_minted/9EEA71C5FDE497844890B56
+E73C10D7A.highlight.minted) (./_minted/481809E53EC00F86AC26A0258223BD94.highlig
+ht.minted
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[36]) (./_minted/4B5138719698AD2B99DA66B586D58B60.highlight.minted) (./_minted/
+7C262D9F5ADA61BABF5E0F874FD856C2.highlight.minted) (./_minted/9295426C8F45935FE
+24283456BDFF495.highlight.minted) (./_minted/F1F5DA2113D5A3B79E0A29BB963DE141.h
+ighlight.minted) (./_minted/6FC7E89AEBB3C2611F190C6F9D661DF4.highlight.minted)
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[37] (./_minted/AB90CF387E907CED51475876452870CF.highlight.minted) (./_minted/A
+454FD69FEEBA9B3146D073EC27A1A03.highlight.minted) (./_minted/39DB9FE12AB4BAE559
+974BF187C00D73.highlight.minted) (./_minted/EBBA7FCA10C590AF3145B44B4D193D51.hi
+ghlight.minted) (./_minted/2E2D815E5EC478C0BF29E5483792A8CD.highlight.minted
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[38]) (./_minted/B8412D032190346072B0B31F0510304C.highlight.minted) (./_minted/
+15C56DD582A574BAECD6D31539D27A51.highlight.minted) (./_minted/D944513248C202C6C
+841AD42E3C8CE16.highlight.minted)
+
+LaTeX Warning: Reference `fig:overleaf-working' on page 39 undefined on input l
+ine 418.
+
+File: png/overleaf.png Graphic file (type png)
+<use png/overleaf.png>
+Package pdftex.def Info: png/overleaf.png  used on input line 423.
+(pdftex.def)             Requested size: 422.77661pt x 248.10582pt.
+)
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[39]
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[40]
+\openout2 = `itAppendix.aux'.
+
+(./itAppendix.tex
+Appendix A.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+)
+
+[41
+
+
+
+
+]
+
+Package glossaries Warning: Empty glossary for \printnoidxglossary[type={main}]
+. Rerun may be required (or you may have forgotten to use commands like \gls) o
+n input line 416.
+
+(./output.bbl
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[42
+
+
+
+]
+
+LaTeX Warning: Empty `thebibliography' environment on input line 21.
+
+) (./output.ind
+
+[43
+
+]
+
+
+
+[44
+
+
+])
+\openout12 = `_78E6221F6393D1356681DB398F14CE6D.data.minted'.
+
+runsystem(latexminted clean  --timestamp 20251015223748Z 78E6221F6393D1356681DB
+398F14CE6D)...executed safely (allowed).
+
+(./output.aux (./prologue.aux) (./itIntroduction.aux) (./itPasswords.aux) (./it
+Hosts.aux) (./KanbanSetup.aux) (./Hosts.aux) (./LinuxCommands.aux) (./ProjectPr
+oposal.aux) (./AWSDeployment.aux) (./LaTeXDocker.aux) (./itBugzilla.aux) (./itO
+verleaf.aux) (./SSLResearch.aux) (./itOverleaf_Configuration.aux) (./itAppendix
+.aux))
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-04-29>
+ ***********
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `output.out' has not changed.
+(rerunfilecheck)             Checksum: AF3981A2CEFD246F1E53DF8703B506E2;20078.
+ ) 
+Here is how much of TeX's memory you used:
+ 39696 strings out of 471528
+ 835763 string characters out of 5519234
+ 1303766 words of memory out of 5000000
+ 65044 multiletter control sequences out of 15000+600000
+ 668956 words of font info for 141 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 96i,11n,105p,2476b,1293s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></us
+r/local/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/local
+/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texli
+ve/2025/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2025
+/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb></usr/local/texlive/2025/texmf
+-dist/fonts/type1/public/txfonts/txbtt.pfb></usr/local/texlive/2025/texmf-dist/
+fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2025/texmf-dist/fonts/t
+ype1/public/txfonts/txtt.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/pu
+blic/txfonts/txtt.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times
+/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.p
+fb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/l
+ocal/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on output.pdf (53 pages, 925864 bytes).
+PDF statistics:
+ 995 PDF objects out of 1000 (max. 8388607)
+ 896 compressed objects within 9 object streams
+ 246 named destinations out of 1000 (max. 500000)
+ 745 words of extra memory for PDF output out of 10000 (max. 10000000)
+

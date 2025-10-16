@@ -1,0 +1,5 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} not required for functionality, but silences Redis warning}
+sysctl\PYG{+w}{ }\PYGZhy{}w\PYG{+w}{ }vm.overcommit\PYGZus{}memory\PYG{o}{=}\PYG{l+m}{1}
+\PYG{n+nb}{echo}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}vm.overcommit\PYGZus{}memory=1\PYGZsq{}}\PYG{+w}{ }\PYGZgt{}\PYGZgt{}\PYG{+w}{ }/etc/sysctl.conf
+\end{MintedVerbatim}

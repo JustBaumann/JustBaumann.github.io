@@ -1,0 +1,9 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}usepackage}[
+breaklinks=true,
+colorlinks=true,
+citecolor=blue,
+linkcolor=blue,
+urlcolor=blue
+]\PYG{n+nb}{\PYGZob{}}hyperref\PYG{n+nb}{\PYGZcb{}}
+\end{MintedVerbatim}

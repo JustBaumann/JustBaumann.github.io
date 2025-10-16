@@ -1,0 +1,7 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZdq{}UserId\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}AROAW4ZMTTNJFUQ2BGYAX:spurthi\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZdq{}Account\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}474150574930\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZdq{}Arn\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}arn:aws:sts::474150574930:assumed\PYGZhy{}role/AWSReservedSSO\PYGZus{}AdministratorAccess\PYGZus{}67ee4a10fe53d47e/spurthi\PYGZdq{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\end{MintedVerbatim}

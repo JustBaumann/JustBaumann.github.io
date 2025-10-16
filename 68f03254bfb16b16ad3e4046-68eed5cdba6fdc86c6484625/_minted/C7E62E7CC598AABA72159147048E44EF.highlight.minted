@@ -1,0 +1,18 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n+nt}{\PYGZdq{}repository\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}repositoryArn\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}arn:aws:ecr:us\PYGZhy{}east\PYGZhy{}1:474150574930:repository/color\PYGZhy{}buttons\PYGZhy{}app\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}registryId\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}474150574930\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}repositoryName\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}color\PYGZhy{}buttons\PYGZhy{}app\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}repositoryUri\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}474150574930.dkr.ecr.us\PYGZhy{}east\PYGZhy{}1.amazonaws.com/color\PYGZhy{}buttons\PYGZhy{}app\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}createdAt\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}2025\PYGZhy{}09\PYGZhy{}29T21:43:04.517000\PYGZhy{}04:00\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}imageTagMutability\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}MUTABLE\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}imageScanningConfiguration\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}scanOnPush\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kc}{true}
+\PYG{+w}{            }\PYG{p}{\PYGZcb{},}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}encryptionConfiguration\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}encryptionType\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}AES256\PYGZdq{}}
+\PYG{+w}{            }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\end{MintedVerbatim}

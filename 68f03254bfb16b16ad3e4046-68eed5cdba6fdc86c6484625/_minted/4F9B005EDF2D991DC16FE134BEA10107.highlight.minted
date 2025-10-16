@@ -1,0 +1,6 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{cd}\PYG{+w}{ }/opt/overleaf
+docker\PYG{+w}{ }compose\PYG{+w}{ }pull
+docker\PYG{+w}{ }compose\PYG{+w}{ }up\PYG{+w}{ }\PYGZhy{}d
+docker\PYG{+w}{ }compose\PYG{+w}{ }ps
+\end{MintedVerbatim}

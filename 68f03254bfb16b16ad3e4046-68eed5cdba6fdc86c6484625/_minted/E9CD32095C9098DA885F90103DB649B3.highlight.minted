@@ -1,0 +1,36 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{services}\PYG{p}{:}
+\PYG{+w}{  }\PYG{n+nt}{mongo}\PYG{p}{:}
+\PYG{+w}{    }\PYG{n+nt}{image}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{mongo:6.0}
+\PYG{+w}{    }\PYG{n+nt}{restart}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{unless\PYGZhy{}stopped}
+\PYG{+w}{    }\PYG{n+nt}{volumes}\PYG{p}{:}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{overleaf\PYGZus{}mongo\PYGZus{}data:/data/db}
+
+\PYG{+w}{  }\PYG{n+nt}{redis}\PYG{p}{:}
+\PYG{+w}{    }\PYG{n+nt}{image}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{redis:7}
+\PYG{+w}{    }\PYG{n+nt}{restart}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{unless\PYGZhy{}stopped}
+\PYG{+w}{    }\PYG{n+nt}{command}\PYG{p}{:}\PYG{+w}{ }\PYG{p+pIndicator}{[}\PYG{l+s}{\PYGZdq{}redis\PYGZhy{}server\PYGZdq{}}\PYG{p+pIndicator}{,}\PYG{l+s}{\PYGZdq{}\PYGZhy{}\PYGZhy{}appendonly\PYGZdq{}}\PYG{p+pIndicator}{,}\PYG{l+s}{\PYGZdq{}yes\PYGZdq{}}\PYG{p+pIndicator}{]}
+\PYG{+w}{    }\PYG{n+nt}{volumes}\PYG{p}{:}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{overleaf\PYGZus{}redis\PYGZus{}data:/data}
+
+\PYG{+w}{  }\PYG{n+nt}{sharelatex}\PYG{p}{:}
+\PYG{+w}{    }\PYG{n+nt}{image}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{sharelatex/sharelatex:latest}
+\PYG{+w}{    }\PYG{n+nt}{container\PYGZus{}name}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{sharelatex}
+\PYG{+w}{    }\PYG{n+nt}{restart}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{unless\PYGZhy{}stopped}
+\PYG{+w}{    }\PYG{n+nt}{depends\PYGZus{}on}\PYG{p}{:}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{mongo}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{redis}
+\PYG{+w}{    }\PYG{n+nt}{environment}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{OVERLEAF\PYGZus{}SITE\PYGZus{}URL}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}http://167.99.54.162:8090\PYGZdq{}}
+\PYG{+w}{      }\PYG{n+nt}{OVERLEAF\PYGZus{}MONGO\PYGZus{}URL}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}mongodb://mongo:27017/sharelatex\PYGZdq{}}
+\PYG{+w}{      }\PYG{n+nt}{OVERLEAF\PYGZus{}REDIS\PYGZus{}HOST}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}redis\PYGZdq{}}
+\PYG{+w}{    }\PYG{n+nt}{ports}\PYG{p}{:}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}8090:80\PYGZdq{}}
+\PYG{+w}{    }\PYG{n+nt}{volumes}\PYG{p}{:}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{overleaf\PYGZus{}app\PYGZus{}data:/var/lib/overleaf}
+
+\PYG{n+nt}{volumes}\PYG{p}{:}
+\PYG{+w}{  }\PYG{n+nt}{overleaf\PYGZus{}mongo\PYGZus{}data}\PYG{p}{:}
+\PYG{+w}{  }\PYG{n+nt}{overleaf\PYGZus{}redis\PYGZus{}data}\PYG{p}{:}
+\PYG{+w}{  }\PYG{n+nt}{overleaf\PYGZus{}app\PYGZus{}data}\PYG{p}{:}
+\end{MintedVerbatim}

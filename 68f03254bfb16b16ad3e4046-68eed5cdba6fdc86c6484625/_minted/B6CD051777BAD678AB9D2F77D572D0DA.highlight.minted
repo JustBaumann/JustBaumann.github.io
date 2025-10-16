@@ -1,0 +1,5 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }git\PYG{+w}{ }add\PYG{+w}{ }main.pdf
+\PYG{+w}{    }git\PYG{+w}{ }commit\PYG{+w}{ }\PYGZhy{}m\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}commited compiled pdf\PYGZdq{}}
+\PYG{+w}{    }git\PYG{+w}{ }push
+\end{MintedVerbatim}

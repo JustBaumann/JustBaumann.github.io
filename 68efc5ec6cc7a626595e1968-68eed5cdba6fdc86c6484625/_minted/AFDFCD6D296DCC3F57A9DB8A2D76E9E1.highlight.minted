@@ -1,0 +1,5 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+mysql\PYG{+w}{ }\PYGZhy{}uroot\PYG{+w}{ }\PYGZhy{}e\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}CREATE DATABASE IF NOT EXISTS bugzilla CHARACTER SET utf8mb4;\PYGZdq{}}
+mysql\PYG{+w}{ }\PYGZhy{}uroot\PYG{+w}{ }\PYGZhy{}e\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}CREATE USER \PYGZsq{}bugs\PYGZsq{}@\PYGZsq{}localhost\PYGZsq{} IDENTIFIED BY \PYGZsq{}bugs\PYGZsq{};\PYGZdq{}}
+mysql\PYG{+w}{ }\PYGZhy{}uroot\PYG{+w}{ }\PYGZhy{}e\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}GRANT ALL PRIVILEGES ON bugzilla.* TO \PYGZsq{}bugs\PYGZsq{}@\PYGZsq{}localhost\PYGZsq{}; FLUSH PRIVILEGES;\PYGZdq{}}
+\end{MintedVerbatim}

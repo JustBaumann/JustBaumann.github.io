@@ -1,0 +1,4 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+pkill\PYG{+w}{ }\PYGZhy{}f\PYG{+w}{ }httpd\PYG{+w}{ }\PYG{o}{||}\PYG{+w}{ }\PYG{n+nb}{true}
+/usr/sbin/httpd\PYG{+w}{ }\PYGZhy{}DFOREGROUND\PYG{+w}{ }\PYG{p}{\PYGZam{}}
+\end{MintedVerbatim}

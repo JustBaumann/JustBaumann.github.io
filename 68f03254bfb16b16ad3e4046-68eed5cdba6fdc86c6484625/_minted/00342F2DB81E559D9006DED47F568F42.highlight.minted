@@ -1,0 +1,6 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+! Emergency stop.
+\PYGZlt{}read *\PYGZgt{}
+
+l.40 \PYGZbs{}usepackage\PYGZob{}algorithmic\PYGZcb{}\PYGZca{}\PYGZca{}M
+\end{MintedVerbatim}

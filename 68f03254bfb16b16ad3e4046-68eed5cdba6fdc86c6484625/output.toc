@@ -1,0 +1,125 @@
+\contentsline {chapter}{\numberline {1}Introduction \\ \small {\textit {-- Justin Baumann, Gianna Cerbone, Thomas Ung, Spurthi Setty}} }{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Passwords \\ \small {\textit {-- Justin Baumann, Gianna Cerbone, Thomas Ung, Spurthi Setty}} }{2}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Kanban Setup \\ \small {\textit {-- Justin Baumann, Gianna Cerbone, Thomas Ung, Spurthi Setty}} }{3}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Kanban Setup }{3}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Hosts \\ \small {\textit {-- Justin Baumann, Gianna Cerbone, Thomas Ung}} }{4}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Linux Commands \\ \small {\textit {-- Justin Baumann, Gianna Cerbone, Thomas Ung, Spurthi Setty}} }{5}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Linux Bash Commands }{5}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Linux Problem Set}{5}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Project Proposal \\ \small {\textit {-- Justin Baumann, Gianna Cerbone, Thomas Ung, Spurthi Setty}} }{8}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Project Proposal }{8}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Project Title: QuackOps User Interface}{8}{subsection.6.1.1}%
+\contentsline {chapter}{\numberline {7}AWS Deployment \\ \small {\textit {-- Justin Baumann, Gianna Cerbone, Thomas Ung, Spurthi Setty}} }{9}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Overview}{9}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Set up Environment}{9}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Set up IAM Identity Center}{9}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Configure AWS CLI with SSO}{10}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Set Environment Variables (Windows CMD)}{11}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Create an ECR repository}{11}{section.7.6}%
+\contentsline {section}{\numberline {7.7}Build, Tag, and Push Docker Image}{12}{section.7.7}%
+\contentsline {section}{\numberline {7.8}Create App Runner ECR Access Role}{13}{section.7.8}%
+\contentsline {section}{\numberline {7.9}Deploy with App Runner}{13}{section.7.9}%
+\contentsline {section}{\numberline {7.10}Verify Service and Get URL}{13}{section.7.10}%
+\contentsline {section}{\numberline {7.11}Website Refactor}{14}{section.7.11}%
+\contentsline {subsection}{\numberline {7.11.1}Updated JavaScript Code}{14}{subsection.7.11.1}%
+\contentsline {subsection}{\numberline {7.11.2}UML Class Diagram}{14}{subsection.7.11.2}%
+\contentsline {chapter}{\numberline {8}LaTeX Docker \\ \small {\textit {-- Justin Baumann, Gianna Cerbone, Thomas Ung, Spurthi Setty}} }{16}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Overview}{16}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Dockerfile}{16}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Build and Run}{16}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Bugzilla \\ \small {\textit {-- Spurthi Setty}} }{17}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Setting Up Bugzilla in Docker on DigitalOcean}{17}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Environment Setup}{17}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Deploying Bugzilla via Docker Compose}{17}{subsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.1.3}Configuring Bugzilla Inside the Container}{18}{subsection.9.1.3}%
+\contentsline {subsection}{\numberline {9.1.4}Resolving Apache Configuration and Permissions}{19}{subsection.9.1.4}%
+\contentsline {subsection}{\numberline {9.1.5}Testing and Verification}{20}{subsection.9.1.5}%
+\contentsline {subsection}{\numberline {9.1.6}Troubleshooting Notes}{20}{subsection.9.1.6}%
+\contentsline {subsection}{\numberline {9.1.7}Final Result}{20}{subsection.9.1.7}%
+\contentsline {chapter}{\numberline {10}Overleaf \\ \small {\textit {-- Spurthi Setty}} }{22}{chapter.10}%
+\contentsline {section}{\numberline {10.1}How to compile this chapter}{22}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Context}{22}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Prerequisites (Ubuntu 22.04/24.04)}{22}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Baseline deployment}{23}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Create working directory}{23}{subsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.4.2}Open firewall}{23}{subsection.10.4.2}%
+\contentsline {subsection}{\numberline {10.4.3}Initial \texttt {docker-compose.yml}}{23}{subsection.10.4.3}%
+\contentsline {subsection}{\numberline {10.4.4}Start the stack}{24}{subsection.10.4.4}%
+\contentsline {section}{\numberline {10.5}Issues encountered and exact fixes}{24}{section.10.5}%
+\contentsline {subsection}{\numberline {10.5.1}(A) Wrong image / registry hiccup}{24}{subsection.10.5.1}%
+\contentsline {subsection}{\numberline {10.5.2}(B) Legacy bind mount path: \texttt {/var/lib/sharelatex}}{24}{subsection.10.5.2}%
+\contentsline {subsection}{\numberline {10.5.3}(C) Legacy env var names: \texttt {SHARELATEX\_*}}{24}{subsection.10.5.3}%
+\contentsline {subsection}{\numberline {10.5.4}(D) Connection reset / app crash loop due to Mongo transactions}{25}{subsection.10.5.4}%
+\contentsline {paragraph}{Step D1: Add override to enable replica set and connection string}{25}{section*.11}%
+\contentsline {paragraph}{Step D2: Recreate the stack}{25}{section*.12}%
+\contentsline {paragraph}{Step D3: Initialize the replica set (one-time)}{25}{section*.13}%
+\contentsline {paragraph}{Step D4: Verify replica set is healthy}{25}{section*.14}%
+\contentsline {subsection}{\numberline {10.5.5}(E) Optional: tune kernel warning from Redis}{25}{subsection.10.5.5}%
+\contentsline {section}{\numberline {10.6}Verification commands we used}{25}{section.10.6}%
+\contentsline {section}{\numberline {10.7}Accessing the site}{26}{section.10.7}%
+\contentsline {section}{\numberline {10.8}Maintenance cheatsheet}{26}{section.10.8}%
+\contentsline {section}{\numberline {10.9}Final status}{26}{section.10.9}%
+\contentsline {section}{\numberline {10.10}Creating a New User Account}{27}{section.10.10}%
+\contentsline {chapter}{\numberline {11}SSL Research}{28}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Overview}{28}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Architecture Considerations}{28}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Using the Overleaf Toolkit with TLS Proxy Mode}{28}{section.11.3}%
+\contentsline {section}{\numberline {11.4}Using an External Reverse Proxy}{29}{section.11.4}%
+\contentsline {subsection}{\numberline {11.4.1}Advantages}{29}{subsection.11.4.1}%
+\contentsline {subsection}{\numberline {11.4.2}Example Nginx Configuration}{29}{subsection.11.4.2}%
+\contentsline {section}{\numberline {11.5}Using Let’s Encrypt for Free SSL Certificates}{30}{section.11.5}%
+\contentsline {section}{\numberline {11.6}Renewal and Automation}{30}{section.11.6}%
+\contentsline {section}{\numberline {11.7}Installing Certificates Inside the Container (Not Recommended)}{31}{section.11.7}%
+\contentsline {section}{\numberline {11.8}Summary and Recommendations}{31}{section.11.8}%
+\contentsline {chapter}{\numberline {12}Configuring Overleaf with Full LaTeX Package Support}{32}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Introduction}{32}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Setting Up Overleaf with Docker}{32}{section.12.2}%
+\contentsline {subsection}{\numberline {12.2.1}Directory Structure}{32}{subsection.12.2.1}%
+\contentsline {subsection}{\numberline {12.2.2}Dockerfile}{33}{subsection.12.2.2}%
+\contentsline {subsection}{\numberline {12.2.3}docker-compose.yml}{33}{subsection.12.2.3}%
+\contentsline {subsection}{\numberline {12.2.4}Enabling MongoDB Replica Set}{34}{subsection.12.2.4}%
+\contentsline {subsection}{\numberline {12.2.5}Building and Starting Containers}{34}{subsection.12.2.5}%
+\contentsline {subsection}{\numberline {12.2.6}Verifying Initial Package Availability}{34}{subsection.12.2.6}%
+\contentsline {section}{\numberline {12.3}Troubleshooting Missing LaTeX Packages}{35}{section.12.3}%
+\contentsline {subsection}{\numberline {12.3.1}Initial Environment Configuration}{35}{subsection.12.3.1}%
+\contentsline {subsection}{\numberline {12.3.2}Verifying Container Status}{35}{subsection.12.3.2}%
+\contentsline {subsection}{\numberline {12.3.3}Sequential Package Installation}{35}{subsection.12.3.3}%
+\contentsline {subsubsection}{Missing Package: \texttt {psfrag}}{35}{section*.15}%
+\contentsline {subsubsection}{Missing Package: \texttt {fancyvrb}}{36}{section*.16}%
+\contentsline {subsubsection}{Missing Package: \texttt {algorithmic}}{36}{section*.17}%
+\contentsline {subsubsection}{Missing Package: \texttt {txfonts}}{36}{section*.18}%
+\contentsline {subsection}{\numberline {12.3.4}Installing Complete Package Collections}{37}{subsection.12.3.4}%
+\contentsline {subsection}{\numberline {12.3.5}Compiler Configuration}{38}{subsection.12.3.5}%
+\contentsline {subsection}{\numberline {12.3.6}Document-Level Fixes}{38}{subsection.12.3.6}%
+\contentsline {subsubsection}{Header Height Adjustment}{38}{section*.19}%
+\contentsline {subsubsection}{Hyperref Deprecated Options}{38}{section*.20}%
+\contentsline {subsubsection}{PDF Bookmark Unicode Warning}{39}{section*.21}%
+\contentsline {subsection}{\numberline {12.3.7}Persistence of Installed Packages}{39}{subsection.12.3.7}%
+\contentsline {section}{\numberline {12.4}Final Working Configuration}{39}{section.12.4}%
+\contentsline {chapter}{\numberline {13}Domain Hosting}{41}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Introduction}{41}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Connecting Overleaf to a Custom Domain}{41}{section.13.2}%
+\contentsline {subsection}{\numberline {13.2.1}Overview}{41}{subsection.13.2.1}%
+\contentsline {subsection}{\numberline {13.2.2}Environment Setup}{41}{subsection.13.2.2}%
+\contentsline {subsection}{\numberline {13.2.3}Step 1: Configure DNS Records in Namecheap}{42}{subsection.13.2.3}%
+\contentsline {paragraph}{Explanation:}{42}{section*.22}%
+\contentsline {subsection}{\numberline {13.2.4}Step 2: Verify DNS Propagation}{42}{subsection.13.2.4}%
+\contentsline {subsection}{\numberline {13.2.5}Step 3: Configure Overleaf Docker Environment}{42}{subsection.13.2.5}%
+\contentsline {subsection}{\numberline {13.2.6}Step 4: Test the Connection}{43}{subsection.13.2.6}%
+\contentsline {subsection}{\numberline {13.2.7}Step 5: Notes}{43}{subsection.13.2.7}%
+\contentsline {section}{\numberline {13.3}Integrating Domain With GitHub}{43}{section.13.3}%
+\contentsline {subsection}{\numberline {13.3.1}Overview}{43}{subsection.13.3.1}%
+\contentsline {subsection}{\numberline {13.3.2}Environment Setup}{43}{subsection.13.3.2}%
+\contentsline {subsection}{\numberline {13.3.3}Step 1: Connect to the Server}{43}{subsection.13.3.3}%
+\contentsline {subsection}{\numberline {13.3.4}Step 2: Generate SSH Key on Ubuntu Host}{43}{subsection.13.3.4}%
+\contentsline {subsection}{\numberline {13.3.5}Step 3: Clone the GitHub Repository}{44}{subsection.13.3.5}%
+\contentsline {subsection}{\numberline {13.3.6}Step 4: Locate \LaTeX {} Source Files in Overleaf Container}{44}{subsection.13.3.6}%
+\contentsline {subsection}{\numberline {13.3.7}Step 5: Copy Files from the Container to the Host}{44}{subsection.13.3.7}%
+\contentsline {subsection}{\numberline {13.3.8}Step 6: Copy Only Source Files to the Repository}{44}{subsection.13.3.8}%
+\contentsline {subsection}{\numberline {13.3.9}Step 7: Commit and Push to GitHub}{44}{subsection.13.3.9}%
+\contentsline {subsection}{\numberline {13.3.10}Step 8: Verification}{44}{subsection.13.3.10}%
+\contentsline {subsection}{\numberline {13.3.11}Notes}{45}{subsection.13.3.11}%
+\contentsline {chapter}{\numberline {14}Compiling Overleaf}{46}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Steps Taken}{46}{section.14.1}%
+\contentsline {chapter}{\numberline {A}Appendix \\ \small {\textit {-- Justin Baumann, Gianna Cerbone, Thomas Ung, Spurthi Setty}} }{48}{appendix.A}%
+\contentsline {chapter}{Bibliography}{50}{appendix*.23}%

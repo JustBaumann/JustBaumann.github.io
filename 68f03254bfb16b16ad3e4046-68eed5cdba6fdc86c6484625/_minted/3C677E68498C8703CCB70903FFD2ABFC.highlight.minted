@@ -1,0 +1,5 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+aws apprunner list\PYGZhy{}services \PYGZhy{}\PYGZhy{}region \PYG{n+nv}{\PYGZpc{}AWS\PYGZus{}REGION\PYGZpc{}} \PYGZhy{}\PYGZhy{}profile default \PYG{l+s+se}{\PYGZca{}}
+\PYG{l+s+se}{\PYGZhy{}}\PYGZhy{}query \PYG{l+s+s2}{\PYGZdq{}ServiceSummaryList[?ServiceName==\PYGZsq{}}\PYG{n+nv}{\PYGZpc{}APP\PYGZus{}NAME\PYGZpc{}}\PYG{l+s+s2}{\PYGZsq{}].[ServiceArn,Status,ServiceUrl]\PYGZdq{}} \PYG{l+s+se}{\PYGZca{}}
+\PYG{l+s+se}{\PYGZhy{}}\PYGZhy{}output table
+\end{MintedVerbatim}

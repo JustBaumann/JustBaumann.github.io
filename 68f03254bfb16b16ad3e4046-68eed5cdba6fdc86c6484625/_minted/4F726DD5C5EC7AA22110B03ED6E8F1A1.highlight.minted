@@ -1,0 +1,26 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{class}\PYG{+w}{ }\PYG{n+nx}{ColorController}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{  }\PYG{k+kr}{constructor}\PYG{p}{(}\PYG{n+nx}{blueBtnId}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{redBtnId}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{blueBtn}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nb}{document}\PYG{p}{.}\PYG{n+nx}{getElementById}\PYG{p}{(}\PYG{n+nx}{blueBtnId}\PYG{p}{);}
+\PYG{+w}{    }\PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{redBtn}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nb}{document}\PYG{p}{.}\PYG{n+nx}{getElementById}\PYG{p}{(}\PYG{n+nx}{redBtnId}\PYG{p}{);}
+\PYG{+w}{    }\PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{attachEvents}\PYG{p}{();}
+\PYG{+w}{  }\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{  }\PYG{n+nx}{attachEvents}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{blueBtn}\PYG{p}{.}\PYG{n+nx}{addEventListener}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}click\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{()}\PYG{+w}{ }\PYG{p}{=\PYGZgt{}}\PYG{+w}{ }\PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{setBlue}\PYG{p}{());}
+\PYG{+w}{    }\PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{redBtn}\PYG{p}{.}\PYG{n+nx}{addEventListener}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}click\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{()}\PYG{+w}{ }\PYG{p}{=\PYGZgt{}}\PYG{+w}{ }\PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{setRed}\PYG{p}{());}
+\PYG{+w}{  }\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{  }\PYG{n+nx}{setBlue}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n+nb}{document}\PYG{p}{.}\PYG{n+nx}{body}\PYG{p}{.}\PYG{n+nx}{style}\PYG{p}{.}\PYG{n+nx}{backgroundColor}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}blue\PYGZsq{}}\PYG{p}{;}
+\PYG{+w}{  }\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{  }\PYG{n+nx}{setRed}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n+nb}{document}\PYG{p}{.}\PYG{n+nx}{body}\PYG{p}{.}\PYG{n+nx}{style}\PYG{p}{.}\PYG{n+nx}{backgroundColor}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}red\PYGZsq{}}\PYG{p}{;}
+\PYG{+w}{  }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{n+nb}{document}\PYG{p}{.}\PYG{n+nx}{addEventListener}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}DOMContentLoaded\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{()}\PYG{+w}{ }\PYG{p}{=\PYGZgt{}}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{  }\PYG{o+ow}{new}\PYG{+w}{ }\PYG{n+nx}{ColorController}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}blueBtn\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}redBtn\PYGZsq{}}\PYG{p}{);}
+\PYG{p}{\PYGZcb{});}
+\end{MintedVerbatim}

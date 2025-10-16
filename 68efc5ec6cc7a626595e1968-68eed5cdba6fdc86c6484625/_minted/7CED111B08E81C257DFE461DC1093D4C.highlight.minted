@@ -1,0 +1,4 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+mkdir\PYG{+w}{ }\PYGZhy{}p\PYG{+w}{ }/opt/overleaf
+\PYG{n+nb}{cd}\PYG{+w}{ }/opt/overleaf
+\end{MintedVerbatim}

@@ -1,0 +1,4 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+chown\PYG{+w}{ }\PYGZhy{}R\PYG{+w}{ }apache:apache\PYG{+w}{ }/var/www/html/bugzilla
+chmod\PYG{+w}{ }\PYGZhy{}R\PYG{+w}{ }\PYG{l+m}{755}\PYG{+w}{ }/var/www/html/bugzilla
+\end{MintedVerbatim}

@@ -1,0 +1,4 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} if your compose ever referenced ghcr, replace it with Docker Hub image}
+sed\PYG{+w}{ }\PYGZhy{}i\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}s\PYGZsh{}ghcr.io/overleaf/overleaf:latest\PYGZsh{}sharelatex/sharelatex:latest\PYGZsh{}\PYGZsq{}}\PYG{+w}{ }docker\PYGZhy{}compose.yml
+\end{MintedVerbatim}
