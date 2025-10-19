@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:  # Optional: enables manual trigger from Actions tab
 
 jobs:
   build_pdf:
@@ -13,16 +14,11 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v3
 
-    - name: Set up LaTeX environment
-      uses: dante-ev/latex-action@latest
-      with:
-        root_file: main.tex
-
     - name: Get short Git hash (changelist)
       id: get_hash
       run: echo "CHANGELIST=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
 
-    - name: Replace Version Number
+    - name: Replace Version Number in LaTeX
       run: |
         sed -i "s/\\\version{.*}/\\\version{${{ env.CHANGELIST }}}/" main.tex
 
@@ -32,10 +28,11 @@ jobs:
         root_file: main.tex
 
     - name: Archive Compiled PDF
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: document-pdf
         path: main.pdf
+        retention-days: 14
 
     - name: Commit compiled PDF
       run: |
