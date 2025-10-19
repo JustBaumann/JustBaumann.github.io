@@ -1,0 +1,46 @@
+name: Build and Tag LaTeX PDF
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set up LaTeX environment
+      uses: dante-ev/latex-action@latest
+      with:
+        root_file: main.tex
+
+    - name: Get short Git hash (changelist)
+      id: get_hash
+      run: echo "CHANGELIST=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+
+    - name: Replace Version Number
+      run: |
+        sed -i "s/\\\version{.*}/\\\version{${{ env.CHANGELIST }}}/" main.tex
+
+    - name: Compile LaTeX to PDF
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: main.tex
+
+    - name: Archive Compiled PDF
+      uses: actions/upload-artifact@v3
+      with:
+        name: document-pdf
+        path: main.pdf
+
+    - name: Commit compiled PDF
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add main.pdf
+        git commit -m "Build PDF for ${{ env.CHANGELIST }}"
+        git push
