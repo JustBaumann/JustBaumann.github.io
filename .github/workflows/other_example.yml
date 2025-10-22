@@ -1,0 +1,40 @@
+name: Compile LaTeX and Store Version
+
+on:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set Version Vars
+      run: |
+        echo "VERSION_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+        echo "BUILD_DATE=$(date -u +%Y-%m-%d)" >> $GITHUB_ENV
+
+    - name: Install TeX Live
+      run: |
+        sudo apt-get update && sudo apt-get install -y \
+        texlive-latex-base texlive-latex-extra latexmk python3-pygments
+
+    - name: Build PDF
+      run: |
+        cd 68eed5e3ba6fdc86c6484640-68eed5cdba6fdc86c6484625
+        latexmk -pdf main.tex
+
+    - name: Commit PDF with Version
+      run: |
+        mkdir -p pdfs
+        cp 68eed5e3ba6fdc86c6484640-68eed5cdba6fdc86c6484625/main.pdf pdfs/SSW590-${VERSION_SHA}.pdf
+        git config user.name "github-actions"
+        git config user.email "actions@github.com"
+        git add pdfs/
+        git commit -m "📄 Auto-compiled version with commit hash ${VERSION_SHA}"
+        git push
