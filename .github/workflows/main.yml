@@ -1,0 +1,55 @@
+name: Overleaf Auto Build
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # allows manual trigger
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Set changelist (short commit hash)
+      id: vars
+      run: echo "CHANGELIST=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+
+    - name: Replace \version{} in LaTeX source
+      run: |
+        if grep -q "\\version{.*}" main.tex; then
+          sed -i "s/\\\version{.*}/\\\version{${{ env.CHANGELIST }}}/" main.tex
+        else
+          echo "Warning: \\version{} command not found in main.tex"
+        fi
+
+    - name: Compile LaTeX using GitHub Runner
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: main.tex
+        latexmk_use_xelatex: true  # if you use xelatex, otherwise remove
+
+    - name: Archive Compiled PDF
+      uses: actions/upload-artifact@v4
+      with:
+        name: JustBaumann-${{ env.CHANGELIST }}.pdf
+        path: main.pdf
+        retention-days: 14
+
+    - name: Rename and Zip PDF
+      run: |
+        mkdir -p builds
+        cp main.pdf builds/JustBaumann-${{ env.CHANGELIST }}.pdf
+        zip builds/JustBaumann-${{ env.CHANGELIST }}.zip builds/JustBaumann-${{ env.CHANGELIST }}.pdf
+
+    - name: Commit PDF and ZIP to repo
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add builds/
+        git add main.tex
+        git commit -m "Build LaTeX PDF: version ${{ env.CHANGELIST }}"
+        git push
