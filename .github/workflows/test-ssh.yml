@@ -1,0 +1,21 @@
+name: Test SSH Connection to Ubuntu
+
+on:
+  workflow_dispatch:  # allows you to run it manually from the Actions tab
+
+jobs:
+  test-connection:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🔐 Test SSH Connection to Ubuntu
+        uses: appleboy/ssh-action@v1.1.0
+        with:
+          host: ${{ secrets.SERVER_IP }}          # e.g. 167.172.xxx.xxx
+          username: root
+          key: ${{ secrets.SSH_PRIVATE_KEY }}     # this should contain the *private* key (not the .pub)
+          script: |
+            echo "✅ Connected successfully to $(hostname)"
+            echo "Current directory: $(pwd)"
+            echo "Listing Overleaf data directory..."
+            ls -lh /var/lib/overleaf/data || echo "⚠️ Could not list /var/lib/overleaf/data"
