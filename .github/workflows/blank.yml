@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:  # Optional: enables manual trigger from Actions tab
+  workflow_dispatch:
 
 jobs:
   build_pdf:
@@ -20,24 +20,26 @@ jobs:
 
     - name: Replace Version Number in LaTeX
       run: |
-        sed -i "s/\\\version{.*}/\\\version{${{ env.CHANGELIST }}}/" main.tex
+        sed -i "s/\\\version{.*}/\\\version{${{ env.CHANGELIST }}}/" \
+        68eed5e3ba6fdc86c6484640-68eed5cdba6fdc86c6484625/main.tex
 
     - name: Compile LaTeX to PDF
       uses: xu-cheng/latex-action@v2
       with:
-        root_file: main.tex
+        root_file: 68eed5e3ba6fdc86c6484640-68eed5cdba6fdc86c6484625/main.tex
 
     - name: Archive Compiled PDF
       uses: actions/upload-artifact@v4
       with:
         name: document-pdf
-        path: main.pdf
+        path: 68eed5e3ba6fdc86c6484640-68eed5cdba6fdc86c6484625/main.pdf
         retention-days: 14
 
     - name: Commit compiled PDF
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add main.pdf
-        git commit -m "Build PDF for ${{ env.CHANGELIST }}"
+        git add 68eed5e3ba6fdc86c6484640-68eed5cdba6fdc86c6484625/main.pdf
+        git commit -m "📄 Build PDF for ${{ env.CHANGELIST }}"
         git push
+
