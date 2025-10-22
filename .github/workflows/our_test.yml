@@ -27,6 +27,7 @@ jobs:
       uses: xu-cheng/latex-action@v2
       with:
         root_file: 68eed5e3ba6fdc86c6484640-68eed5cdba6fdc86c6484625/main.tex
+        output_directory: 68eed5e3ba6fdc86c6484640-68eed5cdba6fdc86c6484625
 
     - name: Archive Compiled PDF
       uses: actions/upload-artifact@v4
