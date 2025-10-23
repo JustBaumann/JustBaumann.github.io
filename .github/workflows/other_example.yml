@@ -26,13 +26,13 @@ jobs:
 
     - name: Build PDF
       run: |
-        cd 68eed5e3ba6fdc86c6484640-68eed5cdba6fdc86c6484625
-        latexmk -pdf main.tex
+        cd 2025F_SSW590_01_2
+        latexmk -pdf itManual.tex
 
     - name: Commit PDF with Version
       run: |
         mkdir -p pdfs
-        cp 68eed5e3ba6fdc86c6484640-68eed5cdba6fdc86c6484625/main.pdf pdfs/SSW590-${VERSION_SHA}.pdf
+        cp 2025F_SSW590_01_2/itManual.pdf pdfs/SSW590-${VERSION_SHA}.pdf
         git config user.name "github-actions"
         git config user.email "actions@github.com"
         git add pdfs/
