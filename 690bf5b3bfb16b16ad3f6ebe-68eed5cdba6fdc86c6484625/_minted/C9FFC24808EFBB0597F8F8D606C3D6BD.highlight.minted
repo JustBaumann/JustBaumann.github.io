@@ -1,0 +1,4 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+docker\PYG{+w}{ }\PYGZhy{}\PYGZhy{}version
+docker\PYG{+w}{ }compose\PYG{+w}{ }version
+\end{MintedVerbatim}

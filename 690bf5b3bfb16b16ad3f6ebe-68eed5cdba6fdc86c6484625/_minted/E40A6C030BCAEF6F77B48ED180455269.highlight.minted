@@ -1,0 +1,6 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}xcolor\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}minted\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}setminted}\PYG{n+nb}{\PYGZob{}}fontsize=\PYG{k}{\PYGZbs{}small},breaklines=true\PYG{n+nb}{\PYGZcb{}}
+\PYG{c}{\PYGZpc{} Compile with:  latexmk \PYGZhy{}pdf \PYGZhy{}shell\PYGZhy{}escape main.tex}
+\end{MintedVerbatim}

@@ -1,0 +1,177 @@
+\chapter{Domain Hosting}
+
+\small{\textit{-- Thomas Ung, Justin Baumann}}
+\label{Chapter:DomainHosting}
+\index{Chapter!DomainHosting}
+
+\section{Introduction}
+
+QuackOps.me was registered through Namecheap using the GitHub Student Developer Pack, which offers students a free domain for one year. Namecheap provides an easy domain management interface and integrates smoothly with GitHub Pages for hosting. By linking the QuackOps domain to GitHub, we were able to deploy and manage a live website directly from a repository—no paid hosting needed. This setup gives our group full control over custom DNS records, SSL, and subdomains (like http://overleaf.quackops.me:8090/project), making it an ideal foundation for hosting and connecting projects like our self-hosted Overleaf instance.
+
+\section{Connecting Overleaf to a Custom Domain}
+
+\subsection{Overview}
+This section documents the configuration process used to connect our self-hosted Overleaf Community Edition (CE) instance to our custom domain, \texttt{quackops.me}, registered through Namecheap. The goal was to make Overleaf accessible via \texttt{overleaf.quackops.me} instead of using the server IP and port number.
+
+\subsection{Environment Setup}
+\begin{itemize}
+  \item \textbf{Server IP:} \texttt{167.99.54.162}
+  \item \textbf{Overleaf instance URL:} \texttt{http://167.99.54.162:8090/project}
+  \item \textbf{Domain registrar:} Namecheap
+  \item \textbf{Registered domain:} \texttt{quackops.me}
+  \item \textbf{Subdomain for Overleaf:} \texttt{overleaf.quackops.me}
+\end{itemize}
+
+\subsection{Step 1: Configure DNS Records in Namecheap}
+We configured the following DNS records under the \textbf{Advanced DNS} tab for the domain \texttt{quackops.me}.  
+This setup matches the configuration in Figure~\ref{fig:dns-records}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Type} & \textbf{Host} & \textbf{Value / Target} & \textbf{TTL} \\ \hline
+A Record & overleaf & 167.99.54.162 & 30 min \\ \hline
+CNAME Record & www & quackops.me. & 30 min \\ \hline
+URL Redirect Record & @ & http://overleaf.quackops.me:8090/project (Unmasked) & 30 min \\ \hline
+URL Redirect Record & www & http://overleaf.quackops.me:8090/project (Unmasked) & 30 min \\ \hline
+\end{tabular}
+\caption{Final DNS configuration for Overleaf domain setup}
+\label{fig:dns-records}
+\end{table}
+
+\paragraph{Explanation:}
+\begin{itemize}
+  \item The \textbf{A Record} maps the subdomain \texttt{overleaf.quackops.me} directly to the server IP address.
+  \item The \textbf{CNAME Record} ensures that requests to \texttt{www.quackops.me} resolve to the same base domain.
+  \item The two \textbf{URL Redirect Records} make both \texttt{quackops.me} and \texttt{www.quackops.me} automatically forward users to Overleaf’s project dashboard.
+  \item Both redirect records are \textbf{Unmasked}, which allows the browser to display the true Overleaf address rather than embedding it in a Namecheap frame.
+\end{itemize}
+
+\subsection{Step 2: Verify DNS Propagation}
+After saving the records, DNS propagation can take up to one hour.  
+To confirm that the records are active, run:
+\begin{verbatim}
+nslookup overleaf.quackops.me
+dig overleaf.quackops.me +short
+\end{verbatim}
+If the DNS has propagated successfully, these commands should return:
+\begin{verbatim}
+167.99.54.162
+\end{verbatim}
+
+\subsection{Step 3: Configure Overleaf Docker Environment}
+The Overleaf instance must be aware of its new domain.  
+We set the environment variables when launching the Docker container:
+\begin{verbatim}
+docker run -d \
+  --name sharelatex \
+  -p 8090:80 \
+  -e SHARELATEX_MONGO_URL=mongodb://overleaf-mongo-1:27017/sharelatex \
+  -e SHARELATEX_REDIS_HOST=overleaf-redis-1 \
+  -e SHARELATEX_SITE_URL=http://overleaf.quackops.me \
+  -e SHARELATEX_BEHIND_PROXY=true \
+  --network overleaf-net \
+  unibaktr/overleaf:latest
+\end{verbatim}
+
+\subsection{Step 4: Test the Connection}
+Once DNS propagation is complete, open a browser and navigate to:
+\begin{verbatim}
+http://overleaf.quackops.me:8090/project
+\end{verbatim}
+The Overleaf dashboard should now load successfully, showing all projects.
+
+\subsection{Step 5: Notes}
+\begin{itemize}
+  \item The setup uses \texttt{http} for simplicity. For production, a reverse proxy (e.g., Nginx or Caddy) with HTTPS should be configured.
+  \item Using \texttt{Unmasked} redirects prevents issues where Namecheap frames obscure the destination URL.
+  \item The \texttt{@} record ensures that navigating to the root domain (\texttt{quackops.me}) automatically forwards users to the Overleaf interface.
+\end{itemize}
+
+
+\section{Integrating Domain With GitHub}
+
+\subsection{Overview}
+This document outlines the process of connecting a self-hosted Overleaf Community Edition (CE) instance to GitHub and exporting all \LaTeX{} source files from the Overleaf Docker container to a public repository. The process includes setting up SSH authentication, locating the Overleaf compile directory, copying project files, and pushing them to GitHub for backup and version control.
+
+\subsection{Environment Setup}
+\begin{itemize}
+  \item \textbf{Host:} Ubuntu server at \texttt{167.99.54.162}
+  \item \textbf{Overleaf container name:} \texttt{sharelatex}
+  \item \textbf{GitHub repository:} \texttt{git@github.com:JustBaumann/JustBaumann.github.io.git}
+\end{itemize}
+
+\subsection{Step 1: Connect to the Server}
+\begin{verbatim}
+ssh root@167.99.54.162
+\end{verbatim}
+
+\subsection{Step 2: Generate SSH Key on Ubuntu Host}
+Create a new SSH key pair and register it with GitHub for secure push access:
+\begin{verbatim}
+ssh-keygen -t rsa -b 4096 -C "server@quackops.me"
+cat /root/.ssh/id_rsa.pub
+\end{verbatim}
+
+Copy the key and add it in GitHub under:
+\texttt{Settings → SSH and GPG Keys → New SSH Key}
+
+Verify connection:
+\begin{verbatim}
+ssh -T git@github.com
+# Expected output:
+# Hi JustBaumann! You've successfully authenticated, but GitHub does not provide shell access.
+\end{verbatim}
+
+\subsection{Step 3: Clone the GitHub Repository}
+\begin{verbatim}
+cd /root
+git clone git@github.com:JustBaumann/JustBaumann.github.io.git
+git config --global user.name "JustBaumann"
+git config --global user.email "overleaf@quackops.me"
+\end{verbatim}
+
+\subsection{Step 4: Locate \LaTeX{} Source Files in Overleaf Container}
+Overleaf CE stores compiled project data under the \texttt{/var/lib/overleaf/data/compiles/} directory.
+To confirm their presence:
+\begin{verbatim}
+docker exec -it sharelatex bash -lc \
+'find /var/lib/overleaf/data/compiles -type f -name "*.tex" | head'
+\end{verbatim}
+
+\subsection{Step 5: Copy Files from the Container to the Host}
+\begin{verbatim}
+docker cp sharelatex:/var/lib/overleaf/data/compiles /root/overleaf_tex_backup
+\end{verbatim}
+
+\subsection{Step 6: Copy Only Source Files to the Repository}
+Create a destination folder and extract only \LaTeX{} sources:
+\begin{verbatim}
+mkdir -p /root/JustBaumann.github.io/overleaf_sources
+find /root/overleaf_tex_backup -type f \
+  \( -name "*.tex" -o -name "*.bib" -o -name "*.cls" -o -name "*.sty" -o -name "*.bst" \) \
+  -exec cp {} /root/JustBaumann.github.io/overleaf_sources/ \;
+\end{verbatim}
+
+\subsection{Step 7: Commit and Push to GitHub}
+\begin{verbatim}
+cd /root/JustBaumann.github.io
+git add .
+git commit -m "Added LaTeX source files recovered from Overleaf compiles/"
+git push origin main
+\end{verbatim}
+
+\subsection{Step 8: Verification}
+After pushing, visit:
+\begin{center}
+\texttt{https://github.com/JustBaumann/JustBaumann.github.io}
+\end{center}
+All \LaTeX{} source files should now be visible under the \texttt{overleaf\_sources/} directory.
+
+\subsection{Notes}
+\begin{itemize}
+  \item The Overleaf CE instance used MongoDB for project metadata, but in this case, raw \LaTeX{} sources were found under the compiled directory.
+  \item Only relevant source files (\texttt{.tex}, \texttt{.bib}, \texttt{.cls}, \texttt{.sty}, \texttt{.bst}) were extracted; compiled outputs (\texttt{.pdf}, \texttt{.log}, \texttt{.aux}, etc.) were intentionally omitted.
+  \item The SSH key created for the Ubuntu host allows seamless pushing to GitHub without re-entering credentials.
+\end{itemize}

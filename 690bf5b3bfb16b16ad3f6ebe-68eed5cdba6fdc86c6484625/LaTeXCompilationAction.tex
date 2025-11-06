@@ -1,0 +1,164 @@
+\chapter{LaTeX Compilation Action \\
+\small{\textit{-- Justin Baumann, Gianna Cerbone, Thomas Ung, Spurthi Setty}} 
+\index{Chapter!LaTeXCompilationAction}
+\index{LaTeXCompilationAction}
+\label{Chapter::LaTeXCompilationAction}}
+
+\section{Overview}
+In this section, we document the process of automating the compilation of our \LaTeX\ project through GitHub Actions, connecting it directly with our Overleaf Community Edition (CE) environment. This setup ensured that any change pushed to GitHub automatically triggered a new PDF build and versioned output, creating a continuous integration (CI) workflow between Overleaf and GitHub. As an extra component, we deployed a self-hosted GitHub runner inside the Overleaf container to compile directly within our environment.
+
+\section{Overleaf--GitHub Integration}
+In order to retrieve the LaTeX source files from the Overleaf container we repeated the commands as done in Chapter \ref{Chapter:DomainHosting}. We organized the extracted files into a dedicated directory and then synchronized them with our GitHub repository.
+
+\section{Automated \LaTeX\ Compilation via GitHub Actions}
+We created a GitHub Actions workflow with the following capabilities:
+    \begin{itemize}
+        \item Triggered on every push to the \texttt{main} branch.
+        \item Compiles a \LaTeX{} document using \texttt{latexmk}.
+        \item Automatically injects the latest commit hash into the PDF for versioning.
+        \item Archives and uploads the compiled PDF as an artifact.
+        \item Pushes the generated PDF into a \texttt{pdfs/} folder in the repository.
+    \end{itemize}
+
+\subsection{Step-by-Step Workflow Creation}
+
+\begin{enumerate}
+    \item \textbf{Navigate to GitHub Actions Tab}
+
+    We opened our repository on GitHub and clicked on the \texttt{Actions} tab at the top of the page.
+
+    \item \textbf{Click \texttt{New Workflow}}
+
+    On the Actions page, we clicked on the \texttt{New workflow} button to create a new GitHub Actions workflow.
+
+    \item \textbf{Choose \texttt{set up a workflow yourself}}
+
+    GitHub offers several templates (e.g., for Node, Python, etc.), but we chose \texttt{set up a workflow yourself} to write our own custom YAML configuration.
+
+    \item \textbf{Edit and Save the YAML File}
+
+    We named the file \texttt{other\_example.yml} and inserted the following content:
+
+    \begin{minted}[frame=lines, fontsize=\small, linenos]{yaml}
+name: Compile LaTeX and Store Version
+
+on:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: [self-hosted, overleaf]  # Use local Overleaf CE container runner
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Get Git Commit Hash and Date
+      run: |
+        echo "VERSION_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+        echo "BUILD_DATE=$(date -u +%Y-%m-%d)" >> $GITHUB_ENV
+
+    - name: Install TeX Live Dependencies
+      run: sudo apt-get update && sudo apt-get install -y \
+             texlive-latex-base texlive-latex-extra latexmk
+
+    - name: Compile LaTeX
+      run: latexmk -pdf 68eed5e3ba6fdc86c6484640-68eed5cdba6fdc86c6484625/main.tex
+
+    - name: Save Compiled PDF to /pdfs
+      run: |
+        mkdir -p pdfs
+        cp 68eed5e3ba6fdc86c6484640-68eed5cdba6fdc86c6484625/main.pdf \
+           pdfs/SSW590-${VERSION_SHA}.pdf
+
+    - name: Commit and Push PDF
+      run: |
+        git config user.name "github-actions"
+        git config user.email "actions@github.com"
+        git add pdfs/
+        git commit -m "Auto-compiled version with commit hash ${VERSION_SHA}"
+        git push
+    \end{minted}
+
+    \item \textbf{Commit to Main Branch}
+
+    We committed the workflow directly to the \texttt{main} branch to enable automatic execution on every push.
+
+    \item \textbf{Verify Workflow Execution}
+
+    After committing, GitHub automatically triggered the workflow. We verified its success in the Actions tab, which showed the workflow run as:
+
+    \begin{itemize}
+        \item Event: \texttt{push}
+        \item Status: \textcolor{green}{\textbf{Success}}
+        \item Branch: \texttt{main}
+    \end{itemize}
+
+    \item \textbf{View Resulting PDF}
+
+    The compiled PDF was saved in the \texttt{pdfs/} folder of our repository and named with the shortened git commit hash, e.g.:
+    \begin{minted}[frame=none]{text}
+pdfs/SSW590-22fc9a7.pdf
+    \end{minted}
+
+\end{enumerate}
+
+
+\section{Results}
+After configuring the workflow, each push from Overleaf triggered an automatic PDF compilation in GitHub. The resulting files were stored in the repository with version-based filenames. Figures~\ref{fig:successworkflows} through~\ref{fig:repos} show the successful workflow execution and versioned PDF outputs.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\textwidth]{png/successworkflows.png}
+  \caption{Successful GitHub Action workflow execution.}
+  \label{fig:successworkflows}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\textwidth]{png/builds.png}
+  \caption{Build log confirming successful \LaTeX\ compilation.}
+  \label{fig:builds}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\textwidth]{png/testpdfs.png}
+  \caption{Versioned PDFs generated and stored in the repository.}
+  \label{fig:testpdfs}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\textwidth]{png/repos.png}
+  \caption{Repository showing automatically uploaded PDF files.}
+  \label{fig:repos}
+\end{figure}
+
+\section{Bonus: Self-Hosted Runner in Overleaf}
+For additional functionality, we configured a self-hosted GitHub Actions runner within our Overleaf CE container. This allowed builds to run directly inside the same environment used for editing, improving consistency and eliminating dependency on GitHub’s hosted runners. Once registered, the Overleaf container appeared in GitHub as an active runner (Figure~\ref{fig:runner}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\textwidth]{png/runnerimagess.png}
+  \caption{Overleaf container registered as a self-hosted GitHub runner.}
+  \label{fig:runner}
+\end{figure}
+
+\section{Summary}
+\begin{itemize}
+  \item Continuous integration pipeline between Overleaf and GitHub successfully implemented.
+  \item Automatic \LaTeX\ compilation and versioned PDF storage upon each push.
+  \item Self-hosted runner enabled Overleaf-native builds for faster and consistent results.
+\end{itemize}
+
+
+
+
+
+
+
+

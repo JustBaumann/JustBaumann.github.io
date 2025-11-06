@@ -1,0 +1,3 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+    docker tag \PYG{n+nv}{\PYGZpc{}ECR\PYGZus{}REPO\PYGZpc{}}:\PYG{n+nv}{\PYGZpc{}IMAGE\PYGZus{}TAG\PYGZpc{}} \PYG{n+nv}{\PYGZpc{}AWS\PYGZus{}ACCOUNT\PYGZus{}ID\PYGZpc{}}.dkr.ecr.\PYG{n+nv}{\PYGZpc{}AWS\PYGZus{}REGION\PYGZpc{}}.amazonaws.com/\PYG{n+nv}{\PYGZpc{}ECR\PYGZus{}REPO\PYGZpc{}}:\PYG{n+nv}{\PYGZpc{}IMAGE\PYGZus{}TAG\PYGZpc{}}
+\end{MintedVerbatim}

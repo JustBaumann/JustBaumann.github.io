@@ -1,0 +1,8 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{set} \PYG{n+nv}{AWS\PYGZus{}REGION}\PYG{p}{=}us\PYGZhy{}east\PYGZhy{}1
+\PYG{k}{set} \PYG{n+nv}{AWS\PYGZus{}ACCOUNT\PYGZus{}ID}\PYG{p}{=}474150574930
+\PYG{k}{set} \PYG{n+nv}{ECR\PYGZus{}REPO}\PYG{p}{=}color\PYGZhy{}buttons\PYGZhy{}app
+\PYG{k}{set} \PYG{n+nv}{IMAGE\PYGZus{}TAG}\PYG{p}{=}v1
+\PYG{k}{set} \PYG{n+nv}{CONTAINER\PYGZus{}PORT}\PYG{p}{=}3000
+\PYG{k}{set} \PYG{n+nv}{APP\PYGZus{}NAME}\PYG{p}{=}my\PYGZhy{}apprunner\PYGZhy{}app
+\end{MintedVerbatim}

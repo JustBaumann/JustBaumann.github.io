@@ -1,0 +1,7 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{services}\PYG{p}{:}
+\PYG{+w}{  }\PYG{n+nt}{sharelatex}\PYG{p}{:}
+\PYG{+w}{    }\PYG{n+nt}{image}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{overleaf\PYGZhy{}fulltex\PYGZhy{}complete}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{} Changed from overleaf\PYGZhy{}fulltex}
+\PYG{+w}{    }\PYG{n+nt}{container\PYGZus{}name}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{sharelatex}
+\PYG{+w}{    }\PYG{c+c1}{\PYGZsh{} ... rest of configuration}
+\end{MintedVerbatim}

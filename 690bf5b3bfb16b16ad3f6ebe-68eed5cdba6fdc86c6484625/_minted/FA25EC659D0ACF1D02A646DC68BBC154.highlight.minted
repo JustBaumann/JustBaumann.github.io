@@ -1,0 +1,3 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+    aws ecr describe\PYGZhy{}images \PYGZhy{}\PYGZhy{}repository\PYGZhy{}name \PYG{n+nv}{\PYGZpc{}ECR\PYGZus{}REPO\PYGZpc{}} \PYGZhy{}\PYGZhy{}region \PYG{n+nv}{\PYGZpc{}AWS\PYGZus{}REGION\PYGZpc{}} \PYGZhy{}\PYGZhy{}query \PYG{l+s+s2}{\PYGZdq{}imageDetails[].imageTags\PYGZdq{}}
+\end{MintedVerbatim}

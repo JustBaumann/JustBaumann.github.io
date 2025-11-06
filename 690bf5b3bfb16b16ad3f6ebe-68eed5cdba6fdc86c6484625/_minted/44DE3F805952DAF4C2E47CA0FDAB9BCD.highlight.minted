@@ -1,0 +1,18 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} optional: install Docker Engine + compose plugin (if not present)}
+apt\PYGZhy{}get\PYG{+w}{ }update\PYG{+w}{ }\PYGZhy{}y
+apt\PYGZhy{}get\PYG{+w}{ }install\PYG{+w}{ }\PYGZhy{}y\PYG{+w}{ }ca\PYGZhy{}certificates\PYG{+w}{ }curl\PYG{+w}{ }gnupg\PYG{+w}{ }lsb\PYGZhy{}release
+install\PYG{+w}{ }\PYGZhy{}m\PYG{+w}{ }\PYG{l+m}{0755}\PYG{+w}{ }\PYGZhy{}d\PYG{+w}{ }/etc/apt/keyrings
+curl\PYG{+w}{ }\PYGZhy{}fsSL\PYG{+w}{ }https://download.docker.com/linux/ubuntu/gpg\PYG{+w}{ }\PYG{p}{|}\PYG{+w}{ }gpg\PYG{+w}{ }\PYGZhy{}\PYGZhy{}dearmor\PYG{+w}{ }\PYGZhy{}o\PYG{+w}{ }/etc/apt/keyrings/docker.gpg
+chmod\PYG{+w}{ }a+r\PYG{+w}{ }/etc/apt/keyrings/docker.gpg
+\PYG{n+nb}{echo}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}deb [arch=}\PYG{k}{\PYGZdl{}(}dpkg\PYG{+w}{ }\PYGZhy{}\PYGZhy{}print\PYGZhy{}architecture\PYG{k}{)}\PYG{l+s+s2}{ signed\PYGZhy{}by=/etc/apt/keyrings/docker.gpg] \PYGZbs{}}
+\PYG{l+s+s2}{https://download.docker.com/linux/ubuntu }\PYG{k}{\PYGZdl{}(}lsb\PYGZus{}release\PYG{+w}{ }\PYGZhy{}cs\PYG{k}{)}\PYG{l+s+s2}{ stable\PYGZdq{}}\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{p}{|}\PYG{+w}{ }tee\PYG{+w}{ }/etc/apt/sources.list.d/docker.list\PYG{+w}{ }\PYGZgt{}\PYG{+w}{ }/dev/null
+apt\PYGZhy{}get\PYG{+w}{ }update\PYG{+w}{ }\PYGZhy{}y
+apt\PYGZhy{}get\PYG{+w}{ }install\PYG{+w}{ }\PYGZhy{}y\PYG{+w}{ }docker\PYGZhy{}ce\PYG{+w}{ }docker\PYGZhy{}ce\PYGZhy{}cli\PYG{+w}{ }containerd.io\PYG{+w}{ }docker\PYGZhy{}buildx\PYGZhy{}plugin\PYG{+w}{ }docker\PYGZhy{}compose\PYGZhy{}plugin
+systemctl\PYG{+w}{ }\PYG{n+nb}{enable}\PYG{+w}{ }\PYGZhy{}\PYGZhy{}now\PYG{+w}{ }docker
+
+\PYG{c+c1}{\PYGZsh{} sanity}
+docker\PYG{+w}{ }\PYGZhy{}\PYGZhy{}version
+docker\PYG{+w}{ }compose\PYG{+w}{ }version
+\end{MintedVerbatim}

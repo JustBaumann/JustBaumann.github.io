@@ -1,0 +1,149 @@
+\chapter{SSL Research}
+\small{\textit{-- Gianna Cerbone}}
+\label{Chapter:SSLResearch}
+\index{Chapter!SSLResearch}
+
+\section{Overview}
+
+This chapter summarizes the research conducted on implementing SSL (Secure Sockets Layer) for Overleaf containers and images. The focus is on how to add SSL certificates, manage them using free services such as Let’s Encrypt, and automate their renewal process. Let’s Encrypt provides free certificates that expire every 90 days, making automated renewal a critical part of the configuration.
+
+\section{Architecture Considerations}
+
+In most deployments, Overleaf is hosted using Docker containers or the Overleaf Toolkit. The recommended approach is to run Overleaf behind a reverse proxy (commonly Nginx) that handles TLS termination. This means HTTPS traffic is decrypted at the proxy, which then forwards plain HTTP requests to the Overleaf application container.
+
+Embedding SSL certificate management directly inside the Overleaf container is possible but discouraged. It adds unnecessary complexity and makes updates harder. Managing certificates at the proxy layer is simpler, more secure, and allows reuse of certificates for multiple services.
+
+\section{Using the Overleaf Toolkit with TLS Proxy Mode}
+
+For those using the Overleaf Toolkit, TLS support is already integrated. You can enable it by initializing the toolkit with:
+
+\begin{verbatim}
+bin/init --tls
+\end{verbatim}
+
+This generates an Nginx configuration and placeholder certificates located in:
+\begin{verbatim}
+config/nginx/certs/overleaf_certificate.pem
+config/nginx/certs/overleaf_key.pem
+\end{verbatim}
+
+Replace these placeholder files with your actual SSL certificate and key. The following settings can be configured in \texttt{config/overleaf.rc}:
+
+\begin{verbatim}
+NGINX_ENABLED=true
+NGINX_CONFIG_PATH=config/nginx/nginx.conf
+NGINX_HTTP_PORT=80
+TLS_CERTIFICATE_PATH=config/nginx/certs/overleaf_certificate.pem
+TLS_PRIVATE_KEY_PATH=config/nginx/certs/overleaf_key.pem
+TLS_PORT=443
+\end{verbatim}
+
+After modifying these settings, re-run:
+\begin{verbatim}
+bin/up
+\end{verbatim}
+to recreate and restart the containers.
+
+If an external proxy handles SSL termination, add the proxy IP address to:
+\begin{verbatim}
+OVERLEAF_TRUSTED_PROXY_IPS
+\end{verbatim}
+so that Overleaf correctly interprets forwarded HTTPS requests.
+
+\section{Using an External Reverse Proxy}
+
+Another common approach is to use an external reverse proxy, such as Nginx or Traefik, to manage SSL and forward traffic to the Overleaf container. This approach simplifies certificate management and keeps the Overleaf image lightweight.
+
+\subsection{Advantages}
+\begin{itemize}
+    \item TLS configuration is isolated from the Overleaf container.
+    \item Certificates can be easily renewed and reused for other services.
+    \item Simplifies upgrades to Overleaf since SSL is handled separately.
+\end{itemize}
+
+\subsection{Example Nginx Configuration}
+
+\begin{verbatim}
+server {
+    listen 80;
+    server_name overleaf.example.com;
+
+    location /.well-known/acme-challenge/ {
+        root /var/www/acme-challenges;
+    }
+
+    location / {
+        proxy_pass http://127.0.0.1:8000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}
+
+server {
+    listen 443 ssl;
+    server_name overleaf.example.com;
+
+    ssl_certificate /etc/letsencrypt/live/overleaf.example.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/overleaf.example.com/privkey.pem;
+
+    location / {
+        proxy_pass http://127.0.0.1:8000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}
+\end{verbatim}
+
+\section{Using Let’s Encrypt for Free SSL Certificates}
+
+Let’s Encrypt offers free SSL certificates that are valid for 90 days. To generate and install one using \texttt{certbot}, run the following commands:
+
+\begin{verbatim}
+sudo apt install certbot python3-certbot-nginx
+sudo certbot certonly --webroot -w /var/www/acme-challenges \
+    -d overleaf.example.com
+\end{verbatim}
+
+After the certificate is installed, configure automatic renewal:
+
+\begin{verbatim}
+sudo certbot renew --post-hook "systemctl reload nginx"
+\end{verbatim}
+
+The renewal command can be added to a cron job or systemd timer to run periodically.
+
+\section{Renewal and Automation}
+
+Because Let’s Encrypt certificates expire every three months, it is essential to automate the renewal process. Recommended best practices include:
+\begin{itemize}
+    \item Schedule automatic renewals using \texttt{certbot renew}.
+    \item Reload or restart the Nginx proxy after renewal to apply the new certificate.
+    \item Test renewal scripts regularly using the \texttt{--dry-run} flag.
+    \item Ensure that HTTP port 80 is available for ACME challenge responses.
+\end{itemize}
+
+\section{Installing Certificates Inside the Container (Not Recommended)}
+
+While possible, installing and managing SSL certificates inside the Overleaf container is not recommended. This approach introduces additional maintenance complexity, such as updating trust stores, managing permissions, and triggering restarts on renewal.
+
+If necessary, certificates can be mounted as Docker volumes and renewed via a sidecar container running \texttt{certbot}. The containerized Overleaf application would then reload the updated certificates periodically.
+
+\section{Summary and Recommendations}
+
+\begin{itemize}
+    \item Use a reverse proxy such as Nginx to handle SSL termination.
+    \item Use Let’s Encrypt for free, automated SSL certificates that renew every 90 days.
+    \item In the Overleaf Toolkit, enable TLS with \texttt{bin/init --tls} and replace the default certificates.
+    \item If using an external proxy, ensure websockets and headers (\texttt{Upgrade}, \texttt{X-Forwarded-Proto}) are properly forwarded.
+    \item Avoid embedding certificate management logic inside the Overleaf application container.
+\end{itemize}
+
+By following these practices, Overleaf can be securely deployed with HTTPS, using automated and renewable SSL certificates, ensuring both encrypted communication and reduced administrative overhead.

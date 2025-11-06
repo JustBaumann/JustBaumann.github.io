@@ -1,0 +1,3 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+sed\PYG{+w}{ }\PYGZhy{}i\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}s\PYGZsh{}/var/lib/sharelatex\PYGZsh{}/var/lib/overleaf\PYGZsh{}g\PYGZsq{}}\PYG{+w}{ }docker\PYGZhy{}compose.yml
+\end{MintedVerbatim}

@@ -1,0 +1,25 @@
+\chapter{Prometheus with Grafana}
+
+\small{\textit{-- Spurthi Setty, Thomas Ung, Justin Baumann, Gianna Cerbone}}
+\label{Chapter:PrometheusWithGrafana}
+\index{Chapter!PrometheusWithGrafana}
+
+\section{Explanation}
+
+Prometheus acts as the data collection and monitoring system, scraping metrics from various sources like Node Exporter at regular intervals. Node Exporter runs on the host machine and exposes system-level metrics such as CPU usage, memory consumption, disk I/O, and network statistics to Prometheus. Grafana then connects to Prometheus as a data source and visualizes the collected metrics through interactive dashboards. Dashboard 1860, a popular pre-built system monitoring dashboard, provides a detailed overview of system health by showing CPU load, memory and disk utilization, network traffic, and uptime. By monitoring Dashboard 1860 in real time, users can quickly identify performance issues, detect bottlenecks, and ensure the system is running smoothly. Together, Prometheus, Node Exporter, and Grafana form a complete observability stack for system performance monitoring
+
+\section{Results}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\textwidth]{png/PrometheusUI.png}
+  \caption{Prometheus UI}
+  \label{fig:repos}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\textwidth]{png/GrafanaDashboard.png}
+  \caption{Grafana Dashboard}
+  \label{fig:repos}
+\end{figure}

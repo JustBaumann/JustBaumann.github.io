@@ -1,0 +1,8 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+sed\PYG{+w}{ }\PYGZhy{}i\PYG{+w}{ }\PYGZhy{}E\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}s/SHARELATEX\PYGZus{}MONGO\PYGZus{}URL/OVERLEAF\PYGZus{}MONGO\PYGZus{}URL/g; \PYGZbs{}}
+\PYG{l+s+s1}{s/SHARELATEX\PYGZus{}REDIS\PYGZus{}HOST/OVERLEAF\PYGZus{}REDIS\PYGZus{}HOST/g; \PYGZbs{}}
+\PYG{l+s+s1}{s/SHARELATEX\PYGZus{}SITE\PYGZus{}URL/OVERLEAF\PYGZus{}SITE\PYGZus{}URL/g\PYGZsq{}}\PYG{+w}{ }docker\PYGZhy{}compose.yml
+
+\PYG{c+c1}{\PYGZsh{} if you had a .env with legacy keys, update it too}
+sed\PYG{+w}{ }\PYGZhy{}i\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}s/SHARELATEX\PYGZus{}SITE\PYGZus{}URL/OVERLEAF\PYGZus{}SITE\PYGZus{}URL/\PYGZsq{}}\PYG{+w}{ }.env\PYG{+w}{ }\PYG{l+m}{2}\PYGZgt{}/dev/null\PYG{+w}{ }\PYG{o}{||}\PYG{+w}{ }\PYG{n+nb}{true}
+\end{MintedVerbatim}

@@ -1,0 +1,6 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+dftex error: pdflatex (file utmb8a.pfb): cannot open Type 1 font
+file for reading
+
+==\PYGZgt{} Fatal error occurred, no output PDF file produced!
+\end{MintedVerbatim}

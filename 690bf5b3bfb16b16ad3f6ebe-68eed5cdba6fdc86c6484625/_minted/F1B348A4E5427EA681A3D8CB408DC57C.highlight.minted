@@ -1,0 +1,10 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{FROM}\PYG{+w}{ }\PYG{l+s}{ubuntu:22.04}
+\PYG{k}{RUN}\PYG{+w}{ }apt\PYGZhy{}get\PYG{+w}{ }update\PYG{+w}{ }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }apt\PYGZhy{}get\PYG{+w}{ }install\PYG{+w}{ }\PYGZhy{}y\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }texlive\PYGZhy{}latex\PYGZhy{}recommended\PYG{+w}{ }texlive\PYGZhy{}latex\PYGZhy{}extra\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }texlive\PYGZhy{}fonts\PYGZhy{}recommended\PYG{+w}{ }latexmk\PYG{+w}{ }python3\PYGZhy{}pip\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }rm\PYG{+w}{ }\PYGZhy{}rf\PYG{+w}{ }/var/lib/apt/lists/*
+\PYG{k}{RUN}\PYG{+w}{ }pip\PYG{+w}{ }install\PYG{+w}{ }pygments
+\PYG{k}{WORKDIR}\PYG{+w}{ }\PYG{l+s}{/work}
+\PYG{k}{ENTRYPOINT}\PYG{+w}{ }\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}latexmk\PYGZdq{}}\PYG{p}{,}\PYG{l+s+s2}{\PYGZdq{}\PYGZhy{}pdf\PYGZdq{}}\PYG{p}{,}\PYG{l+s+s2}{\PYGZdq{}\PYGZhy{}interaction=nonstopmode\PYGZdq{}}\PYG{p}{,}\PYG{l+s+s2}{\PYGZdq{}\PYGZhy{}halt\PYGZhy{}on\PYGZhy{}error\PYGZdq{}}\PYG{p}{,}\PYG{l+s+s2}{\PYGZdq{}\PYGZhy{}shell\PYGZhy{}escape\PYGZdq{}}\PYG{p}{]}
+\end{MintedVerbatim}

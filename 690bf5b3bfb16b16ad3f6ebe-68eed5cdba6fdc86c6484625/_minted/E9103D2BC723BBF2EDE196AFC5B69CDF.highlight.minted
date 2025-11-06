@@ -1,0 +1,13 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{cd}\PYG{+w}{ }/var/www/html/bugzilla
+cat\PYG{+w}{ }\PYGZgt{}\PYG{+w}{ }localconfig\PYG{+w}{ }\PYG{l+s}{\PYGZlt{}\PYGZlt{}\PYGZsq{}CONF\PYGZsq{}}
+\PYG{l+s}{\PYGZdl{}db\PYGZus{}driver = \PYGZsq{}mysql\PYGZsq{};}
+\PYG{l+s}{\PYGZdl{}db\PYGZus{}host   = \PYGZsq{}localhost\PYGZsq{};}
+\PYG{l+s}{\PYGZdl{}db\PYGZus{}name   = \PYGZsq{}bugzilla\PYGZsq{};}
+\PYG{l+s}{\PYGZdl{}db\PYGZus{}user   = \PYGZsq{}bugs\PYGZsq{};}
+\PYG{l+s}{\PYGZdl{}db\PYGZus{}pass   = \PYGZsq{}bugs\PYGZsq{};}
+\PYG{l+s}{\PYGZdl{}webservergroup = \PYGZsq{}apache\PYGZsq{};}
+\PYG{l+s}{\PYGZdl{}urlbase = \PYGZsq{}http://167.99.54.162:8080/bugzilla/\PYGZsq{};}
+\PYG{l+s}{CONF}
+chown\PYG{+w}{ }\PYGZhy{}R\PYG{+w}{ }apache:apache\PYG{+w}{ }.
+\end{MintedVerbatim}
