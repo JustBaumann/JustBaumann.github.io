@@ -1,0 +1,11 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+load\PYGZhy{}balanced\PYGZhy{}app/
+│
+├── docker\PYGZhy{}compose.yml
+├── nginx/
+│   └── nginx.conf
+├── web1/
+│   └── index.html
+└── web2/
+    └── index.html
+\end{MintedVerbatim}

@@ -1,0 +1,16 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+rm\PYG{+w}{ }\PYGZhy{}f\PYG{+w}{ }/etc/httpd/conf.d/welcome.conf
+cat\PYG{+w}{ }\PYGZgt{}/etc/httpd/conf.d/bugzilla\PYGZhy{}root.conf\PYG{+w}{ }\PYG{l+s}{\PYGZlt{}\PYGZlt{}\PYGZsq{}CONF\PYGZsq{}}
+\PYG{l+s}{ServerName 127.0.0.1}
+\PYG{l+s}{DocumentRoot \PYGZdq{}/var/www/html/bugzilla\PYGZdq{}}
+
+\PYG{l+s}{\PYGZlt{}Directory \PYGZdq{}/var/www/html/bugzilla\PYGZdq{}\PYGZgt{}}
+\PYG{l+s}{    Options +ExecCGI +FollowSymLinks}
+\PYG{l+s}{    AllowOverride All}
+\PYG{l+s}{    Require all granted}
+\PYG{l+s}{    AddHandler cgi\PYGZhy{}script .cgi}
+\PYG{l+s}{\PYGZlt{}/Directory\PYGZgt{}}
+
+\PYG{l+s}{DirectoryIndex index.cgi}
+\PYG{l+s}{CONF}
+\end{MintedVerbatim}

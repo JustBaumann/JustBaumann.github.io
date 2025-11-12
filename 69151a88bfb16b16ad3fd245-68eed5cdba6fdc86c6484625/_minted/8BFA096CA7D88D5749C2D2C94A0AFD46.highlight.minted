@@ -1,0 +1,5 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{cd}\PYG{+w}{ }/home/load\PYGZhy{}balanced\PYGZhy{}app
+docker\PYG{+w}{ }compose\PYG{+w}{ }up\PYG{+w}{ }\PYGZhy{}d\PYG{+w}{ }\PYGZhy{}\PYGZhy{}build
+docker\PYG{+w}{ }ps
+\end{MintedVerbatim}

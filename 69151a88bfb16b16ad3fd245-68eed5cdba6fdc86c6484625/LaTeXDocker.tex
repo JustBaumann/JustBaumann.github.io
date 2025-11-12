@@ -1,0 +1,29 @@
+\chapter{LaTeX Docker \\
+\small{\textit{-- Justin Baumann, Gianna Cerbone, Thomas Ung, Spurthi Setty}} 
+\index{Chapter!LaTeXDocker}
+\index{LaTeXDocker}
+\label{Chapter::LaTeXDocker}}
+
+\section{Overview}
+This chapter demonstrates building a Docker container that compiles LaTeX documents with TeX Live, similar to how Overleaf runs builds.
+
+\section{Dockerfile}
+\begin{minted}[fontsize=\small,breaklines]{docker}
+FROM ubuntu:22.04
+RUN apt-get update && apt-get install -y \
+    texlive-latex-recommended texlive-latex-extra \
+    texlive-fonts-recommended latexmk python3-pip \
+    && rm -rf /var/lib/apt/lists/*
+RUN pip install pygments
+WORKDIR /work
+ENTRYPOINT ["latexmk","-pdf","-interaction=nonstopmode","-halt-on-error","-shell-escape"]
+\end{minted}
+
+\section{Build and Run}
+\begin{minted}[fontsize=\small,breaklines]{bash}
+# build the image
+docker build -t latex-texlive .
+
+# run to compile example.tex into a PDF
+docker run --rm -v %cd%:/work latex-texlive example.tex
+\end{minted}

@@ -1,0 +1,4 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}fancyhdr\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}setlength}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}headheight}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}27pt\PYG{n+nb}{\PYGZcb{}}
+\end{MintedVerbatim}

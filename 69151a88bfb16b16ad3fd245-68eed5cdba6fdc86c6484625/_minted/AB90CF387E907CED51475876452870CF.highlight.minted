@@ -1,0 +1,4 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+Package fancyhdr Warning: \PYGZbs{}headheight is too small (14.45377pt):
+Make it at least 26.14003pt.
+\end{MintedVerbatim}

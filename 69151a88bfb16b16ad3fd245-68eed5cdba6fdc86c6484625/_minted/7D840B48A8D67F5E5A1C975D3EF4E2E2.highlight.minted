@@ -1,0 +1,46 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{events}\PYG{+w}{ }\PYG{p}{\PYGZob{}\PYGZcb{}}
+
+\PYG{k}{http}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kn}{upstream}\PYG{+w}{ }\PYG{l+s}{backend}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k+kn}{server}\PYG{+w}{ }\PYG{n}{web1}\PYG{p}{:}\PYG{l+m+mi}{80}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k+kn}{server}\PYG{+w}{ }\PYG{n}{web2}\PYG{p}{:}\PYG{l+m+mi}{80}\PYG{p}{;}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{    }\PYG{c+c1}{\PYGZsh{} Load Balancer}
+\PYG{+w}{    }\PYG{k+kn}{server}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k+kn}{listen}\PYG{+w}{ }\PYG{l+m+mi}{80}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k+kn}{server\PYGZus{}name}\PYG{+w}{ }\PYG{l+s}{loadbalancer.quackops.me}\PYG{p}{;}
+
+\PYG{+w}{        }\PYG{k+kn}{location}\PYG{+w}{ }\PYG{l+s}{/}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{k+kn}{proxy\PYGZus{}pass}\PYG{+w}{ }\PYG{l+s}{http://backend}\PYG{p}{;}
+\PYG{+w}{            }\PYG{k+kn}{proxy\PYGZus{}set\PYGZus{}header}\PYG{+w}{ }\PYG{l+s}{Host}\PYG{+w}{ }\PYG{n+nv}{\PYGZdl{}host}\PYG{p}{;}
+\PYG{+w}{            }\PYG{k+kn}{proxy\PYGZus{}set\PYGZus{}header}\PYG{+w}{ }\PYG{l+s}{X\PYGZhy{}Real\PYGZhy{}IP}\PYG{+w}{ }\PYG{n+nv}{\PYGZdl{}remote\PYGZus{}addr}\PYG{p}{;}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{    }\PYG{c+c1}{\PYGZsh{} Virtual Host 1}
+\PYG{+w}{    }\PYG{k+kn}{server}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k+kn}{listen}\PYG{+w}{ }\PYG{l+m+mi}{80}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k+kn}{server\PYGZus{}name}\PYG{+w}{ }\PYG{l+s}{web1.quackops.me}\PYG{p}{;}
+
+\PYG{+w}{        }\PYG{k+kn}{location}\PYG{+w}{ }\PYG{l+s}{/}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{k+kn}{proxy\PYGZus{}pass}\PYG{+w}{ }\PYG{l+s}{http://web1:80}\PYG{p}{;}
+\PYG{+w}{            }\PYG{k+kn}{proxy\PYGZus{}set\PYGZus{}header}\PYG{+w}{ }\PYG{l+s}{Host}\PYG{+w}{ }\PYG{n+nv}{\PYGZdl{}host}\PYG{p}{;}
+\PYG{+w}{            }\PYG{k+kn}{proxy\PYGZus{}set\PYGZus{}header}\PYG{+w}{ }\PYG{l+s}{X\PYGZhy{}Real\PYGZhy{}IP}\PYG{+w}{ }\PYG{n+nv}{\PYGZdl{}remote\PYGZus{}addr}\PYG{p}{;}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{    }\PYG{c+c1}{\PYGZsh{} Virtual Host 2}
+\PYG{+w}{    }\PYG{k+kn}{server}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k+kn}{listen}\PYG{+w}{ }\PYG{l+m+mi}{80}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k+kn}{server\PYGZus{}name}\PYG{+w}{ }\PYG{l+s}{web2.quackops.me}\PYG{p}{;}
+
+\PYG{+w}{        }\PYG{k+kn}{location}\PYG{+w}{ }\PYG{l+s}{/}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{k+kn}{proxy\PYGZus{}pass}\PYG{+w}{ }\PYG{l+s}{http://web2:80}\PYG{p}{;}
+\PYG{+w}{            }\PYG{k+kn}{proxy\PYGZus{}set\PYGZus{}header}\PYG{+w}{ }\PYG{l+s}{Host}\PYG{+w}{ }\PYG{n+nv}{\PYGZdl{}host}\PYG{p}{;}
+\PYG{+w}{            }\PYG{k+kn}{proxy\PYGZus{}set\PYGZus{}header}\PYG{+w}{ }\PYG{l+s}{X\PYGZhy{}Real\PYGZhy{}IP}\PYG{+w}{ }\PYG{n+nv}{\PYGZdl{}remote\PYGZus{}addr}\PYG{p}{;}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{MintedVerbatim}

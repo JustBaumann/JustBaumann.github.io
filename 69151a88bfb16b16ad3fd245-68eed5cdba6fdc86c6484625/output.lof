@@ -1,0 +1,36 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Screenshot of Linux Bash commands executed.}}{5}{figure.5.1}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces UML Class Diagram for the \texttt {ColorController} class}}{15}{figure.7.1}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Screenshot of bugzilla working at \url {http://167.99.54.162:8080/} }}{21}{figure.9.1}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Screenshot of Compiled File at \url {http://167.99.54.162:8090}}}{27}{figure.10.1}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {12.1}{\ignorespaces Successfully compiled template in Overleaf showing the PDF output, \url {URL: http://167.99.54.162:8090/project/68eed5f5ba6fdc86c648466b}}}{40}{figure.12.1}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {14.1}{\ignorespaces Cmd Output of compiled overleaf}}{46}{figure.14.1}%
+\contentsline {figure}{\numberline {14.2}{\ignorespaces PDF Output of compiled overleaf}}{47}{figure.14.2}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {15.1}{\ignorespaces Successful GitHub Action workflow execution.}}{50}{figure.15.1}%
+\contentsline {figure}{\numberline {15.2}{\ignorespaces Build log confirming successful \LaTeX \ compilation.}}{51}{figure.15.2}%
+\contentsline {figure}{\numberline {15.3}{\ignorespaces Versioned PDFs generated and stored in the repository.}}{51}{figure.15.3}%
+\contentsline {figure}{\numberline {15.4}{\ignorespaces Repository showing automatically uploaded PDF files.}}{52}{figure.15.4}%
+\contentsline {figure}{\numberline {15.5}{\ignorespaces Overleaf container registered as a self-hosted GitHub runner.}}{53}{figure.15.5}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {16.1}{\ignorespaces Prometheus UI}}{55}{figure.16.1}%
+\contentsline {figure}{\numberline {16.2}{\ignorespaces Grafana Dashboard}}{55}{figure.16.2}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {17.1}{\ignorespaces Screenshot of Stage/Pipeline view}}{59}{figure.17.1}%
+\contentsline {figure}{\numberline {17.2}{\ignorespaces Screenshot of Test Result page}}{59}{figure.17.2}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {18.1}{\ignorespaces Load Balancer and Virtual Host deployment on DigitalOcean droplet (\texttt {167.99.54.162}).}}{64}{figure.18.1}%
+\addvspace {10\p@ }

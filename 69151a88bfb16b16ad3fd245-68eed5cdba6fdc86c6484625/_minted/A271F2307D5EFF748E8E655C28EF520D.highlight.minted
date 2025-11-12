@@ -1,0 +1,43 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{name}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{Compile LaTeX and Store Version}
+
+\PYG{n+nt}{on}\PYG{p}{:}
+\PYG{+w}{  }\PYG{n+nt}{push}\PYG{p}{:}
+\PYG{+w}{    }\PYG{n+nt}{branches}\PYG{p}{:}\PYG{+w}{ }\PYG{p+pIndicator}{[}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}main\PYGZdq{}}\PYG{+w}{ }\PYG{p+pIndicator}{]}
+
+\PYG{n+nt}{permissions}\PYG{p}{:}
+\PYG{+w}{  }\PYG{n+nt}{contents}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{write}
+
+\PYG{n+nt}{jobs}\PYG{p}{:}
+\PYG{+w}{  }\PYG{n+nt}{build}\PYG{p}{:}
+\PYG{+w}{    }\PYG{n+nt}{runs\PYGZhy{}on}\PYG{p}{:}\PYG{+w}{ }\PYG{p+pIndicator}{[}\PYG{n+nv}{self\PYGZhy{}hosted}\PYG{p+pIndicator}{,}\PYG{+w}{ }\PYG{n+nv}{overleaf}\PYG{p+pIndicator}{]}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{} Use local Overleaf CE container runner}
+
+\PYG{+w}{    }\PYG{n+nt}{steps}\PYG{p}{:}
+\PYG{+w}{    }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{uses}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{actions/checkout@v4}
+
+\PYG{+w}{    }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{name}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{Get Git Commit Hash and Date}
+\PYG{+w}{      }\PYG{n+nt}{run}\PYG{p}{:}\PYG{+w}{ }\PYG{p+pIndicator}{|}
+\PYG{+w}{        }\PYG{n+no}{echo \PYGZdq{}VERSION\PYGZus{}SHA=\PYGZdl{}(git rev\PYGZhy{}parse \PYGZhy{}\PYGZhy{}short HEAD)\PYGZdq{} \PYGZgt{}\PYGZgt{} \PYGZdl{}GITHUB\PYGZus{}ENV}
+\PYG{+w}{        }\PYG{n+no}{echo \PYGZdq{}BUILD\PYGZus{}DATE=\PYGZdl{}(date \PYGZhy{}u +\PYGZpc{}Y\PYGZhy{}\PYGZpc{}m\PYGZhy{}\PYGZpc{}d)\PYGZdq{} \PYGZgt{}\PYGZgt{} \PYGZdl{}GITHUB\PYGZus{}ENV}
+
+\PYG{+w}{    }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{name}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{Install TeX Live Dependencies}
+\PYG{+w}{      }\PYG{n+nt}{run}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{sudo apt\PYGZhy{}get update \PYGZam{}\PYGZam{} sudo apt\PYGZhy{}get install \PYGZhy{}y \PYGZbs{}}
+\PYG{+w}{             }\PYG{l+lScalar+lScalarPlain}{texlive\PYGZhy{}latex\PYGZhy{}base texlive\PYGZhy{}latex\PYGZhy{}extra latexmk}
+
+\PYG{+w}{    }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{name}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{Compile LaTeX}
+\PYG{+w}{      }\PYG{n+nt}{run}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{latexmk \PYGZhy{}pdf 68eed5e3ba6fdc86c6484640\PYGZhy{}68eed5cdba6fdc86c6484625/main.tex}
+
+\PYG{+w}{    }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{name}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{Save Compiled PDF to /pdfs}
+\PYG{+w}{      }\PYG{n+nt}{run}\PYG{p}{:}\PYG{+w}{ }\PYG{p+pIndicator}{|}
+\PYG{+w}{        }\PYG{n+no}{mkdir \PYGZhy{}p pdfs}
+\PYG{+w}{        }\PYG{n+no}{cp 68eed5e3ba6fdc86c6484640\PYGZhy{}68eed5cdba6fdc86c6484625/main.pdf \PYGZbs{}}
+\PYG{+w}{           }\PYG{n+no}{pdfs/SSW590\PYGZhy{}\PYGZdl{}\PYGZob{}VERSION\PYGZus{}SHA\PYGZcb{}.pdf}
+
+\PYG{+w}{    }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{name}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{Commit and Push PDF}
+\PYG{+w}{      }\PYG{n+nt}{run}\PYG{p}{:}\PYG{+w}{ }\PYG{p+pIndicator}{|}
+\PYG{+w}{        }\PYG{n+no}{git config user.name \PYGZdq{}github\PYGZhy{}actions\PYGZdq{}}
+\PYG{+w}{        }\PYG{n+no}{git config user.email \PYGZdq{}actions@github.com\PYGZdq{}}
+\PYG{+w}{        }\PYG{n+no}{git add pdfs/}
+\PYG{+w}{        }\PYG{n+no}{git commit \PYGZhy{}m \PYGZdq{}Auto\PYGZhy{}compiled version with commit hash \PYGZdl{}\PYGZob{}VERSION\PYGZus{}SHA\PYGZcb{}\PYGZdq{}}
+\PYG{+w}{        }\PYG{n+no}{git push}
+\end{MintedVerbatim}

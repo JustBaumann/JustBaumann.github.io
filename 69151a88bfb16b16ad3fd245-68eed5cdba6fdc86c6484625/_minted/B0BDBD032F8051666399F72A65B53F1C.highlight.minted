@@ -1,0 +1,4 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{cd}\PYG{+w}{ }/opt/overleaf
+docker\PYG{+w}{ }build\PYG{+w}{ }\PYGZhy{}t\PYG{+w}{ }overleaf\PYGZhy{}fulltex\PYG{+w}{ }.
+\end{MintedVerbatim}

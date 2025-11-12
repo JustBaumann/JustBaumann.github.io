@@ -1,0 +1,3247 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.5.19)  12 NOV 2025 23:47
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**itManual.tex
+(./itManual.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-04-29>
+(./cornell.cls
+Document Class: cornell 1998/03/26 v2.0 Cornell University thesis class
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count272
+\c@chapter=\count273
+\c@section=\count274
+\c@subsection=\count275
+\c@subsubsection=\count276
+\c@paragraph=\count277
+\c@subparagraph=\count278
+\c@figure=\count279
+\c@table=\count280
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen146
+)
+\@abhdskip=\skip51
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/usr/
+local/texlive/2025/texmf-dist/tex/latex/psfrag/psfrag.sty
+Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+)
+\pfg@pcount=\count281
+\pfg@scount=\count282
+\pfg@temp=\write3
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks17
+\verbatim@line=\toks18
+\verbatim@in@stream=\read2
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip52
+\f@nch@offset@elh=\skip53
+\f@nch@offset@erh=\skip54
+\f@nch@offset@olh=\skip55
+\f@nch@offset@orh=\skip56
+\f@nch@offset@elf=\skip57
+\f@nch@offset@erf=\skip58
+\f@nch@offset@olf=\skip59
+\f@nch@offset@orf=\skip60
+\f@nch@height=\skip61
+\f@nch@footalignment=\skip62
+\f@nch@widthL=\skip63
+\f@nch@widthC=\skip64
+\f@nch@widthR=\skip65
+\@temptokenb=\toks19
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+)
+\FV@CodeLineNo=\count283
+\FV@InFile=\read3
+\FV@TabBox=\box53
+\c@FancyVerbLine=\count284
+\FV@StepNumber=\count285
+\FV@OutFile=\write4
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2025/05/14 v3.7.0 Yet another Pygments shim for LaTeX
+(/usr/local/texlive/2025/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))) (/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count286
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2025/05/29 v1.13.2 fvextra - extensions and patches for fancyv
+rb
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2025/05/13 line numbers on paragraphs v5.5
+(/usr/local/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+\linenopenalty=\count287
+\output=\toks21
+\linenoprevgraf=\count288
+\linenumbersep=\dimen147
+\linenumberwidth=\dimen148
+\c@linenumber=\count289
+\c@pagewiselinenumber=\count290
+\c@LN@truepage=\count291
+\c@internallinenumber=\count292
+\c@internallinenumbers=\count293
+\quotelinenumbersep=\dimen149
+\bframerule=\dimen150
+\bframesep=\dimen151
+\bframebox=\box54
+)
+\c@FancyVerbWriteLine=\count294
+\c@FancyVerbBufferLine=\count295
+\c@FV@TrueTabGroupLevel=\count296
+\c@FV@TrueTabCounter=\count297
+\FV@TabBox@Group=\box55
+\FV@bgcolorstructbox=\box56
+\FV@TmpLength=\skip66
+\c@FV@HighlightLinesStart=\count298
+\c@FV@HighlightLinesStop=\count299
+\FV@LoopCount=\count300
+\FV@NCharsBox=\box57
+\FV@BreakIndent=\dimen152
+\FV@BreakIndentNChars=\count301
+\FV@BreakSymbolSepLeft=\dimen153
+\FV@BreakSymbolSepLeftNChars=\count302
+\FV@BreakSymbolSepRight=\dimen154
+\FV@BreakSymbolSepRightNChars=\count303
+\FV@BreakSymbolIndentLeft=\dimen155
+\FV@BreakSymbolIndentLeftNChars=\count304
+\FV@BreakSymbolIndentRight=\dimen156
+\FV@BreakSymbolIndentRightNChars=\count305
+\c@FancyVerbLineBreakLast=\count306
+\FV@LineBox=\box58
+\FV@LineIndentBox=\box59
+\c@FV@BreakBufferDepth=\count307
+\FV@LineWidth=\dimen157
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/latex2pydata/latex2pydata.sty
+Package: latex2pydata 2025/03/26 v0.6.0 latex2pydata - write data to file in Py
+thon literal format
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr
+/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks22
+\pgfkeys@temptoks=\toks23
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfil
+tered.code.tex
+\pgfkeys@tmptoks=\toks24
+))) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks25
+\pgfopts@list@add@b@toks=\toks26
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count308
+\float@exts=\toks27
+\float@box=\box60
+\@float@everytoks=\toks28
+\@floatcapt=\box61
+)
+\c@minted@FancyVerbLineTemp=\count309
+\@float@every@listing=\toks29
+\c@listing=\count310
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
+(/usr/local/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+(/usr/local/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count311
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen158
+\Hy@linkcounter=\count312
+\Hy@pagecounter=\count313
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count314
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+
+! Package hyperref Error: Wrong DVI mode driver option `pdfmark',
+(hyperref)                because pdfTeX or LuaTeX is running in PDF mode.
+
+See the hyperref package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4040 \ProcessKeyvalOptions{Hyp}
+                                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package hyperref Info: Option `breaklinks' set `true' on input line 4040.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4040.
+
+Package hyperref Warning: Option `pagecolor' is not available anymore.
+
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count315
+(/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen159
+(/usr/local/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count316
+\Field@Width=\dimen160
+\Fld@charsize=\dimen161
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring ON on input line 6060.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count317
+\c@Item=\count318
+\c@Hfootnote=\count319
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count320
+\c@bookmark@seq@number=\count321
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip67
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count322
+\lst@gtempboxa=\box62
+\lst@token=\toks30
+\lst@length=\count323
+\lst@currlwidth=\dimen162
+\lst@column=\count324
+\lst@pos=\count325
+\lst@lostspace=\dimen163
+\lst@width=\dimen164
+\lst@newlines=\count326
+\lst@lineno=\count327
+\lst@maxwidth=\dimen165
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+\c@lstnumber=\count328
+\lst@skipnumbers=\count329
+\lst@framebox=\box63
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2024/09/23 1.10c listings configuration
+))
+Package: listings 2024/09/23 1.10c (Carsten Heinz)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks31
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen166
+\ar@mcellbox=\box64
+\extrarowheight=\dimen167
+\NC@list=\toks32
+\extratabsurround=\skip68
+\backup@length=\skip69
+\ar@cellbox=\box65
+)
+\TX@col@width=\dimen168
+\TX@old@table=\dimen169
+\TX@old@col=\dimen170
+\TX@target=\dimen171
+\TX@delta=\dimen172
+\TX@cols=\count330
+\TX@ftn=\toks33
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
+\everycr=\toks34
+\minrowclearance=\skip70
+\rownum=\count331
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks35
+\c@algorithm=\count332
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count333
+\c@ALC@line=\count334
+\c@ALC@rem=\count335
+\c@ALC@depth=\count336
+\ALC@tlm=\skip71
+\algorithmicindent=\skip72
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count337
+\c@Blindtext=\count338
+\c@blind@countparstart=\count339
+\blind@countxx=\count340
+\blindtext@numBlindtext=\count341
+\blind@countyy=\count342
+\c@blindlist=\count343
+\c@blindlistlevel=\count344
+\c@blindlist@level=\count345
+\blind@listitem=\count346
+\c@blind@listcount=\count347
+\c@blind@levelcount=\count348
+\blind@mathformula=\count349
+\blind@Mathformula=\count350
+\c@blind@randomcount=\count351
+\c@blind@randommax=\count352
+\c@blind@pangramcount=\count353
+\c@blind@pangrammax=\count354
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip73
+\cftbeforetoctitleskip=\skip74
+\cftaftertoctitleskip=\skip75
+\cftbeforepartskip=\skip76
+\cftpartnumwidth=\skip77
+\cftpartindent=\skip78
+\cftbeforechapskip=\skip79
+\cftchapindent=\skip80
+\cftchapnumwidth=\skip81
+\cftbeforesecskip=\skip82
+\cftsecindent=\skip83
+\cftsecnumwidth=\skip84
+\cftbeforesubsecskip=\skip85
+\cftsubsecindent=\skip86
+\cftsubsecnumwidth=\skip87
+\cftbeforesubsubsecskip=\skip88
+\cftsubsubsecindent=\skip89
+\cftsubsubsecnumwidth=\skip90
+\cftbeforeparaskip=\skip91
+\cftparaindent=\skip92
+\cftparanumwidth=\skip93
+\cftbeforesubparaskip=\skip94
+\cftsubparaindent=\skip95
+\cftsubparanumwidth=\skip96
+\cftbeforeloftitleskip=\skip97
+\cftafterloftitleskip=\skip98
+\cftbeforefigskip=\skip99
+\cftfigindent=\skip100
+\cftfignumwidth=\skip101
+\c@lofdepth=\count355
+\c@lotdepth=\count356
+\cftbeforelottitleskip=\skip102
+\cftafterlottitleskip=\skip103
+\cftbeforetabskip=\skip104
+\cfttabindent=\skip105
+\cfttabnumwidth=\skip106
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip107
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks36
+\ex@=\dimen173
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen174
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count357
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count358
+\leftroot@=\count359
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count360
+\DOTSCASE@=\count361
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box66
+\strutbox@=\box67
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen175
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count362
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count363
+\dotsspace@=\muskip18
+\c@parentequation=\count364
+\dspbrk@lvl=\count365
+\tag@help=\toks37
+\row@=\count366
+\column@=\count367
+\maxfields@=\count368
+\andhelp@=\toks38
+\eqnshift@=\dimen176
+\alignsep@=\dimen177
+\tagshift@=\dimen178
+\tagwidth@=\dimen179
+\totwidth@=\dimen180
+\lineht@=\dimen181
+\@envbody=\toks39
+\multlinegap=\skip108
+\multlinetaggap=\skip109
+\mathdisplay@stack=\toks40
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+\@LN@amsmath@ams@eqpen=\count369
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2025/09/09 version 6.8.0 text color boxes
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/
+local/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texl
+ive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks41
+\pgfutil@tempdima=\dimen182
+\pgfutil@tempdimb=\dimen183
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box68
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/
+local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen184
+\Gin@req@width=\dimen185
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@x=\dimen186
+\pgf@y=\dimen187
+\pgf@xa=\dimen188
+\pgf@ya=\dimen189
+\pgf@xb=\dimen190
+\pgf@yb=\dimen191
+\pgf@xc=\dimen192
+\pgf@yc=\dimen193
+\pgf@xd=\dimen194
+\pgf@yd=\dimen195
+\w@pgf@writea=\write5
+\r@pgf@reada=\read4
+\c@pgf@counta=\count370
+\c@pgf@countb=\count371
+\c@pgf@countc=\count372
+\c@pgf@countd=\count373
+\t@pgf@toka=\toks42
+\t@pgf@tokb=\toks43
+\t@pgf@tokc=\toks44
+\pgf@sys@id@count=\count374
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count375
+\pgfsyssoftpath@bigbuffer@items=\count376
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+LaTeX Info: Redefining \color on input line 762.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr
+/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen196
+\pgfmath@count=\count377
+\pgfmath@box=\box69
+\pgfmath@toks=\toks45
+\pgfmath@stack@operand=\toks46
+\pgfmath@stack@operation=\toks47
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/mat
+h/pgfmathcalc.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/mat
+h/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count378
+)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen197
+\pgf@picmaxx=\dimen198
+\pgf@picminy=\dimen199
+\pgf@picmaxy=\dimen256
+\pgf@pathminx=\dimen257
+\pgf@pathmaxx=\dimen258
+\pgf@pathminy=\dimen259
+\pgf@pathmaxy=\dimen260
+\pgf@xx=\dimen261
+\pgf@xy=\dimen262
+\pgf@yx=\dimen263
+\pgf@yy=\dimen264
+\pgf@zx=\dimen265
+\pgf@zy=\dimen266
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen267
+\pgf@path@lasty=\dimen268
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen269
+\pgf@shorten@start@additional=\dimen270
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box70
+\pgf@hbox=\box71
+\pgf@layerbox@main=\box72
+\pgf@picture@serial@count=\count379
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen271
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen272
+\pgf@pt@y=\dimen273
+\pgf@pt@temp=\dimen274
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen275
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen276
+\pgf@sys@shading@range@num=\count380
+\pgf@shadingcount=\count381
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box73
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.
+tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box74
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen277
+\pgf@nodesepend=\dimen278
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr
+/local/texlive/2025/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texli
+ve/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/
+2025/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen279
+\pgffor@skip=\dimen280
+\pgffor@stack=\toks48
+\pgffor@toks=\toks49
+))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count382
+\pgfplotmarksize=\dimen281
+)
+\tikz@lastx=\dimen282
+\tikz@lasty=\dimen283
+\tikz@lastxsaved=\dimen284
+\tikz@lastysaved=\dimen285
+\tikz@lastmovetox=\dimen286
+\tikz@lastmovetoy=\dimen287
+\tikzleveldistance=\dimen288
+\tikzsiblingdistance=\dimen289
+\tikz@figbox=\box75
+\tikz@figbox@bg=\box76
+\tikz@tempbox=\box77
+\tikz@tempbox@bg=\box78
+\tikztreelevel=\count383
+\tikznumberofchildren=\count384
+\tikznumberofcurrentchild=\count385
+\tikz@fig@count=\count386
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count387
+\pgfmatrixcurrentcolumn=\count388
+\pgf@matrix@numberofcolumns=\count389
+)
+\tikz@expandcount=\count390
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (/usr/local/texlive/2025/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+(/usr/local/texlive/2025/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box79
+\tcb@upperbox=\box80
+\tcb@lowerbox=\box81
+\tcb@phantombox=\box82
+\c@tcbbreakpart=\count391
+\c@tcblayer=\count392
+\c@tcolorbox@number=\count393
+\l__tcobox_tmpa_box=\box83
+\l__tcobox_tmpa_dim=\dimen290
+\tcb@temp=\box84
+\tcb@temp=\box85
+\tcb@temp=\box86
+\tcb@temp=\box87
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip110
+\enit@outerparindent=\dimen291
+\enit@toks=\toks50
+\enit@inbox=\box88
+\enit@count@id=\count394
+\enitdp@description=\count395
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2024-10-27 v4.22 Multi-page Table package (DPC)
+\LTleft=\skip111
+\LTright=\skip112
+\LTpre=\skip113
+\LTpost=\skip114
+\LTchunksize=\count396
+\LTcapwidth=\dimen292
+\LT@head=\box89
+\LT@firsthead=\box90
+\LT@foot=\box91
+\LT@lastfoot=\box92
+\LT@gbox=\box93
+\LT@cols=\count397
+\LT@rows=\count398
+\c@LT@tables=\count399
+\c@LT@chunks=\count400
+\LT@p@ftn=\toks51
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/txfonts/txfonts.sty
+Package: txfonts 2008/01/22 v3.2.1
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/txr/m/n on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/txr/m/n on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/txr/m/n --> OT1/txr/bx/n on input line 22.
+\symitalic=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `italic' in version `bold'
+(Font)                  OT1/txr/m/it --> OT1/txr/bx/it on input line 26.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/txr/bx/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/txr/bx/n on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/txr/m/it on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/txr/m/it on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/txr/m/it --> OT1/txr/bx/it on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/txss/m/n on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/txss/m/n on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/txss/m/n --> OT1/txss/b/n on input line 41.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/txtt/m/n on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/txtt/m/n on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/txtt/m/n --> OT1/txtt/b/n on input line 51.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/txmi/m/it on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/txmi/m/it on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/txmi/m/it --> OML/txmi/bx/it on input line 59.
+\symlettersA=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `lettersA' in version `bold'
+(Font)                  U/txmia/m/it --> U/txmia/bx/it on input line 67.
+LaTeX Font Info:    Redeclaring math alphabet \mathfrak on input line 70.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/txsy/m/n on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/txsy/m/n on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/txsy/m/n --> OMS/txsy/bx/n on input line 78.
+LaTeX Font Info:    Redeclaring symbol font `AMSa' on input line 93.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `normal'
+(Font)                  U/msa/m/n --> U/txsya/m/n on input line 93.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
+(Font)                  U/msa/m/n --> U/txsya/m/n on input line 93.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
+(Font)                  U/txsya/m/n --> U/txsya/bx/n on input line 94.
+LaTeX Font Info:    Redeclaring symbol font `AMSb' on input line 102.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `normal'
+(Font)                  U/msb/m/n --> U/txsyb/m/n on input line 102.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
+(Font)                  U/msb/m/n --> U/txsyb/m/n on input line 102.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
+(Font)                  U/txsyb/m/n --> U/txsyb/bx/n on input line 103.
+\symsymbolsC=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `bold'
+(Font)                  U/txsyc/m/n --> U/txsyc/bx/n on input line 113.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/txex/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/txex/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/txex/m/n --> OMX/txex/bx/n on input line 121.
+\symlargesymbolsA=\mathgroup9
+LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
+(Font)                  U/txexa/m/n --> U/txexa/bx/n on input line 129.
+LaTeX Font Info:    Redeclaring math symbol \mathsterling on input line 164.
+LaTeX Info: Redefining \not on input line 1043.
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/pstool/pstool.sty
+Package: pstool 2018/01/20 v1.5e Wrapper for processing PostScript/psfrag figur
+es
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+
+Package ifplatform Warning: 
+    shell escape is disabled, so I can only detect \ifwindows.
+
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/filemod/filemod.sty
+Package: filemod 2011/09/19 v1.2 Get and compare file modification times
+(/usr/local/texlive/2025/texmf-dist/tex/latex/filemod/filemod-expmin.sty
+Package: filemod-expmin 2011/09/19 v1.2 Get and compare file modification times
+ (expandable; minimal)
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/bigfoot/suffix.sty
+Package: suffix 2006/07/15 1.5a Variant command support
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local
+/texlive/2025/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks52
+\XKV@tempa@toks=\toks53
+)
+\XKV@depth=\count401
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-04-29 L3 programming layer (loader) 
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-04-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count402
+))
+\pstool@out=\write6
+\pstool@mainfile@ior=\read5
+\pstool@auxfile@ior=\read6
+
+Package pstool Warning: 
+  Package option [process=none] activated
+  because -shell-escape is not enabled.
+This warning occurred on input line 163.
+
+runsystem(cd ""; cp -- "output.aux" "output.oldaux" )...disabled (restricted).
+
+)
+\c@theorem=\count403
+\c@lemma=\count404
+\c@corollary=\count405
+\c@claim=\count406
+\c@definition=\count407
+\c@reqkFunctional=\count408
+\c@reqkQuality=\count409
+\c@reqkConstraint=\count410
+\c@reqkInterface=\count411
+\c@reqkBusiness=\count412
+\c@useCase=\count413
+\c@userStory=\count414
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/glossaries/base/glossaries.sty
+Package: glossaries 2025/08/11 v4.8 (NLCT)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
+Package: mfirstuc 2025/04/03 v2.09 (NLCT)
+\@glsmfirst=\toks54
+\@glsmrest=\toks55
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/xfor/xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/datatool/datatool-base.sty
+Package: datatool-base 2025/04/25 v3.4.1 (NLCT)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tracklang/tracklang.sty
+Package: tracklang 2025/03/11 v1.6.6 (NLCT) Track Languages
+(/usr/local/texlive/2025/texmf-dist/tex/generic/tracklang/tracklang.tex)) (/usr
+/local/texlive/2025/texmf-dist/tex/latex/datatool/datatool-l3fp.def
+File: datatool-l3fp.def 2025/04/25 v3.4.1 (NLCT)
+)
+\@dtl@toks=\toks56
+\@dtl@tmpcount=\count415
+\dtl@tmplength=\skip115
+\l__datatool_measure_box=\box94
+\dtl@sortresult=\count416
+(/usr/local/texlive/2025/texmf-dist/tex/latex/datatool/datatool-utf8.ldf
+File: datatool-utf8.ldf 2025/04/25 v3.4.1 (NLCT)
+)
+\@dtl@datatype=\count417
+\l__datatool_tmpa_int=\count418
+\l__datatool_tmpb_int=\count419
+\l__datatool_tmpc_int=\count420
+\l__datatool_tmpd_int=\count421
+\l__datatool_count_int=\count422
+\l__datatool_tmp_datatype_int=\count423
+\l__datatool_tmpa_dim=\dimen293
+\l__datatool_tmpb_dim=\dimen294
+\c_datatool_unknown_int=\count424
+\l__datatool_year_int=\count425
+\l__datatool_month_int=\count426
+\l__datatool_day_int=\count427
+\l__datatool_hour_int=\count428
+\l__datatool_minute_int=\count429
+\l__datatool_second_int=\count430
+\l__datatool_tzhour_int=\count431
+\l__datatool_tzminute_int=\count432
+\l__datatool_julian_int=\count433
+\l__datatool_local_julian_int=\count434
+\l__datatool_prefix_int=\count435
+\l__datatool_suffix_int=\count436
+\@dtl@foreach@level=\count437
+\dtl@codeA=\count438
+\dtl@codeB=\count439
+)
+\gls@level=\count440
+\@gls@tmpb=\toks57
+\gls@tmplen=\skip116
+\l__glossaries_tmpa_dim=\dimen295
+\l__glossaries_tmpb_dim=\dimen296
+\glskeylisttok=\toks58
+\glslabeltok=\toks59
+\glsshorttok=\toks60
+\glslongtok=\toks61
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/glossaries/styles/glossary-hypern
+av.sty
+Package: glossary-hypernav 2025/08/11 v4.8 (NLCT)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/glossaries/styles/glossary-list.s
+ty
+Package: glossary-list 2025/08/11 v4.8 (NLCT)
+\glslistdottedwidth=\skip117
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/glossaries/styles/glossary-long.s
+ty
+Package: glossary-long 2025/08/11 v4.8 (NLCT)
+\glsdescwidth=\skip118
+\glspagelistwidth=\skip119
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/glossaries/styles/glossary-super.
+sty
+Package: glossary-super 2025/08/11 v4.8 (NLCT)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/supertabular/supertabular.sty
+Package: supertabular 2024/07/20 v4.2c the supertabular environment
+\c@tracingst=\count441
+\ST@wd=\dimen297
+\ST@rightskip=\skip120
+\ST@leftskip=\skip121
+\ST@parfillskip=\skip122
+\ST@pageleft=\dimen298
+\ST@headht=\dimen299
+\ST@tailht=\dimen300
+\ST@pagesofar=\dimen301
+\ST@pboxht=\dimen302
+\ST@rowht=\dimen303
+\ST@prevht=\dimen304
+\ST@toadd=\dimen305
+\ST@dimen=\dimen306
+\ST@pbox=\box95
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/glossaries/styles/glossary-tree.s
+ty
+Package: glossary-tree 2025/08/11 v4.8 (NLCT)
+\l__glossaries_tree_max_known_level_int=\count442
+\l__glossaries_tree_offset_dim=\dimen307
+\l__glossaries_tree_namewidth_dim=\dimen308
+\l__glossaries_tree_symbolwidth_dim=\dimen309
+\l__glossaries_tree_prenamesym_width_dim=\dimen310
+\l__glossaries_tree_presubnamesym_width_dim=\dimen311
+\l__glossaries_tree_namewidth_padding_dim=\dimen312
+\l__glossaries_tree_symbolwidth_padding_dim=\dimen313
+\l__glossaries_tree_namesymbolwidth_dim=\dimen314
+\l__glossaries_tree_namesymbolwidth_padding_dim=\dimen315
+\l__glossaries_tree_level_int=\count443
+\glstreeindent=\skip123
+)) (./itGlossary.tex)
+\@indexfile=\write7
+\openout7 = `output.idx'.
+
+Writing index file output.idx
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+)
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 3
+60.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/txfonts/ot1txr.fd
+File: ot1txr.fd 2000/12/15 v3.1
+) (./output.aux (./prologue.aux
+
+LaTeX Warning: Label `Table::UpdateHistory' multiply defined.
+
+) (./itIntroduction.aux) (./itPasswords.aux) (./itHosts.aux) (./KanbanSetup.aux
+) (./Hosts.aux) (./LinuxCommands.aux) (./ProjectProposal.aux) (./AWSDeployment.
+aux) (./LaTeXDocker.aux) (./itBugzilla.aux) (./itOverleaf.aux
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
+) (./SSLResearch.aux) (./itOverleaf_Configuration.aux
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
+) (./DomainHosting.aux) (./CompilingOverleaf.aux
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
+) (./LaTeXCompilationAction.aux) (./PrometheusWithGrafana.aux
+
+LaTeX Warning: Label `fig:repos' multiply defined.
+
+
+LaTeX Warning: Label `fig:repos' multiply defined.
+
+) (./JenkinsPytest.aux) (./LoadBalancer.aux) (./itAppendix.aux))
+\openout1 = `output.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 360.
+LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
+360.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/txfonts/omltxmi.fd
+File: omltxmi.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 360.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 360.
+LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
+360.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/txfonts/omstxsy.fd
+File: omstxsy.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 360.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 360.
+LaTeX Font Info:    ... okay on input line 360.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 360.
+LaTeX Font Info:    ... okay on input line 360.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 360.
+LaTeX Font Info:    ... okay on input line 360.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 360.
+LaTeX Font Info:    Trying to load font information for OMX+txex on input line 
+360.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/txfonts/omxtxex.fd
+File: omxtxex.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 360.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 360.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 3
+60.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/txfonts/utxexa.fd
+File: utxexa.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 360.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 360.
+LaTeX Font Info:    ... okay on input line 360.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 360.
+LaTeX Font Info:    ... okay on input line 360.
+(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count444
+\scratchdimen=\dimen316
+\scratchbox=\box96
+\nofMPsegments=\count445
+\nofMParguments=\count446
+\everyMPshowfont=\toks62
+\MPscratchCnt=\count447
+\MPscratchDim=\dimen317
+\MPnumerator=\count448
+\makeMPintoPDFobject=\count449
+\everyMPtoPDFconversion=\toks63
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package hyperref Info: Link coloring ON on input line 360.
+(./output.out) (./output.out)
+\@outlinefile=\write8
+\openout8 = `output.out'.
+
+\c@lstlisting=\count450
+\openout2 = `prologue.aux'.
+
+(./prologue.tex
+Title page
+Title page
+! Misplaced alignment tab character &.
+\@author ->Justin Baumann &
+                            Gianna Cerbone & Thomas Ung & Spurthi Setty\\ St...
+l.12 \end
+         {titlepage}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\@author ->Justin Baumann & Gianna Cerbone &
+                                             Thomas Ung & Spurthi Setty\\ St...
+l.12 \end
+         {titlepage}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\@author ...aumann & Gianna Cerbone & Thomas Ung &
+                                                   Spurthi Setty\\ Stevens.edu 
+l.12 \end
+         {titlepage}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+
+[1
+Non-PDF special ignored!
+<special> header=psfrag.pro
+
+
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
+al/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc}]
+Copyleft page
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 1
+6.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/txfonts/ts1txr.fd
+File: ts1txr.fd 2000/12/15 v3.1
+)
+! Misplaced alignment tab character &.
+\@author ->Justin Baumann &
+                            Gianna Cerbone & Thomas Ung & Spurthi Setty\\ St...
+l.16 \makecopyright
+                   
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\@author ->Justin Baumann & Gianna Cerbone &
+                                             Thomas Ung & Spurthi Setty\\ St...
+l.16 \makecopyright
+                   
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\@author ...aumann & Gianna Cerbone & Thomas Ung &
+                                                   Spurthi Setty\\ Stevens.edu 
+l.16 \makecopyright
+                   
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+
+[2
+
+
+]
+Abstract
+! Misplaced alignment tab character &.
+\@author ->Justin Baumann &
+                            Gianna Cerbone & Thomas Ung & Spurthi Setty\\ St...
+l.21 \begin{abstract}
+                     
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\@author ->Justin Baumann & Gianna Cerbone &
+                                             Thomas Ung & Spurthi Setty\\ St...
+l.21 \begin{abstract}
+                     
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\@author ...aumann & Gianna Cerbone & Thomas Ung &
+                                                   Spurthi Setty\\ Stevens.edu 
+l.21 \begin{abstract}
+                     
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+(./abstract.tex
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 9.
+[3
+
+])
+
+[4]
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <24.88> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 38.
+(./output.toc
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <10.95> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <10.95> not available
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 1.
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 1
+.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/txfonts/utxsya.fd
+File: utxsya.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 1
+.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/txfonts/utxsyb.fd
+File: utxsyb.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 1
+.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/txfonts/utxmia.fd
+File: utxmia.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
+.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/txfonts/utxsyc.fd
+File: utxsyc.fd 2000/12/15 v3.1
+)
+
+[5
+
+]
+LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
+46.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/txfonts/ot1txtt.fd
+File: ot1txtt.fd 2000/12/15 v3.1
+)
+
+[6]
+
+[7]
+
+[8])
+\tf@toc=\write9
+\openout9 = `output.toc'.
+
+
+
+[9] (./output.lot)
+\tf@lot=\write10
+\openout10 = `output.lot'.
+
+
+
+[10
+
+] (./output.lof
+Overfull \hbox (14.01045pt too wide) in paragraph at lines 35--35
+ [][] [][][]\OT1/txr/m/n/12 Load Bal-ancer and Vir-tual Host de-ploy-ment on Di
+g-i-talO-cean droplet (\OT1/txtt/m/n/12 167.99.54.162\OT1/txr/m/n/12 ).[][] [] 
+ 
+ []
+
+)
+\tf@lof=\write11
+\openout11 = `output.lof'.
+
+
+
+[11
+
+])
+\openout2 = `itIntroduction.aux'.
+
+(./itIntroduction.tex
+Chapter 1.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+)
+
+[1
+
+
+
+
+
+]
+\openout2 = `itPasswords.aux'.
+
+(./itPasswords.tex
+Chapter 2.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 14--14
+[]|\OT1/txr/m/n/10.95 SSH/root ac-count on Dig-i-talO-cean. Pass-word fol-lows 
+An-
+ []
+
+)
+
+[2
+
+
+
+
+]
+\openout2 = `itHosts.aux'.
+
+No file itHosts.tex.
+\openout2 = `KanbanSetup.aux'.
+
+(./KanbanSetup.tex
+Chapter 3.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17.28> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 8.
+)
+
+[3
+
+
+
+
+
+
+
+]
+\openout2 = `Hosts.aux'.
+
+(./Hosts.tex
+Chapter 4.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+
+Underfull \hbox (badness 1565) in paragraph at lines 16--16
+[]|\OT1/txr/m/n/10.95 Root pass-word stored sep-a-rately; SSH keys rec-om-mende
+d.
+ []
+
+)
+
+[4
+
+
+
+
+]
+\openout2 = `LinuxCommands.aux'.
+
+(./LinuxCommands.tex
+Chapter 5.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+Package epstopdf Info: Source file: <eps/LinuxBash.eps>
+(epstopdf)                    date: 2025-11-12 23:43:21
+(epstopdf)                    size: 2811732 bytes
+(epstopdf)             Output file: <eps/LinuxBash-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-11-12 23:43:41
+(epstopdf)                    size: 72071 bytes
+(epstopdf)             Command: <repstopdf --outfile=eps/LinuxBash-eps-converte
+d-to.pdf eps/LinuxBash.eps>
+(epstopdf)             \includegraphics on input line 14.
+Package epstopdf Info: Output file is already uptodate.
+<eps/LinuxBash-eps-converted-to.pdf, id=878, 1269.74374pt x 366.36874pt>
+File: eps/LinuxBash-eps-converted-to.pdf Graphic file (type pdf)
+<use eps/LinuxBash-eps-converted-to.pdf>
+Package pdftex.def Info: eps/LinuxBash-eps-converted-to.pdf  used on input line
+ 14.
+(pdftex.def)             Requested size: 469.75499pt x 135.54312pt.
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 21.
+
+
+[5
+
+
+
+
+ <./eps/LinuxBash-eps-converted-to.pdf>]
+LaTeX Font Info:    Trying to load font information for TS1+txtt on input line 
+35.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/txfonts/ts1txtt.fd
+File: ts1txtt.fd 2000/12/15 v3.1
+)
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[6])
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[7]
+\openout2 = `ProjectProposal.aux'.
+
+(./ProjectProposal.tex
+Chapter 6.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+)
+
+[8
+
+
+
+
+]
+\openout2 = `AWSDeployment.aux'.
+
+(./AWSDeployment.tex
+Chapter 7.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+\pydata@fh@0=\write12
+\openout12 = `_78E6221F6393D1356681DB398F14CE6D.data.minted'.
+
+runsystem(latexminted config  --timestamp 20251112234709Z 78E6221F6393D1356681D
+B398F14CE6D)...executed safely (allowed).
+
+(./_78E6221F6393D1356681DB398F14CE6D.config.minted)
+runsystem(latexminted cleanconfig  --timestamp 20251112234709Z 78E6221F6393D135
+6681DB398F14CE6D)...executed safely (allowed).
+
+(./_minted/default.style.minted) (./_minted/15E6D25E4719382BD9B7725FDE2A03D1.hi
+ghlight.minted) (./_minted/FC3F26139970BC5A6DCEC74D77FCB0DF.highlight.minted)
+
+[9
+
+
+
+
+] (./_minted/6AD5A2E396B6060DFBFCD435D92A573D.highlight.minted) (./_minted/1ED9
+8F9F7165DE9D9AD700C8E16CB4B6.highlight.minted)
+\openout12 = `_78E6221F6393D1356681DB398F14CE6D.data.minted'.
+
+runsystem(latexminted highlight  --timestamp 20251112234709Z 78E6221F6393D13566
+81DB398F14CE6D)...executed safely (allowed).
+
+(./_78E6221F6393D1356681DB398F14CE6D.message.minted)
+
+! Package minted Error: 
+ => ./AWSDeployment.tex:76: Pygments lexer "base" is unknown.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78     \end{minted}
+                     
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+(./_minted/1A41EA5405A3CFAF389E9793951DDCF8.highlight.minted
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[10]
+Overfull \hbox (180.48293pt too wide) in paragraph at lines 5--5
+[][]\OT1/txtt/m/n/10.95 "arn:aws:sts::474150574930:assumed[]role/AWSReservedSSO
+_AdministratorAccess_67ee4a10fe53d47e/spurthi"[]|  
+ []
+
+) (./_minted/D67347C0F057D02EDAD1564C241824E4.highlight.minted) (./_minted/B6C8
+1856252B8E32F48767959E85DFE5.highlight.minted) (./_minted/C7E62E7CC598AABA72159
+147048E44EF.highlight.minted
+Overfull \hbox (31.01585pt too wide) in paragraph at lines 4--4
+[][]\OT1/txtt/m/n/10.95 "arn:aws:ecr:us[]east[]1:474150574930:repository/color[
+]buttons[]app"[],|  
+ []
+
+
+Overfull \hbox (25.26712pt too wide) in paragraph at lines 7--7
+[][]\OT1/txtt/m/n/10.95 "474150574930.dkr.ecr.us[]east[]1.amazonaws.com/color[]
+buttons[]app"[],|  
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[11]) (./_minted/5BA41A1F0BCFD830326E5EB194629604.highlight.minted) (./_minted/
+6E9DAC8FE73AC73AFD8E926B38017912.highlight.minted) (./_minted/78A97970509320AFA
+B4422B2BFCFFE40.highlight.minted) (./_minted/7663E3174577E0ABB077907D71B5536C.h
+ighlight.minted
+Overfull \hbox (31.01585pt too wide) in paragraph at lines 2--2
+[]\OT1/txtt/m/n/10.95 %AWS_ACCOUNT_ID%[].dkr.ecr.[]%AWS_REGION%[].amazonaws.com
+/[]%ECR_REPO%[]:[]%IMAGE_TAG%[]|  
+ []
+
+) (./_minted/63FCB2E1EA96957954F1034C96D562FF.highlight.minted
+Overfull \hbox (36.76459pt too wide) in paragraph at lines 2--2
+[]\OT1/txtt/m/n/10.95 %AWS_ACCOUNT_ID%[].dkr.ecr.[]%AWS_REGION%[].amazonaws.com
+/[]%ECR_REPO%[]:[]%IMAGE_TAG%[]%|  
+ []
+
+) (./_minted/FA25EC659D0ACF1D02A646DC68BBC154.highlight.minted) (./_minted/0C7C
+D16183EB7594A7ACB7B6D61EC9DD.highlight.minted) (./_minted/522A2EC034765D3FC5709
+FADC38A75F1.highlight.minted
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[12]
+Overfull \hbox (508.16074pt too wide) in paragraph at lines 2--2
+[]\OT1/txtt/m/n/10.95 "{\"[]Version\[]":\"[]2012[]10[]17\[]",\"[]Statement\[]":
+[{\"[]Effect\[]":\"[]Allow\[]",\"[]Principal\[]":{\"[]Service\[]":\"[]build.app
+runner.amazonaws.com\[]"},\"[]Action\[]":\"[]sts:AssumeRole\[]"}]}"[]|  
+ []
+
+) (./_minted/C6A2117F6B816F5EB75203073444A047.highlight.minted
+Overfull \hbox (8.02092pt too wide) in paragraph at lines 2--2
+\OT1/txtt/m/n/10.95 arn:aws:iam::aws:policy/service[]role/AWSAppRunnerServicePo
+licyForECRAccess|  
+ []
+
+) (./_minted/7832DB90089A5DBA163D4C7E1C912130.highlight.minted
+Overfull \hbox (2.27219pt too wide) in paragraph at lines 2--2
+[]\OT1/txtt/m/n/10.95 ACCESS_ROLE_ARN[]=arn:aws:iam::[]%AWS_ACCOUNT_ID%[]:role/
+AppRunnerECRAccessRole|  
+ []
+
+) (./_minted/68A83A1801F7DBEF959691E365DEB705.highlight.minted
+Overfull \hbox (1404.96317pt too wide) in paragraph at lines 5--5
+[]\OT1/txtt/m/n/10.95 "{\"[]AuthenticationConfiguration\[]":{\"[]AccessRoleArn\
+[]":\"[][]%ACCESS_ROLE_ARN%[]\[]"},\"[]ImageRepository\[]":{\"[]ImageIdentifier
+\[]":\"[][]%AWS_ACCOUNT_ID%[].dkr.ecr.[]%AWS_REGION%[].amazonaws.com/[]%ECR_REP
+O%[]:[]%IMAGE_TAG%[]\[]",\"[]ImageRepositoryType\[]":\"[]ECR\[]",\"[]ImageConfi
+guration\[]":{\"[]Port\[]":\"[][]%CONTAINER_PORT%[]\[]"}},\"[]AutoDeploymentsEn
+abled\[]":true}"[] 
+ []
+
+) (./_minted/3C677E68498C8703CCB70903FFD2ABFC.highlight.minted
+Overfull \hbox (36.76459pt too wide) in paragraph at lines 3--3
+[]\OT1/txtt/m/n/10.95 "ServiceSummaryList[?ServiceName==\TS1/txtt/m/n/10.95 '[]
+[]\OT1/txtt/m/n/10.95 %APP_NAME%[][]\TS1/txtt/m/n/10.95 '\OT1/txtt/m/n/10.95 ].
+[ServiceArn,Status,ServiceUrl]"[] 
+ []
+
+) (./_minted/F2BC891967B520B20ADF9C30B89E8859.highlight.minted)
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[13] (./_minted/4F726DD5C5EC7AA22110B03ED6E8F1A1.highlight.minted)
+Package epstopdf Info: Source file: <eps/ColorControllerUML.eps>
+(epstopdf)                    date: 2025-11-12 23:43:21
+(epstopdf)                    size: 140365 bytes
+(epstopdf)             Output file: <eps/ColorControllerUML-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2025-11-12 23:43:48
+(epstopdf)                    size: 11482 bytes
+(epstopdf)             Command: <repstopdf --outfile=eps/ColorControllerUML-eps
+-converted-to.pdf eps/ColorControllerUML.eps>
+(epstopdf)             \includegraphics on input line 271.
+Package epstopdf Info: Output file is already uptodate.
+<eps/ColorControllerUML-eps-converted-to.pdf, id=977, 401.5pt x 165.61874pt>
+File: eps/ColorControllerUML-eps-converted-to.pdf Graphic file (type pdf)
+<use eps/ColorControllerUML-eps-converted-to.pdf>
+Package pdftex.def Info: eps/ColorControllerUML-eps-converted-to.pdf  used on i
+nput line 271.
+(pdftex.def)             Requested size: 281.85585pt x 116.27348pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[14]
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[15 <./eps/ColorControllerUML-eps-converted-to.pdf>]
+\openout2 = `LaTeXDocker.aux'.
+
+(./LaTeXDocker.tex
+Chapter 8.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+(./_minted/F1B348A4E5427EA681A3D8CB408DC57C.highlight.minted
+Overfull \hbox (1.64116pt too wide) in paragraph at lines 9--9
+[]\OT1/txtt/m/n/10.95 [[]"latexmk"[],[]"[]pdf"[],[]"[]interaction=nonstopmode"[
+],[]"[]halt[]on[]error"[],[]"[]shell[]escape"[]]|  
+ []
+
+) (./_minted/98FA748880853A3A30C93F04A4D94626.highlight.minted
+LaTeX Font Info:    Font shape `OT1/txtt/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/txtt/m/sl' tried instead on input line 2.
+))
+
+[16
+
+
+
+
+]
+\openout2 = `itBugzilla.aux'.
+
+(./itBugzilla.tex
+Chapter 9.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+(./_minted/2B823D151599CCD4E20CD439583C215D.highlight.minted) (./_minted/C9FFC2
+4808EFBB0597F8F8D606C3D6BD.highlight.minted) (./_minted/CC240B705565EC314F525E4
+BE3E58FB9.highlight.minted) (./_minted/25D65ECD87E6BCBF1755E2EDA74399CE.highlig
+ht.minted
+
+[17
+
+
+
+
+]) (./_minted/4AFD8D034CE6504E68EBF1D4B5C6FFF9.highlight.minted) (./_minted/B08
+7F3CB98D7AD277B96B1A6604968BF.highlight.minted) (./_minted/AFDFCD6D296DCC3F57A9
+DB8A2D76E9E1.highlight.minted) (./_minted/E9103D2BC723BBF2EDE196AFC5B69CDF.high
+light.minted
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[18]) (./_minted/DC41763582DE963175F3C8AB2FD3CC06.highlight.minted) (./_minted/
+C446A1F16EEC2791FA027A5F27815A8F.highlight.minted) (./_minted/5B0E02D0CB96F7FB6
+638AE24D34AE3C5.highlight.minted) (./_minted/6619A020D47F71D4042B12A4625DC261.h
+ighlight.minted) (./_minted/76999F3EA234A7BC444374F4763B2C7F.highlight.minted
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[19]) (./_minted/D6AF514CCE0B261463B63D95B0693BA7.highlight.minted) (./_minted/
+2351A07FB5EA8183224CBC5D5117B054.highlight.minted) (./_minted/CBD12A88EE28D1658
+35667708CCAD21E.highlight.minted) (./_minted/76999F3EA234A7BC444374F4763B2C7F.h
+ighlight.minted)
+<png/bugzilla.png, id=1020, 1271.5003pt x 740.7675pt>
+File: png/bugzilla.png Graphic file (type png)
+<use png/bugzilla.png>
+Package pdftex.def Info: png/bugzilla.png  used on input line 231.
+(pdftex.def)             Requested size: 328.82706pt x 191.5664pt.
+)
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[20]
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[21 <./png/bugzilla.png>]
+\openout2 = `itOverleaf.aux'.
+
+(./itOverleaf.tex
+Chapter 10.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+(./_minted/E40A6C030BCAEF6F77B48ED180455269.highlight.minted) (./_minted/44DE3F
+805952DAF4C2E47CA0FDAB9BCD.highlight.minted
+
+[22
+
+
+
+
+]) (./_minted/7CED111B08E81C257DFE461DC1093D4C.highlight.minted) (./_minted/ACE
+6EEEE3DF96CFDBE2E5128BFD9C027.highlight.minted) (./_minted/E9CD32095C9098DA885F
+90103DB649B3.highlight.minted
+Overfull \hbox (1.8264pt too wide) in paragraph at lines 55--1
+\OT1/txr/m/n/10.95 We used \OT1/txtt/m/n/10.95 sharelatex/sharelatex \OT1/txr/m
+/n/10.95 (the Over-leaf CE im-age) with Mon-goDB and Re-dis. Note the \OT1/txr/
+bx/n/10.95 Overleaf-
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[23]) (./_minted/4F9B005EDF2D991DC16FE134BEA10107.highlight.minted) (./_minted/
+2FA550BCF9C9B2CD15B596870C812EDA.highlight.minted) (./_minted/51633974E8ED18C7D
+93ABBD55BF4437B.highlight.minted) (./_minted/F58F80424A9A15CA03E7ADEAA5CB8D14.h
+ighlight.minted
+Overfull \hbox (79.88971pt too wide) in paragraph at lines 120--1
+\OT1/txr/m/it/10.95 Symptom: \OT1/txtt/m/n/10.95 000[]check[]for[]old[]env[]var
+s[]5.sh \OT1/txr/m/n/10.95 re-fuses startup, list-ing \OT1/txtt/m/n/10.95 SHARE
+LATEX[]MONGO[]URL\OT1/txr/m/n/10.95 , \OT1/txtt/m/n/10.95 SHARELATEX[]REDIS[]HO
+ST\OT1/txr/m/n/10.95 ,
+ []
+
+)
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[24] (./_minted/7D163AFCF3E47DF69F63522AE2EC72DD.highlight.minted) (./_minted/8
+2733CB5E7622646A5BEE2AD798AC2DA.highlight.minted) (./_minted/8EF8FC0BD15BE57DF6
+A6FD18B6024098.highlight.minted) (./_minted/08B0038556C9AA7235C54ED9AD919E46.hi
+ghlight.minted) (./_minted/B970E4A1E1CDDEF4659DB1D41C7734BC.highlight.minted) (
+./_minted/944F773137112B915B6DA98E7594EEAC.highlight.minted
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[25]) (./_minted/440C48E148BAD6B787FB0144147CCC0B.highlight.minted)
+<png/overleaf.png, id=1061, 1443.14156pt x 846.91406pt>
+File: png/overleaf.png Graphic file (type png)
+<use png/overleaf.png>
+Package pdftex.def Info: png/overleaf.png  used on input line 227.
+(pdftex.def)             Requested size: 422.77661pt x 248.10582pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[26])
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[27 <./png/overleaf.png>]
+\openout2 = `SSLResearch.aux'.
+
+(./SSLResearch.tex
+Chapter 11.
+
+
+[28
+
+
+
+
+]
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[29]
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[30])
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[31]
+\openout2 = `itOverleaf_Configuration.aux'.
+
+(./itOverleaf_Configuration.tex
+Chapter 12.
+(./_minted/3AF3CB9D93B2987686B5420FF85380A3.highlight.minted) (./_minted/22F319
+FDDBBEF076ADB44D276EEF29F7.highlight.minted
+
+[32
+
+
+
+
+]) (./_minted/34E832F6AA9A985C93802D8CF0B7F972.highlight.minted
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[33]) (./_minted/36C4159D4EAD634BBE3E94D6B273D1C1.highlight.minted) (./_minted/
+B0BDBD032F8051666399F72A65B53F1C.highlight.minted) (./_minted/D41F67273B1D29646
+AF948C269672F01.highlight.minted) (./_minted/229FA61976A4AB15C01BE46BE492AAB8.h
+ighlight.minted) (./_minted/F1F5DA2113D5A3B79E0A29BB963DE141.highlight.minted)
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[34] (./_minted/C0EEBC639CF89E74E60114447E53958A.highlight.minted) (./_minted/2
+25D01C12E17C752E87602891679B08C.highlight.minted) (./_minted/F6EDDAAD1EC203641D
+43D4912A71ECA9.highlight.minted) (./_minted/C27E502E5957A14999178F47ECDAB302.hi
+ghlight.minted) (./_minted/F1F5DA2113D5A3B79E0A29BB963DE141.highlight.minted) (
+./_minted/9E3820E7CED7FCAD026890F68DCF1AD9.highlight.minted
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[35]) (./_minted/5ACF556FCBEEBFF1A29C3C9552118A1C.highlight.minted) (./_minted/
+D5D3D6DC6184534C640C4C8E1CD64C1C.highlight.minted) (./_minted/61457A68274F55C18
+67BE9F34C47F79A.highlight.minted) (./_minted/00342F2DB81E559D9006DED47F568F42.h
+ighlight.minted) (./_minted/40B03286FBD828A5C694D321CD72490A.highlight.minted) 
+(./_minted/62C04D9C8B63860308D7558F9241685E.highlight.minted) (./_minted/35CF05
+C2C68775D8FE15570F2BE4B7ED.highlight.minted) (./_minted/9EEA71C5FDE497844890B56
+E73C10D7A.highlight.minted) (./_minted/481809E53EC00F86AC26A0258223BD94.highlig
+ht.minted
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[36]) (./_minted/4B5138719698AD2B99DA66B586D58B60.highlight.minted) (./_minted/
+7C262D9F5ADA61BABF5E0F874FD856C2.highlight.minted) (./_minted/9295426C8F45935FE
+24283456BDFF495.highlight.minted) (./_minted/F1F5DA2113D5A3B79E0A29BB963DE141.h
+ighlight.minted) (./_minted/6FC7E89AEBB3C2611F190C6F9D661DF4.highlight.minted)
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[37] (./_minted/AB90CF387E907CED51475876452870CF.highlight.minted) (./_minted/A
+454FD69FEEBA9B3146D073EC27A1A03.highlight.minted) (./_minted/39DB9FE12AB4BAE559
+974BF187C00D73.highlight.minted) (./_minted/EBBA7FCA10C590AF3145B44B4D193D51.hi
+ghlight.minted) (./_minted/2E2D815E5EC478C0BF29E5483792A8CD.highlight.minted
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[38]) (./_minted/B8412D032190346072B0B31F0510304C.highlight.minted) (./_minted/
+15C56DD582A574BAECD6D31539D27A51.highlight.minted) (./_minted/D944513248C202C6C
+841AD42E3C8CE16.highlight.minted)
+
+LaTeX Warning: Reference `fig:overleaf-working' on page 39 undefined on input l
+ine 418.
+
+File: png/overleaf.png Graphic file (type png)
+<use png/overleaf.png>
+Package pdftex.def Info: png/overleaf.png  used on input line 423.
+(pdftex.def)             Requested size: 422.77661pt x 248.10582pt.
+)
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[39]
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[40]
+\openout2 = `DomainHosting.aux'.
+
+(./DomainHosting.tex
+Chapter 13.
+
+Overfull \hbox (28.7968pt too wide) in paragraph at lines 9--10
+\OT1/txr/m/n/10.95 group full con-trol over cus-tom DNS records, SSL, and sub-d
+o-mains (like http://overleaf.quackops.me:8090/project),
+ []
+
+
+Overfull \hbox (17.69293pt too wide) in paragraph at lines 31--39
+ [][] 
+ []
+
+
+
+[41
+
+
+
+
+]
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[42]
+Overfull \hbox (70.62596pt too wide) in paragraph at lines 124--124
+[]\OT1/txtt/m/n/10.95 # Hi JustBaumann! You\TS1/txtt/m/n/10.95 '\OT1/txtt/m/n/1
+0.95 ve successfully authenticated, but GitHub does not provide shell access.[]
+ 
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[43]
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <10> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 135.
+
+Overfull \hbox (53.37976pt too wide) in paragraph at lines 153--153
+[]  \OT1/txtt/m/n/10.95 \( -name "*.tex" -o -name "*.bib" -o -name "*.cls" -o -
+name "*.sty" -o -name "*.bst" \) \[] 
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[44])
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[45]
+\openout2 = `CompilingOverleaf.aux'.
+
+(./CompilingOverleaf.tex
+Chapter 14.
+(./_minted/E463E838CCDF4BBE600CBB579254138A.highlight.minted) (./_minted/E99E0E
+D95825DED7F27C6F55238ED17A.highlight.minted) (./_minted/2E50B6A8C4B0BA218A6AE64
+61B8AAB71.highlight.minted)
+<png/cmdoverleaf.png, id=1172, 992.95969pt x 566.115pt>
+File: png/cmdoverleaf.png Graphic file (type png)
+<use png/cmdoverleaf.png>
+Package pdftex.def Info: png/cmdoverleaf.png  used on input line 30.
+(pdftex.def)             Requested size: 234.87749pt x 133.9095pt.
+(./_minted/B6CD051777BAD678AB9D2F77D572D0DA.highlight.minted
+
+[46
+
+
+
+
+ <./png/cmdoverleaf.png>])
+<png/overleafpdf.png, id=1178, 1336.995pt x 802.49812pt>
+File: png/overleafpdf.png Graphic file (type png)
+<use png/overleafpdf.png>
+Package pdftex.def Info: png/overleafpdf.png  used on input line 46.
+(pdftex.def)             Requested size: 234.87749pt x 140.97806pt.
+)
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[47 <./png/overleafpdf.png>]
+\openout2 = `LaTeXCompilationAction.aux'.
+
+(./LaTeXCompilationAction.tex
+Chapter 15.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+
+
+[48
+
+
+
+
+] (./_minted/A271F2307D5EFF748E8E655C28EF520D.highlight.minted
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[49]) (./_minted/4582921D4B93D98AFAF296F3E4A272D4.highlight.minted)
+<png/successworkflows.png, id=1200, 1084.05pt x 263.48438pt>
+File: png/successworkflows.png Graphic file (type png)
+<use png/successworkflows.png>
+Package pdftex.def Info: png/successworkflows.png  used on input line 115.
+(pdftex.def)             Requested size: 399.2946pt x 97.04945pt.
+<png/builds.png, id=1201, 1437.87187pt x 673.76718pt>
+File: png/builds.png Graphic file (type png)
+<use png/builds.png>
+Package pdftex.def Info: png/builds.png  used on input line 122.
+(pdftex.def)             Requested size: 399.2946pt x 187.1011pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[50 <./png/successworkflows.png>]
+<png/testpdfs.png, id=1211, 1428.08531pt x 675.27281pt>
+File: png/testpdfs.png Graphic file (type png)
+<use png/testpdfs.png>
+Package pdftex.def Info: png/testpdfs.png  used on input line 129.
+(pdftex.def)             Requested size: 399.2946pt x 188.80719pt.
+<png/repos.png, id=1212, 1260.20813pt x 621.82312pt>
+File: png/repos.png Graphic file (type png)
+<use png/repos.png>
+Package pdftex.def Info: png/repos.png  used on input line 136.
+(pdftex.def)             Requested size: 399.2946pt x 197.02339pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[51 <./png/builds.png> <./png/testpdfs.png>]
+<png/runnerimagess.png, id=1220, 1388.18625pt x 1350.54562pt>
+File: png/runnerimagess.png Graphic file (type png)
+<use png/runnerimagess.png>
+Package pdftex.def Info: png/runnerimagess.png  used on input line 146.
+(pdftex.def)             Requested size: 399.2946pt x 388.47462pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[52 <./png/repos.png>])
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[53 <./png/runnerimagess.png>]
+\openout2 = `PrometheusWithGrafana.aux'.
+
+(./PrometheusWithGrafana.tex
+Chapter 16.
+<png/PrometheusUI.png, id=1231, 1611.01875pt x 744.53156pt>
+File: png/PrometheusUI.png Graphic file (type png)
+<use png/PrometheusUI.png>
+Package pdftex.def Info: png/PrometheusUI.png  used on input line 15.
+(pdftex.def)             Requested size: 399.2946pt x 184.53058pt.
+
+
+[54
+
+
+
+
+]
+<png/GrafanaDashboard.png, id=1236, 1699.85063pt x 1024.57782pt>
+File: png/GrafanaDashboard.png Graphic file (type png)
+<use png/GrafanaDashboard.png>
+Package pdftex.def Info: png/GrafanaDashboard.png  used on input line 22.
+(pdftex.def)             Requested size: 399.2946pt x 240.66638pt.
+)
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.04622pt}.
+
+[55 <./png/PrometheusUI.png> <./png/GrafanaDashboard.png>]
+\openout2 = `JenkinsPytest.aux'.
+
+(./JenkinsPytest.tex
+Chapter 17.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+
+Overfull \hbox (10.87567pt too wide) in paragraph at lines 43--43
+ []\OT1/txtt/m/n/10.95 docker exec -it jenkins cat /var/jenkins_home/secrets/in
+itialAdminPassword[] 
+ []
+
+
+
+[56
+
+
+
+
+]
+Overfull \hbox (36.76459pt too wide) in paragraph at lines 65--65
+ []\OT1/txtt/m/n/10.95 git remote add origin https://github.com/JustBaumann/jen
+kins-python-pytest-demo.git[] 
+ []
+
+
+Overfull \hbox (17.55525pt too wide) in paragraph at lines 77--78
+[]\OT1/txr/bx/n/10.95 Repository URL\OT1/txr/m/n/10.95 : \OT1/txtt/m/n/10.95 ht
+tps://github.com/JustBaumann/jenkins-python-pytest-demo.git 
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[57]
+<png/Jenkins Job.png, id=1268, 1068.99374pt x 176.66pt>
+File: png/Jenkins Job.png Graphic file (type png)
+<use png/Jenkins Job.png>
+Package pdftex.def Info: png/Jenkins Job.png  used on input line 145.
+(pdftex.def)             Requested size: 469.75499pt x 77.63089pt.
+<png/JenkinsTest.png, id=1269, 623.32875pt x 282.05376pt>
+File: png/JenkinsTest.png Graphic file (type png)
+<use png/JenkinsTest.png>
+Package pdftex.def Info: png/JenkinsTest.png  used on input line 151.
+(pdftex.def)             Requested size: 469.75499pt x 212.56409pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[58])
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[59 <./png/Jenkins Job.png> <./png/JenkinsTest.png>]
+\openout2 = `LoadBalancer.aux'.
+
+(./LoadBalancer.tex
+Chapter 18.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 6.
+
+(./_minted/2B823D151599CCD4E20CD439583C215D.highlight.minted) (./_minted/440118
+CA87FC07AF01D0FFFD73CF8EEA.highlight.minted) (./_minted/00BE8CD3591F99F1725FDE2
+0EC4D4065.highlight.minted
+
+! LaTeX Error: Unicode character │ (U+2502)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 │
+       
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character │ (U+2502)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 │
+       
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ├ (U+251C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 ├── docker\PYGZhy{}compose.yml
+                                        
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 ├── docker\PYGZhy{}compose.yml
+                                        
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 ├── docker\PYGZhy{}compose.yml
+                                        
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ├ (U+251C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 ├── docker\PYGZhy{}compose.yml
+                                        
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 ├── docker\PYGZhy{}compose.yml
+                                        
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 ├── docker\PYGZhy{}compose.yml
+                                        
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ├ (U+251C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ├── nginx/
+                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ├── nginx/
+                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ├── nginx/
+                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ├ (U+251C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ├── nginx/
+                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ├── nginx/
+                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ├── nginx/
+                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+
+[60
+
+
+
+
+]
+
+! LaTeX Error: Unicode character │ (U+2502)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 │   └── nginx.conf
+                              
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character └ (U+2514)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 │   └── nginx.conf
+                              
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 │   └── nginx.conf
+                              
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 │   └── nginx.conf
+                              
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character │ (U+2502)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 │   └── nginx.conf
+                              
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character └ (U+2514)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 │   └── nginx.conf
+                              
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 │   └── nginx.conf
+                              
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 │   └── nginx.conf
+                              
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ├ (U+251C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ├── web1/
+                   
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ├── web1/
+                   
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ├── web1/
+                   
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ├ (U+251C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ├── web1/
+                   
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ├── web1/
+                   
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ├── web1/
+                   
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character │ (U+2502)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 │   └── index.html
+                              
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character └ (U+2514)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 │   └── index.html
+                              
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 │   └── index.html
+                              
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 │   └── index.html
+                              
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character │ (U+2502)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 │   └── index.html
+                              
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character └ (U+2514)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 │   └── index.html
+                              
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 │   └── index.html
+                              
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 │   └── index.html
+                              
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character └ (U+2514)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 └── web2/
+                   
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 └── web2/
+                   
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 └── web2/
+                   
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character └ (U+2514)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 └── web2/
+                   
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 └── web2/
+                   
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 └── web2/
+                   
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character └ (U+2514)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10     └── index.html
+                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10     └── index.html
+                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10     └── index.html
+                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character └ (U+2514)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10     └── index.html
+                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10     └── index.html
+                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ─ (U+2500)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10     └── index.html
+                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+) (./_minted/4A53A7DEE43B88CFDE66767A71019286.highlight.minted) (./_minted/E1B1
+629A8DD3D62233452CFD3A2F4CBB.highlight.minted) (./_minted/7D840B48A8D67F5E5A1C9
+75D3EF4E2E2.highlight.minted
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[61]) (./_minted/C8A30AB3B5019EFFDE99597D30E5C65C.highlight.minted
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[62]) (./_minted/A56BED5782345990733A67B055975830.highlight.minted) (./_minted/
+8BFA096CA7D88D5749C2D2C94A0AFD46.highlight.minted)
+LaTeX Font Info:    Trying to load font information for OMS+txtt on input line 
+211.
+LaTeX Font Info:    No file OMStxtt.fd. on input line 211.
+
+LaTeX Font Warning: Font shape `OMS/txtt/m/n' undefined
+(Font)              using `OMS/txsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 211.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[63]
+Overfull \hbox (25.11293pt too wide) in paragraph at lines 212--213
+[]\OT1/txr/bx/n/10.95 NXDOMAIN Er-rors: \OT1/txr/m/n/10.95 Wait for DNS prop-a-
+ga-tion or ver-ify that each sub-do-main points to \OT1/txtt/m/n/10.95 167.99.5
+4.162\OT1/txr/m/n/10.95 . 
+ []
+
+<png/loadbalancer.png, id=1312, 1098.35344pt x 237.88875pt>
+File: png/loadbalancer.png Graphic file (type png)
+<use png/loadbalancer.png>
+Package pdftex.def Info: png/loadbalancer.png  used on input line 230.
+(pdftex.def)             Requested size: 328.82706pt x 71.21834pt.
+
+Underfull \hbox (badness 5696) in paragraph at lines 231--231
+[]\OT1/txr/m/n/12 Figure 18.1: []Load Bal-ancer and Vir-tual Host de-ploy-ment 
+on Dig-i-talO-cean droplet
+ []
+
+(./_minted/07B1D3E1D178D1935B1CB493596C8DEB.highlight.minted
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[64 <./png/loadbalancer.png>]))
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[65]
+\openout2 = `itAppendix.aux'.
+
+(./itAppendix.tex
+Appendix A.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
+)
+
+[66
+
+
+
+
+]
+
+Package glossaries Warning: Empty glossary for \printnoidxglossary[type={main}]
+. Rerun may be required (or you may have forgotten to use commands like \gls) o
+n input line 429.
+
+(./output.bbl
+
+
+Package fancyhdr Warning: \headheight is too small (14.45377pt): 
+(fancyhdr)                Make it at least 26.14003pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.14003pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-11.68626pt}.
+
+[67
+
+
+
+]
+
+LaTeX Warning: Empty `thebibliography' environment on input line 21.
+
+) (./output.ind
+
+[68
+
+]
+
+
+
+[69
+
+
+])
+\openout12 = `_78E6221F6393D1356681DB398F14CE6D.data.minted'.
+
+runsystem(latexminted clean  --timestamp 20251112234709Z 78E6221F6393D1356681DB
+398F14CE6D)...executed safely (allowed).
+
+(./output.aux (./prologue.aux) (./itIntroduction.aux) (./itPasswords.aux) (./it
+Hosts.aux) (./KanbanSetup.aux) (./Hosts.aux) (./LinuxCommands.aux) (./ProjectPr
+oposal.aux) (./AWSDeployment.aux) (./LaTeXDocker.aux) (./itBugzilla.aux) (./itO
+verleaf.aux) (./SSLResearch.aux) (./itOverleaf_Configuration.aux) (./DomainHost
+ing.aux) (./CompilingOverleaf.aux) (./LaTeXCompilationAction.aux) (./Prometheus
+WithGrafana.aux) (./JenkinsPytest.aux) (./LoadBalancer.aux) (./itAppendix.aux))
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-04-29>
+ ***********
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `output.out' has not changed.
+(rerunfilecheck)             Checksum: 6C81AFA1DAC5815CABC26CBEB2B70187;30411.
+ ) 
+Here is how much of TeX's memory you used:
+ 40323 strings out of 471528
+ 852464 string characters out of 5519234
+ 1323255 words of memory out of 5000000
+ 65452 multiletter control sequences out of 15000+600000
+ 685607 words of font info for 186 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 96i,11n,105p,2476b,1294s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></us
+r/local/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/local
+/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texli
+ve/2025/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2025
+/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb></usr/local/texlive/2025/texmf
+-dist/fonts/type1/public/txfonts/txbtt.pfb></usr/local/texlive/2025/texmf-dist/
+fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2025/texmf-dist/fonts/t
+ype1/public/txfonts/txtt.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/pu
+blic/txfonts/txtt.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times
+/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.p
+fb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/l
+ocal/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on output.pdf (80 pages, 2069960 bytes).
+PDF statistics:
+ 1514 PDF objects out of 1728 (max. 8388607)
+ 1359 compressed objects within 14 object streams
+ 370 named destinations out of 1000 (max. 500000)
+ 1221 words of extra memory for PDF output out of 10000 (max. 10000000)
+

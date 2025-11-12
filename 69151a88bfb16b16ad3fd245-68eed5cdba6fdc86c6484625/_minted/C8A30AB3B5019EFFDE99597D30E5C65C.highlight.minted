@@ -1,0 +1,26 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{version}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}3\PYGZsq{}}
+\PYG{n+nt}{services}\PYG{p}{:}
+\PYG{+w}{  }\PYG{n+nt}{web1}\PYG{p}{:}
+\PYG{+w}{    }\PYG{n+nt}{image}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{nginx}
+\PYG{+w}{    }\PYG{n+nt}{container\PYGZus{}name}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{web1}
+\PYG{+w}{    }\PYG{n+nt}{volumes}\PYG{p}{:}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{./web1:/usr/share/nginx/html:ro}
+
+\PYG{+w}{  }\PYG{n+nt}{web2}\PYG{p}{:}
+\PYG{+w}{    }\PYG{n+nt}{image}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{nginx}
+\PYG{+w}{    }\PYG{n+nt}{container\PYGZus{}name}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{web2}
+\PYG{+w}{    }\PYG{n+nt}{volumes}\PYG{p}{:}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{./web2:/usr/share/nginx/html:ro}
+
+\PYG{+w}{  }\PYG{n+nt}{loadbalancer}\PYG{p}{:}
+\PYG{+w}{    }\PYG{n+nt}{image}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{nginx}
+\PYG{+w}{    }\PYG{n+nt}{container\PYGZus{}name}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{loadbalancer}
+\PYG{+w}{    }\PYG{n+nt}{ports}\PYG{p}{:}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}80:80\PYGZdq{}}
+\PYG{+w}{    }\PYG{n+nt}{volumes}\PYG{p}{:}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{./nginx/nginx.conf:/etc/nginx/nginx.conf:ro}
+\PYG{+w}{    }\PYG{n+nt}{depends\PYGZus{}on}\PYG{p}{:}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{web1}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{web2}
+\end{MintedVerbatim}

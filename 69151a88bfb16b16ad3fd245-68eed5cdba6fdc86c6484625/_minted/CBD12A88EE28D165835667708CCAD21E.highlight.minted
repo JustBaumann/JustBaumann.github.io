@@ -1,0 +1,5 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+mkdir\PYG{+w}{ }\PYGZhy{}p\PYG{+w}{ }/var/log/httpd
+touch\PYG{+w}{ }/var/log/httpd/error\PYGZus{}log\PYG{+w}{ }/var/log/httpd/access\PYGZus{}log
+chown\PYG{+w}{ }\PYGZhy{}R\PYG{+w}{ }apache:apache\PYG{+w}{ }/var/log/httpd
+\end{MintedVerbatim}

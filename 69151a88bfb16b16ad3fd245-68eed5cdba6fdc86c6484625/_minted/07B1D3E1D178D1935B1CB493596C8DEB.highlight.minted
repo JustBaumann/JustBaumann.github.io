@@ -1,0 +1,41 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{PS }\PYG{n}{C}\PYG{p}{:\PYGZbs{}}\PYG{n}{Users}\PYG{p}{\PYGZbs{}}\PYG{n}{thoma}\PYG{p}{\PYGZgt{}} \PYG{n+nb}{curl }\PYG{n}{http}\PYG{p}{://}\PYG{n}{loadbalancer}\PYG{p}{.}\PYG{n}{quackops}\PYG{p}{.}\PYG{n}{me}
+
+\PYG{n}{StatusCode}        \PYG{p}{:} \PYG{n}{200}
+\PYG{n}{StatusDescription} \PYG{p}{:} \PYG{n}{OK}
+\PYG{n}{Content}           \PYG{p}{:} \PYG{p}{\PYGZlt{}}\PYG{n}{h1}\PYG{p}{\PYGZgt{}}\PYG{n}{Hello} \PYG{n}{from} \PYG{n}{Web} \PYG{n}{1} \PYG{p}{\PYGZlt{}/}\PYG{n}{h1}\PYG{p}{\PYGZgt{}}
+\PYG{n}{RawContent}        \PYG{p}{:} \PYG{n}{HTTP}\PYG{p}{/}\PYG{n}{1}\PYG{p}{.}\PYG{n}{1} \PYG{n}{200} \PYG{n}{OK}
+                    \PYG{n}{Content\PYGZhy{}Type}\PYG{p}{:} \PYG{n}{text}\PYG{p}{/}\PYG{n}{html}
+                    \PYG{n}{Content\PYGZhy{}Length}\PYG{p}{:} \PYG{n}{26}
+                    \PYG{n}{Date}\PYG{p}{:} \PYG{n}{Wed}\PYG{p}{,} \PYG{n}{12} \PYG{n}{Nov} \PYG{n}{2025} \PYG{n}{03}\PYG{p}{:}\PYG{n}{38}\PYG{p}{:}\PYG{n}{53} \PYG{n}{GMT}
+
+\PYG{n+nb}{PS }\PYG{n}{C}\PYG{p}{:\PYGZbs{}}\PYG{n}{Users}\PYG{p}{\PYGZbs{}}\PYG{n}{thoma}\PYG{p}{\PYGZgt{}} \PYG{n+nb}{curl }\PYG{n}{http}\PYG{p}{://}\PYG{n}{loadbalancer}\PYG{p}{.}\PYG{n}{quackops}\PYG{p}{.}\PYG{n}{me}
+
+\PYG{n}{StatusCode}        \PYG{p}{:} \PYG{n}{200}
+\PYG{n}{StatusDescription} \PYG{p}{:} \PYG{n}{OK}
+\PYG{n}{Content}           \PYG{p}{:} \PYG{p}{\PYGZlt{}}\PYG{n}{h1}\PYG{p}{\PYGZgt{}}\PYG{n}{Hello} \PYG{n}{from} \PYG{n}{Web} \PYG{n}{2} \PYG{p}{\PYGZlt{}/}\PYG{n}{h1}\PYG{p}{\PYGZgt{}}
+\PYG{n}{RawContent}        \PYG{p}{:} \PYG{n}{HTTP}\PYG{p}{/}\PYG{n}{1}\PYG{p}{.}\PYG{n}{1} \PYG{n}{200} \PYG{n}{OK}
+                    \PYG{n}{Content\PYGZhy{}Type}\PYG{p}{:} \PYG{n}{text}\PYG{p}{/}\PYG{n}{html}
+                    \PYG{n}{Content\PYGZhy{}Length}\PYG{p}{:} \PYG{n}{26}
+                    \PYG{n}{Date}\PYG{p}{:} \PYG{n}{Wed}\PYG{p}{,} \PYG{n}{12} \PYG{n}{Nov} \PYG{n}{2025} \PYG{n}{03}\PYG{p}{:}\PYG{n}{38}\PYG{p}{:}\PYG{n}{54} \PYG{n}{GMT}
+
+\PYG{n+nb}{PS }\PYG{n}{C}\PYG{p}{:\PYGZbs{}}\PYG{n}{Users}\PYG{p}{\PYGZbs{}}\PYG{n}{thoma}\PYG{p}{\PYGZgt{}} \PYG{n+nb}{curl }\PYG{n}{http}\PYG{p}{://}\PYG{n}{loadbalancer}\PYG{p}{.}\PYG{n}{quackops}\PYG{p}{.}\PYG{n}{me}
+
+\PYG{n}{StatusCode}        \PYG{p}{:} \PYG{n}{200}
+\PYG{n}{StatusDescription} \PYG{p}{:} \PYG{n}{OK}
+\PYG{n}{Content}           \PYG{p}{:} \PYG{p}{\PYGZlt{}}\PYG{n}{h1}\PYG{p}{\PYGZgt{}}\PYG{n}{Hello} \PYG{n}{from} \PYG{n}{Web} \PYG{n}{1} \PYG{p}{\PYGZlt{}/}\PYG{n}{h1}\PYG{p}{\PYGZgt{}}
+\PYG{n}{RawContent}        \PYG{p}{:} \PYG{n}{HTTP}\PYG{p}{/}\PYG{n}{1}\PYG{p}{.}\PYG{n}{1} \PYG{n}{200} \PYG{n}{OK}
+                    \PYG{n}{Content\PYGZhy{}Type}\PYG{p}{:} \PYG{n}{text}\PYG{p}{/}\PYG{n}{html}
+                    \PYG{n}{Content\PYGZhy{}Length}\PYG{p}{:} \PYG{n}{26}
+                    \PYG{n}{Date}\PYG{p}{:} \PYG{n}{Wed}\PYG{p}{,} \PYG{n}{12} \PYG{n}{Nov} \PYG{n}{2025} \PYG{n}{03}\PYG{p}{:}\PYG{n}{38}\PYG{p}{:}\PYG{n}{55} \PYG{n}{GMT}
+
+\PYG{n+nb}{PS }\PYG{n}{C}\PYG{p}{:\PYGZbs{}}\PYG{n}{Users}\PYG{p}{\PYGZbs{}}\PYG{n}{thoma}\PYG{p}{\PYGZgt{}} \PYG{n+nb}{curl }\PYG{n}{http}\PYG{p}{://}\PYG{n}{loadbalancer}\PYG{p}{.}\PYG{n}{quackops}\PYG{p}{.}\PYG{n}{me}
+
+\PYG{n}{StatusCode}        \PYG{p}{:} \PYG{n}{200}
+\PYG{n}{StatusDescription} \PYG{p}{:} \PYG{n}{OK}
+\PYG{n}{Content}           \PYG{p}{:} \PYG{p}{\PYGZlt{}}\PYG{n}{h1}\PYG{p}{\PYGZgt{}}\PYG{n}{Hello} \PYG{n}{from} \PYG{n}{Web} \PYG{n}{2} \PYG{p}{\PYGZlt{}/}\PYG{n}{h1}\PYG{p}{\PYGZgt{}}
+\PYG{n}{RawContent}        \PYG{p}{:} \PYG{n}{HTTP}\PYG{p}{/}\PYG{n}{1}\PYG{p}{.}\PYG{n}{1} \PYG{n}{200} \PYG{n}{OK}
+                    \PYG{n}{Content\PYGZhy{}Type}\PYG{p}{:} \PYG{n}{text}\PYG{p}{/}\PYG{n}{html}
+                    \PYG{n}{Content\PYGZhy{}Length}\PYG{p}{:} \PYG{n}{26}
+                    \PYG{n}{Date}\PYG{p}{:} \PYG{n}{Wed}\PYG{p}{,} \PYG{n}{12} \PYG{n}{Nov} \PYG{n}{2025} \PYG{n}{03}\PYG{p}{:}\PYG{n}{39}\PYG{p}{:}\PYG{n}{01} \PYG{n}{GMT}
+\end{MintedVerbatim}

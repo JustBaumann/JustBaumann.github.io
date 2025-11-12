@@ -1,0 +1,4 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+docker\PYG{+w}{ }\PYG{n+nb}{exec}\PYG{+w}{ }\PYGZhy{}it\PYG{+w}{ }overleaf\PYGZhy{}mongo\PYGZhy{}1\PYG{+w}{ }mongosh
+\PYGZgt{}\PYG{+w}{ }rs.initiate\PYG{o}{()}
+\end{MintedVerbatim}

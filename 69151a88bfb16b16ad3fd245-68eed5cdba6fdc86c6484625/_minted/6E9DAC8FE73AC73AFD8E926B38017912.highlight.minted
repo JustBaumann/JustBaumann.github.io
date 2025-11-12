@@ -1,0 +1,3 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+    docker build \PYGZhy{}\PYGZhy{}platform linux/amd64 \PYGZhy{}t \PYG{n+nv}{\PYGZpc{}ECR\PYGZus{}REPO\PYGZpc{}}:\PYG{n+nv}{\PYGZpc{}IMAGE\PYGZus{}TAG\PYGZpc{}} .
+\end{MintedVerbatim}

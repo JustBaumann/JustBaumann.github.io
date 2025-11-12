@@ -1,0 +1,10 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+cat\PYG{+w}{ }\PYGZgt{}\PYG{+w}{ }docker\PYGZhy{}compose.override.yml\PYG{+w}{ }\PYG{l+s}{\PYGZlt{}\PYGZlt{}\PYGZsq{}YML\PYGZsq{}}
+\PYG{l+s}{services:}
+\PYG{l+s}{  mongo:}
+\PYG{l+s}{    command: [\PYGZdq{}mongod\PYGZdq{},\PYGZdq{}\PYGZhy{}\PYGZhy{}replSet\PYGZdq{},\PYGZdq{}rs0\PYGZdq{},\PYGZdq{}\PYGZhy{}\PYGZhy{}bind\PYGZus{}ip\PYGZus{}all\PYGZdq{}]}
+\PYG{l+s}{  sharelatex:}
+\PYG{l+s}{    environment:}
+\PYG{l+s}{      OVERLEAF\PYGZus{}MONGO\PYGZus{}URL: \PYGZdq{}mongodb://mongo:27017/sharelatex?replicaSet=rs0\PYGZdq{}}
+\PYG{l+s}{YML}
+\end{MintedVerbatim}

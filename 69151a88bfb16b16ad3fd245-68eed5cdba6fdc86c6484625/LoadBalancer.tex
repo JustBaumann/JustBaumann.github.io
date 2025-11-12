@@ -1,0 +1,284 @@
+\chapter{Load Balancer and Virtual Host \\
+\small{\textit{-- Thomas Ung}}
+\index{load balancer}
+\index{virtual host}
+\index{Chapter!Load Balancer and Virtual Host}
+\label{Chapter::LoadBalancer}}
+
+\section{Overview}
+
+This section documents the creation and deployment of a simple load-balanced web application using Docker and Nginx on a DigitalOcean Ubuntu 22.04 Droplet.  
+The objective is to demonstrate two concepts: (1) a round-robin load balancer that alternates traffic between two web servers, and (2) name-based virtual hosting that routes different subdomains to unique back-end containers.
+
+\section{Environment Setup}
+
+\begin{enumerate}
+    \item \textbf{Create the Droplet:}
+    \begin{itemize}
+        \item OS: Ubuntu 22.04 LTS  
+        \item Size: 2 vCPUs, 4 GB RAM  
+        \item Public IP Address: \texttt{167.99.54.162}
+    \end{itemize}
+
+    \item \textbf{Install Docker and Docker Compose:}
+
+    \begin{minted}[fontsize=\small,breaklines]{bash}
+sudo apt update && sudo apt upgrade -y
+sudo apt install docker.io docker-compose -y
+sudo systemctl enable docker
+sudo systemctl start docker
+docker --version
+docker compose version
+    \end{minted}
+
+    \item \textbf{Verify Docker:}
+
+    \begin{minted}[fontsize=\small,breaklines]{bash}
+docker info
+    \end{minted}
+\end{enumerate}
+
+\section{Directory Structure}
+
+\begin{minted}[fontsize=\small,breaklines]{text}
+load-balanced-app/
+│
+├── docker-compose.yml
+├── nginx/
+│   └── nginx.conf
+├── web1/
+│   └── index.html
+└── web2/
+    └── index.html
+\end{minted}
+
+\section{Web Server Files}
+
+Each web server container serves static HTML content:
+
+\begin{minted}[fontsize=\small,breaklines]{html}
+<!-- web1/index.html -->
+<h1>Hello from Web 1</h1>
+\end{minted}
+
+\begin{minted}[fontsize=\small,breaklines]{html}
+<!-- web2/index.html -->
+<h1>Hello from Web 2</h1>
+\end{minted}
+
+\section{Nginx Configuration}
+
+\subsection{Combined Load Balancer and Virtual Host Configuration}
+
+\begin{minted}[fontsize=\small,breaklines]{nginx}
+events {}
+
+http {
+    upstream backend {
+        server web1:80;
+        server web2:80;
+    }
+
+    # Load Balancer
+    server {
+        listen 80;
+        server_name loadbalancer.quackops.me;
+
+        location / {
+            proxy_pass http://backend;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+        }
+    }
+
+    # Virtual Host 1
+    server {
+        listen 80;
+        server_name web1.quackops.me;
+
+        location / {
+            proxy_pass http://web1:80;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+        }
+    }
+
+    # Virtual Host 2
+    server {
+        listen 80;
+        server_name web2.quackops.me;
+
+        location / {
+            proxy_pass http://web2:80;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+        }
+    }
+}
+\end{minted}
+
+\section{Docker Compose File}
+
+\begin{minted}[fontsize=\small,breaklines]{yaml}
+version: '3'
+services:
+  web1:
+    image: nginx
+    container_name: web1
+    volumes:
+      - ./web1:/usr/share/nginx/html:ro
+
+  web2:
+    image: nginx
+    container_name: web2
+    volumes:
+      - ./web2:/usr/share/nginx/html:ro
+
+  loadbalancer:
+    image: nginx
+    container_name: loadbalancer
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - web1
+      - web2
+\end{minted}
+
+\section{Deployment Steps}
+
+\begin{enumerate}
+    \item \textbf{Copy Project Files to Droplet:}
+
+    \begin{minted}[fontsize=\small,breaklines]{bash}
+scp -r load-balanced-app/* root@167.99.54.162:/home/load-balanced-app/
+    \end{minted}
+
+    \item \textbf{Start Containers:}
+
+    \begin{minted}[fontsize=\small,breaklines]{bash}
+cd /home/load-balanced-app
+docker compose up -d --build
+docker ps
+    \end{minted}
+
+    Verify that the containers \texttt{web1}, \texttt{web2}, and \texttt{loadbalancer} are running.
+\end{enumerate}
+
+\section{DNS Configuration}
+
+The following A records were created in Namecheap:
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Host} & \textbf{Type} & \textbf{Value (IP)} \\
+\hline
+@ & A & 167.99.54.162 \\
+loadbalancer & A & 167.99.54.162 \\
+web1 & A & 167.99.54.162 \\
+web2 & A & 167.99.54.162 \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Testing and Verification}
+
+\subsection{Load Balancer}
+
+Visit:
+\begin{center}
+\textbf{\url{http://loadbalancer.quackops.me}}
+\end{center}
+
+Refreshing alternates between:
+\begin{itemize}
+    \item \texttt{Hello from Web 1}
+    \item \texttt{Hello from Web 2}
+\end{itemize}
+
+\subsection{Virtual Hosting}
+
+\begin{itemize}
+    \item \textbf{Web 1:} \url{http://web1.quackops.me} → Displays ``Hello from Web 1''  
+    \item \textbf{Web 2:} \url{http://web2.quackops.me} → Displays ``Hello from Web 2''  
+\end{itemize}
+
+\section{Troubleshooting Notes}
+
+\begin{itemize}
+    \item \textbf{403 Forbidden:} Ensure the \texttt{events \{\}} block exists at the top of \texttt{nginx.conf}.  
+    \item \textbf{NXDOMAIN Errors:} Wait for DNS propagation or verify that each subdomain points to \texttt{167.99.54.162}.  
+    \item \textbf{Port Conflicts:} Confirm that no other service is using port 80.  
+    \item \textbf{Connection Persistence:} If load balancing does not alternate, add the directive \texttt{random;} inside the \texttt{upstream} block.  
+\end{itemize}
+
+\section{Final Result}
+
+The Nginx reverse proxy successfully provides both load balancing and name-based virtual hosting.  
+All components operate as expected, with subdomains resolving correctly through Namecheap DNS.
+
+\begin{center}
+\textbf{\url{http://loadbalancer.quackops.me}} \\
+\textbf{\url{http://web1.quackops.me}} \\
+\textbf{\url{http://web2.quackops.me}}
+\end{center}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{png/loadbalancer.png}
+    \caption{Load Balancer and Virtual Host deployment on DigitalOcean droplet (\texttt{167.99.54.162}).}
+    \label{fig:loadbalancer}
+\end{figure}
+
+To verify that the load balancer was correctly alternating between the two web servers without relying on browser caching or DNS propagation, the \texttt{curl} command was used in PowerShell.  
+Unlike a browser, \texttt{curl} allows direct inspection of HTTP responses and headers, making it an ideal tool for confirming the underlying server response pattern.
+
+Each repeated request to \url{http://loadbalancer.quackops.me} returned content from alternating web containers, confirming that round-robin load balancing was functioning correctly.
+
+\begin{minted}[fontsize=\small,breaklines]{powershell}
+PS C:\Users\thoma> curl http://loadbalancer.quackops.me
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : <h1>Hello from Web 1 </h1>
+RawContent        : HTTP/1.1 200 OK
+                    Content-Type: text/html
+                    Content-Length: 26
+                    Date: Wed, 12 Nov 2025 03:38:53 GMT
+
+PS C:\Users\thoma> curl http://loadbalancer.quackops.me
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : <h1>Hello from Web 2 </h1>
+RawContent        : HTTP/1.1 200 OK
+                    Content-Type: text/html
+                    Content-Length: 26
+                    Date: Wed, 12 Nov 2025 03:38:54 GMT
+
+PS C:\Users\thoma> curl http://loadbalancer.quackops.me
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : <h1>Hello from Web 1 </h1>
+RawContent        : HTTP/1.1 200 OK
+                    Content-Type: text/html
+                    Content-Length: 26
+                    Date: Wed, 12 Nov 2025 03:38:55 GMT
+
+PS C:\Users\thoma> curl http://loadbalancer.quackops.me
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : <h1>Hello from Web 2 </h1>
+RawContent        : HTTP/1.1 200 OK
+                    Content-Type: text/html
+                    Content-Length: 26
+                    Date: Wed, 12 Nov 2025 03:39:01 GMT
+\end{minted}
+
+The alternating responses of “\texttt{Hello from Web 1}” and “\texttt{Hello from Web 2}” confirm that Nginx is successfully distributing incoming requests between the two backend containers in a round-robin manner.  
+This demonstrates that the configuration defined in the \texttt{upstream backend} block of \texttt{nginx.conf} is working exactly as intended.
+

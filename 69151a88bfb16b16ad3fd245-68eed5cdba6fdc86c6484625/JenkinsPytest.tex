@@ -1,0 +1,155 @@
+\chapter{Jenkins with Pytest \\
+\small{\textit{-- Justin Baumann, Gianna Cerbone, Thomas Ung, Spurthi Setty}} 
+\index{Chapter!jenkinssetup}
+\index{jenkinssetup}
+\label{Chapter::jenkinssetup}}
+
+% Add a section and label it so that we can reference it later
+\section{Jenkins Setup \label{Section:jenkinssetup}}
+This is the order of operations executed to set up Jenkins.
+\begin{enumerate}
+  \item \textbf{Project directory (host):}
+  \begin{verbatim}
+  C:\Users\minij\Desktop\jenkins-python-pytest-demo
+  \end{verbatim}
+
+  \item \textbf{Compose file (host)} to run Jenkins in Docker:
+  \begin{verbatim}
+  version: '3.8'
+  services:
+    jenkins:
+      image: jenkins/jenkins:lts
+      container_name: jenkins
+      ports:
+        - "8080:8080"
+        - "50000:50000"
+      volumes:
+        - jenkins_home:/var/jenkins_home
+        - /var/run/docker.sock:/var/run/docker.sock
+  volumes:
+    jenkins_home:
+  \end{verbatim}
+
+  \item \textbf{Start Jenkins (host terminal):}
+  \begin{verbatim}
+  docker compose up -d
+  \end{verbatim}
+
+  \item \textbf{Access and unlock Jenkins:}
+  \begin{itemize}
+    \item Open \texttt{http://localhost:8080}.
+    \item Retrieve initial password (host):
+\begin{verbatim}
+docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+\end{verbatim}
+    \item Install ``Suggested plugins'' and create the admin user.
+  \end{itemize}
+
+  \item \textbf{Install Python once inside the Jenkins container} (so the agent can create a venv):
+\begin{verbatim}
+docker exec -u root -it jenkins bash
+apt-get update
+apt-get install -y python3 python3-venv python3-pip
+exit
+\end{verbatim}
+\end{enumerate}
+
+\subsection*{B. Source Control (GitHub)}
+\begin{enumerate}
+  \item Initialize and push the demo project to GitHub:
+\begin{verbatim}
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/JustBaumann/jenkins-python-pytest-demo.git
+git push -u origin main
+\end{verbatim}
+\end{enumerate}
+
+\subsection*{C. Jenkins Pipeline Job}
+\begin{enumerate}
+  \item In Jenkins: \textbf{New Item} $\rightarrow$ \textbf{Pipeline}.
+  \item Under \textbf{Pipeline}:
+    \begin{itemize}
+      \item \textbf{Definition}: Pipeline script from SCM.
+      \item \textbf{SCM}: Git.
+      \item \textbf{Repository URL}: \texttt{https://github.com/JustBaumann/jenkins-python-pytest-demo.git}
+      \item \textbf{Branch}: \texttt{main}
+      \item \textbf{Script Path}: \texttt{Jenkinsfile}
+    \end{itemize}
+  \item Save, then \textbf{Build Now}.
+\end{enumerate}
+
+\subsection*{D. Pytest: What the Pipeline Does}
+\noindent The pipeline runs in four stages:
+\begin{enumerate}
+  \item \textbf{Prepare/Install dependencies}: Create a Python virtual environment and install \texttt{pytest}.
+  \item \textbf{Run tests}: Execute the unit tests and write a JUnit XML report (\texttt{report.xml}).
+  \item \textbf{Publish Report}: Archive and display test results in Jenkins.
+  \item (Optional) \textbf{Always publish}: ensure results are shown even when tests fail.
+\end{enumerate}
+
+\subsection*{E. Jenkinsfile Used}
+\noindent Stored at the repo root as \texttt{Jenkinsfile}. It assumes Python is installed in the Jenkins container (Step~A.5).
+\begin{verbatim}
+pipeline {
+  agent any
+
+  stages {
+    stage('Install dependencies') {
+      steps {
+        sh 'python3 -m venv venv'
+        sh './venv/bin/pip install -r requirements.txt'
+      }
+    }
+
+    stage('Run tests') {
+      steps {
+        // Write JUnit XML so Jenkins can publish a Test Result tab
+        sh './venv/bin/pytest --junitxml=report.xml'
+        // Optional to keep pipeline going even on failures:
+        // sh './venv/bin/pytest --junitxml=report.xml || true'
+      }
+    }
+
+    stage('Publish Report') {
+      steps {
+        junit 'report.xml'
+      }
+    }
+  }
+}
+\end{verbatim}
+
+\subsection*{F. Test Suite Contents}
+\noindent Minimal demo tests to show a mix of pass/fail:
+\begin{verbatim}
+# repo path: tests/test_sample.py
+def test_addition():
+    assert 1 + 1 == 2
+
+def test_subtraction():
+    assert 5 - 2 == 3
+
+def test_failure_example():
+    assert 2 * 2 == 5  # intentional fail
+\end{verbatim}
+
+\subsection*{G. Results and Evidence}
+\begin{itemize}
+  \item After a build completes, Jenkins shows a \textbf{Test Result} link for the run
+        (summary: 3 tests, 1 failed), and a \textbf{Stage/Pipeline} view with the three stages.
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[width=1.0\textwidth]{png/Jenkins Job.png}
+    \caption{Screenshot of Stage/Pipeline view}
+    \label{fig:Jenkins Job}
+\end{figure}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1.0\textwidth]{png/JenkinsTest.png}
+    \caption{Screenshot of Test Result page}
+    \label{fig:Jenkins Test}
+\end{figure}
+\end{itemize}

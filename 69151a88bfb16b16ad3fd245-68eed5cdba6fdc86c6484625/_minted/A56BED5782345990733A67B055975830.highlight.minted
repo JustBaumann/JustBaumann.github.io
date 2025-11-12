@@ -1,0 +1,3 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+scp\PYG{+w}{ }\PYGZhy{}r\PYG{+w}{ }load\PYGZhy{}balanced\PYGZhy{}app/*\PYG{+w}{ }root@167.99.54.162:/home/load\PYGZhy{}balanced\PYGZhy{}app/
+\end{MintedVerbatim}

@@ -1,0 +1,5 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+docker\PYG{+w}{ }\PYG{n+nb}{exec}\PYG{+w}{ }\PYGZhy{}it\PYG{+w}{ }sharelatex\PYG{+w}{ }tlmgr\PYG{+w}{ }install\PYG{+w}{ }txfonts\PYG{+w}{ }helvetic\PYG{+w}{ }\PYG{n+nb}{times}\PYG{+w}{ }courier
+docker\PYG{+w}{ }\PYG{n+nb}{exec}\PYG{+w}{ }\PYGZhy{}it\PYG{+w}{ }sharelatex\PYG{+w}{ }updmap\PYGZhy{}sys
+docker\PYG{+w}{ }\PYG{n+nb}{exec}\PYG{+w}{ }\PYGZhy{}it\PYG{+w}{ }sharelatex\PYG{+w}{ }mktexlsr
+\end{MintedVerbatim}

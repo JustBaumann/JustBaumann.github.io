@@ -1,0 +1,20 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{FROM}\PYG{+w}{ }\PYG{l+s}{sharelatex/sharelatex:latest}
+
+\PYG{k}{USER}\PYG{+w}{ }\PYG{l+s}{root}
+
+\PYG{k}{RUN}\PYG{+w}{ }apt\PYGZhy{}get\PYG{+w}{ }update\PYG{+w}{ }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }apt\PYGZhy{}get\PYG{+w}{ }install\PYG{+w}{ }\PYGZhy{}y\PYG{+w}{ }texlive\PYGZhy{}full\PYG{+w}{ }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }apt\PYGZhy{}get\PYG{+w}{ }clean\PYG{+w}{ }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }rm\PYG{+w}{ }\PYGZhy{}rf\PYG{+w}{ }/var/lib/apt/lists/*
+
+\PYG{k}{ENV}\PYG{+w}{ }\PYG{n+nv}{TEXMFROOT}\PYG{o}{=}/usr/share/texlive
+\PYG{k}{ENV}\PYG{+w}{ }\PYG{n+nv}{TEXMFVAR}\PYG{o}{=}\PYG{n+nv}{\PYGZdl{}TEXMFROOT}/texmf\PYGZhy{}var
+\PYG{k}{ENV}\PYG{+w}{ }\PYG{n+nv}{TEXMFSYSVAR}\PYG{o}{=}\PYG{n+nv}{\PYGZdl{}TEXMFROOT}/texmf\PYGZhy{}var
+\PYG{k}{ENV}\PYG{+w}{ }\PYG{n+nv}{TEXMFCONFIG}\PYG{o}{=}\PYG{n+nv}{\PYGZdl{}TEXMFROOT}/texmf\PYGZhy{}config
+\PYG{k}{ENV}\PYG{+w}{ }\PYG{n+nv}{TEXMFSYSCONFIG}\PYG{o}{=}\PYG{n+nv}{\PYGZdl{}TEXMFROOT}/texmf\PYGZhy{}config
+\PYG{k}{ENV}\PYG{+w}{ }\PYG{n+nv}{TEXMFLOCAL}\PYG{o}{=}\PYG{n+nv}{\PYGZdl{}TEXMFROOT}/texmf\PYGZhy{}local
+\PYG{k}{ENV}\PYG{+w}{ }\PYG{n+nv}{TEXMFDIST}\PYG{o}{=}\PYG{n+nv}{\PYGZdl{}TEXMFROOT}/texmf\PYGZhy{}dist
+\PYG{k}{ENV}\PYG{+w}{ }\PYG{n+nv}{TEXMFHOME}\PYG{o}{=}/root/texmf
+
+\PYG{k}{RUN}\PYG{+w}{ }mktexlsr
+\end{MintedVerbatim}
